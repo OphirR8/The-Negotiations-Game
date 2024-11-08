@@ -1,0 +1,343 @@
+[
+  {
+    "tacticID": 1,
+    "tactic": "Mirroring",
+    "scenario": "A client says, 'I’m not sure this solution fits our team’s needs.'",
+    "levels": {
+      "Easy": {
+        "correctOption": "Fits your team’s needs?",
+        "wrongOptions": [
+          "What makes you say that?",
+          "It sounds like you’re hesitant about the solution."
+        ],
+        "explanation": "Mirroring encourages the client to elaborate without feeling questioned or judged, revealing more details about their concerns."
+      },
+      "Medium": {
+        "correctOption": "Fits your team’s needs?",
+        "wrongOptions": [
+          "Does this mean you’re rejecting the solution?",
+          "What’s wrong with the solution?"
+        ],
+        "explanation": "Mirroring is non-threatening and allows the client to clarify their concerns naturally. The incorrect options sound accusatory or defensive."
+      },
+      "Hard": {
+        "correctOption": "Fits your team’s needs?",
+        "wrongOptions": [
+          "Why doesn’t it work for your team?",
+          "I disagree; I think it does fit your team’s needs."
+        ],
+        "explanation": "Mirroring keeps the conversation open and encourages dialogue. Defensive or confrontational approaches shut down the conversation."
+      }
+    }
+  },
+  {
+    "tacticID": 2,
+    "tactic": "Labeling",
+    "scenario": "A customer says, 'I feel like this is too expensive for us.'",
+    "levels": {
+      "Easy": {
+        "correctOption": "It sounds like you’re concerned about the price.",
+        "wrongOptions": [
+          "What’s your budget?",
+          "Let me explain why the price is fair."
+        ],
+        "explanation": "Labeling acknowledges the emotion behind the objection, making the customer feel understood. Asking about the budget or justifying the price skips over their emotional concern."
+      },
+      "Medium": {
+        "correctOption": "It seems like you’re worried about affordability.",
+        "wrongOptions": [
+          "How much can you afford?",
+          "I understand, but our competitors charge even more."
+        ],
+        "explanation": "Labeling identifies and verbalizes the concern without judgment, showing empathy. Budget questions and comparisons feel dismissive."
+      },
+      "Hard": {
+        "correctOption": "It looks like you’re concerned about whether this investment is worth it.",
+        "wrongOptions": [
+          "Why do you think it’s expensive?",
+          "Maybe this isn’t the right product for you."
+        ],
+        "explanation": "Labeling focuses on the customer’s emotions, encouraging them to share their reasoning. The wrong options are too blunt and risk alienating the customer."
+      }
+    }
+  },
+  {
+    "tacticID": 3,
+    "tactic": "Tactical Empathy",
+    "scenario": "A coworker says, 'I’m overwhelmed with the number of tasks I have.'",
+    "levels": {
+      "Easy": {
+        "correctOption": "It sounds like you’re feeling stressed about your workload.",
+        "wrongOptions": [
+          "Maybe you just need to manage your time better.",
+          "Let’s focus on solutions instead of stress."
+        ],
+        "explanation": "Tactical empathy involves acknowledging their feelings, which opens the door to further dialogue. Offering solutions without understanding the problem feels dismissive."
+      },
+      "Medium": {
+        "correctOption": "I can see why you feel overwhelmed given the amount of work you’re handling.",
+        "wrongOptions": [
+          "Why don’t you delegate some tasks?",
+          "Stress is part of the job."
+        ],
+        "explanation": "Empathy validates their emotions. Suggesting delegation or downplaying stress misses the opportunity to connect and understand."
+      },
+      "Hard": {
+        "correctOption": "It must feel exhausting to have so many tasks on your plate right now.",
+        "wrongOptions": [
+          "Why are you struggling with the workload?",
+          "You’ll manage once you focus on priorities."
+        ],
+        "explanation": "Empathy fosters connection and encourages openness. Questioning or minimizing their struggle makes them feel unsupported."
+      }
+    }
+  },
+  {
+    "tacticID": 4,
+    "tactic": "Calibrated Questions",
+    "scenario": "A manager says, 'This timeline is impossible for my team.'",
+    "levels": {
+      "Easy": {
+        "correctOption": "What about the timeline feels challenging?",
+        "wrongOptions": [
+          "Why can’t you meet the timeline?",
+          "Can’t you just try harder?"
+        ],
+        "explanation": "Open-ended questions like 'What' explore the issue without being confrontational. 'Why' or accusatory language increases defensiveness."
+      },
+      "Medium": {
+        "correctOption": "How can we adjust the timeline to make it more manageable?",
+        "wrongOptions": [
+          "When can you commit to finishing?",
+          "What’s wrong with the timeline?"
+        ],
+        "explanation": "How questions encourage collaboration. Imposing deadlines or questioning their ability creates friction."
+      },
+      "Hard": {
+        "correctOption": "What resources would make this timeline achievable?",
+        "wrongOptions": [
+          "Why didn’t you raise this concern earlier?",
+          "How are you planning to catch up?"
+        ],
+        "explanation": "Exploring resource needs promotes problem-solving. Blame or pressure erodes trust and cooperation."
+      }
+    }
+  },
+  {
+    "tacticID": 5,
+    "tactic": "Accusation Audit",
+    "scenario": "A prospect says, 'I feel like you’re just trying to sell me something I don’t need.'",
+    "levels": {
+      "Easy": {
+        "correctOption": "You might feel like I’m more focused on making a sale than understanding your needs.",
+        "wrongOptions": [
+          "That’s not true—I’m here to help.",
+          "Why would you think that?"
+        ],
+        "explanation": "Acknowledging their concern preemptively disarms them, showing empathy. Defensive responses or questions escalate tension."
+      },
+      "Medium": {
+        "correctOption": "You probably think I’m not fully understanding your situation right now.",
+        "wrongOptions": [
+          "Let’s focus on what you need instead.",
+          "You’re being unfair to assume that."
+        ],
+        "explanation": "Addressing their perception directly builds trust. Redirecting or calling out their assumption ignores their feelings."
+      },
+      "Hard": {
+        "correctOption": "It might seem like I’m not listening to what’s most important to you.",
+        "wrongOptions": [
+          "This isn’t about me—it’s about your needs.",
+          "What makes you think I’m just trying to sell you something?"
+        ],
+        "explanation": "A proactive acknowledgment lowers defensiveness. Shifting the focus or questioning their view comes across as dismissive."
+      }
+    }
+  }
+  {
+    "tacticID": 6,
+    "tactic": "No-Oriented Questions",
+    "scenario": "A customer says, 'I’m not sure if this product is right for us.'",
+    "levels": {
+      "Easy": {
+        "correctOption": "Would it be ridiculous to think this might address your needs?",
+        "wrongOptions": [
+          "Do you think this could work for you?",
+          "What if I show you how it fits?"
+        ],
+        "explanation": "Framing the question to elicit a 'no' lowers their defenses, making them more comfortable discussing concerns. 'Yes' questions feel pushy."
+      },
+      "Medium": {
+        "correctOption": "Are you opposed to exploring how this could fit your needs?",
+        "wrongOptions": [
+          "Wouldn’t this work perfectly for you?",
+          "Why don’t you believe this is the right fit?"
+        ],
+        "explanation": "No-oriented questions put them in control, reducing resistance. Positive framing or accusatory questions backfire by pressuring them."
+      },
+      "Hard": {
+        "correctOption": "Would it be a mistake to consider this solution for your challenges?",
+        "wrongOptions": [
+          "Why do you think it’s not right for you?",
+          "How can I convince you this is the right fit?"
+        ],
+        "explanation": "Inviting a 'no' creates a safe environment for the conversation. Direct challenges increase resistance and reduce trust."
+      }
+    }
+  },
+  {
+    "tacticID": 7,
+    "tactic": "The Rule of Three",
+    "scenario": "A vendor says, 'I agree to the terms, but I want to confirm a few details.'",
+    "levels": {
+      "Easy": {
+        "correctOption": "Just to confirm, you’re okay with the delivery timeline, right?",
+        "wrongOptions": [
+          "Let’s finalize the deal now.",
+          "There’s nothing else to discuss, correct?"
+        ],
+        "explanation": "Reconfirming in different ways ensures alignment. Pushing to close or dismissing concerns skips over potential objections."
+      },
+      "Medium": {
+        "correctOption": "You’re comfortable with the pricing and the terms, correct?",
+        "wrongOptions": [
+          "I assume you’re fine with everything, right?",
+          "You agreed to the terms already, so we’re done."
+        ],
+        "explanation": "Reconfirming clarifies expectations. Assuming agreement or rushing creates room for misunderstandings."
+      },
+      "Hard": {
+        "correctOption": "So, we’re aligned on the delivery schedule, pricing, and payment terms?",
+        "wrongOptions": [
+          "Let’s move forward since you agreed earlier.",
+          "I don’t think there’s anything left to discuss."
+        ],
+        "explanation": "Multiple confirmations uncover any hidden concerns. Overconfidence risks missing critical details."
+      }
+    }
+  },
+  {
+    "tacticID": 8,
+    "tactic": "Late-Night FM DJ Voice",
+    "scenario": "A customer says, 'I’m really stressed about committing to this.'",
+    "levels": {
+      "Easy": {
+        "correctOption": "(In a calm tone) 'I understand, and I’m here to help you work through it.'",
+        "wrongOptions": [
+          "Let’s not overthink this.",
+          "You’ll be fine once you decide."
+        ],
+        "explanation": "A calm tone reassures and builds trust. Dismissive or rushed responses increase anxiety."
+      },
+      "Medium": {
+        "correctOption": "(In a slow, calm tone) 'It’s completely normal to feel this way about a big decision.'",
+        "wrongOptions": [
+          "Why are you so stressed?",
+          "This decision isn’t that difficult."
+        ],
+        "explanation": "The soothing voice acknowledges their emotions without judgment. Challenging their feelings creates defensiveness."
+      },
+      "Hard": {
+        "correctOption": "(In a composed tone) 'Let’s take it one step at a time. What’s your biggest concern right now?'",
+        "wrongOptions": [
+          "This stress is unnecessary.",
+          "You’re overthinking this decision."
+        ],
+        "explanation": "A calm tone paired with a supportive question reduces stress. Invalidating their feelings makes the situation worse."
+      }
+    }
+  },
+  {
+    "tacticID": 9,
+    "tactic": "The 'That’s Right' Moment",
+    "scenario": "A colleague says, 'This project is taking too much of our time and resources.'",
+    "levels": {
+      "Easy": {
+        "correctOption": "It sounds like this project is overwhelming for the team.",
+        "wrongOptions": [
+          "We all have to put in the effort.",
+          "Let’s figure out how to reprioritize."
+        ],
+        "explanation": "Summarizing their perspective fosters agreement and validation. Ignoring their feelings skips the critical step of alignment."
+      },
+      "Medium": {
+        "correctOption": "It seems like this project is stretching the team too thin.",
+        "wrongOptions": [
+          "That’s how projects go sometimes.",
+          "Maybe we need to work harder."
+        ],
+        "explanation": "Reflecting their concerns accurately invites the 'That’s right' response. Minimizing their concerns creates resistance."
+      },
+      "Hard": {
+        "correctOption": "It sounds like the project’s demands are affecting productivity and morale.",
+        "wrongOptions": [
+          "Why don’t we just focus on finishing it?",
+          "This is just a temporary challenge."
+        ],
+        "explanation": "Capturing their perspective fully earns trust and agreement. Dismissing or simplifying their concern misses the opportunity for alignment."
+      }
+    }
+  },
+  {
+    "tacticID": 10,
+    "tactic": "The Black Swan Theory",
+    "scenario": "A supplier says, 'We’re hesitant to commit to your terms right now.'",
+    "levels": {
+      "Easy": {
+        "correctOption": "What other factors are influencing your decision?",
+        "wrongOptions": [
+          "We’ve offered the best terms, so what’s the hesitation?",
+          "Why are you hesitant to commit?"
+        ],
+        "explanation": "Open-ended questions like 'What' uncover hidden motivations without sounding accusatory. Defensiveness or pressure blocks valuable information."
+      },
+      "Medium": {
+        "correctOption": "How does this decision align with your other priorities?",
+        "wrongOptions": [
+          "Isn’t this the best offer you’ve seen?",
+          "What would it take to get you to agree today?"
+        ],
+        "explanation": "Exploring their priorities helps reveal potential Black Swans. Comparing offers or rushing to close shuts down productive dialogue."
+      },
+      "Hard": {
+        "correctOption": "What would I need to know to fully understand your hesitation?",
+        "wrongOptions": [
+          "Why don’t you just commit if these terms work for you?",
+          "Are you stalling for a better deal?"
+        ],
+        "explanation": "Asking about what you need to know signals curiosity and respect, encouraging them to share critical hidden information. Accusations or assumptions damage trust."
+      }
+    }
+  },
+  {
+    "tacticID": 11,
+    "tactic": "Anchoring with Extreme Requests",
+    "scenario": "A client is negotiating the price of your service and says, 'We need a lower price to move forward.'",
+    "levels": {
+      "Easy": {
+        "correctOption": "We typically charge $20,000 for a package like this, but I’m open to exploring options that fit your budget.",
+        "wrongOptions": [
+          "We can’t lower the price—it’s non-negotiable.",
+          "How much can you afford?"
+        ],
+        "explanation": "Starting with a high anchor and offering flexibility frames the conversation advantageously. Refusing to engage or focusing entirely on their budget gives away control."
+      },
+      "Medium": {
+        "correctOption": "Our premium package costs $25,000, but let’s discuss what’s most important to you so we can adjust.",
+        "wrongOptions": [
+          "Why don’t you just go with the standard package?",
+          "We’ll need you to commit to the full price to proceed."
+        ],
+        "explanation": "Anchoring high sets a favorable reference point and allows room for negotiation. Dismissing their request or making demands ends the conversation prematurely."
+      },
+      "Hard": {
+        "correctOption": "Our comprehensive service typically starts at $30,000. Is that a figure you were expecting?",
+        "wrongOptions": [
+          "This is the best price we can offer, so take it or leave it.",
+          "What’s the maximum you’re willing to spend?"
+        ],
+        "explanation": "A bold anchor shapes their perception of value while giving them space to express their expectations. Ultimatums or focusing on their budget without context limits the negotiation’s scope."
+      }
+    }
+  }
+]
