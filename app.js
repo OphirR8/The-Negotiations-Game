@@ -27,17 +27,19 @@ function startGame() {
     loadScenario();
 }
 
-let scenarios = [];
-let currentScenarioIndex = 0;
+let tacticsData = [];
+let currentTacticIndex = 0;
+let currentDifficulty = 'Easy'; // Can be 'Easy', 'Medium', or 'Hard'
 let score = 0;
 
+
 // Fetch scenarios from JSON file
-fetch('data/scenarios.json')
-    .then(response => response.json())
-    .then(data => {
-        scenarios = data;
-    })
-    .catch(error => console.error('Error loading scenarios:', error));
+fetch('data/tactics.json')
+  .then(response => response.json())
+  .then(data => {
+    tacticsData = data;
+  })
+  .catch(error => console.error('Error loading tactics data:', error));
 
 // Function to load a scenario
 function loadScenario() {
