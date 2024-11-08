@@ -27,65 +27,79 @@ function startGame() {
     loadScenario();
 }
 
+let scenarios = [];
+let currentScenarioIndex = 0;
+let score = 0;
+
+// Fetch scenarios from JSON file
+fetch('data/scenarios.json')
+    .then(response => response.json())
+    .then(data => {
+        scenarios = data;
+    })
+    .catch(error => console.error('Error loading scenarios:', error));
+
 // Function to load a scenario
 function loadScenario() {
-    // Placeholder text
-    document.getElementById('scenario').textContent = "Scenario will appear here.";
-    // Load tactic options
-    loadTacticOptions();
+    if (currentScenarioIndex < scenarios.length) {
+        const scenarioObj = scenarios[currentScenarioIndex];
+        document.getElementById('scenario').textContent = scenarioObj.scenario;
+        loadTacticOptions(scenarioObj);
+    } else {
+        endGame();
+    }
 }
 
 // Function to load tactic options
-function loadTacticOptions() {
-    const tacticOptions = ['Tactic 1', 'Tactic 2', 'Tactic 3']; // Placeholder tactics
+function loadTacticOptions(scenarioObj) {
     const tacticContainer = document.getElementById('tactic-options');
-    tacticContainer.innerHTML = ''; // Clear previous options
-    tacticOptions.forEach(tactic => {
+    tacticContainer.innerHTML = '';
+    scenarioObj.tactics.forEach(tactic => {
         const button = document.createElement('button');
         button.textContent = tactic;
-        button.onclick = () => selectTactic(tactic);
+        button.onclick = () => selectTactic(tactic, scenarioObj);
         tacticContainer.appendChild(button);
     });
 }
-
 // Function to handle tactic selection
-function selectTactic(tactic) {
-    // Hide tactic selection
+function selectTactic(selectedTactic, scenarioObj) {
+    const isCorrectTactic = selectedTactic === scenarioObj.correctTactic;
+    // Store this for feedback
+    scenarioObj.selectedTactic = selectedTactic;
+    scenarioObj.isCorrectTactic = isCorrectTactic;
+    if (isCorrectTactic) {
+        score += 5; // Add points for correct tactic
+    }
+    // Hide tactic selection and show response selection
     document.getElementById('tactic-selection').classList.add('hidden');
-    // Show response selection
     document.getElementById('response-selection').classList.remove('hidden');
-    // Load response options
-    loadResponseOptions();
+    loadResponseOptions(scenarioObj);
 }
 
 // Function to load response options
-function loadResponseOptions() {
-    const responseOptions = ['Response 1', 'Response 2', 'Response 3']; // Placeholder responses
+function loadResponseOptions(scenarioObj) {
     const responseContainer = document.getElementById('response-options');
-    responseContainer.innerHTML = ''; // Clear previous options
-    responseOptions.forEach(response => {
+    responseContainer.innerHTML = '';
+    scenarioObj.responses.forEach(response => {
         const button = document.createElement('button');
-        button.textContent = response;
-        button.onclick = () => selectResponse(response);
+        button.textContent = response.text;
+        button.onclick = () => selectResponse(response, scenarioObj);
         responseContainer.appendChild(button);
     });
 }
-
 // Function to handle response selection
-function selectResponse(response) {
-    // Hide response selection
+function selectResponse(selectedResponse, scenarioObj) {
+    const isCorrectResponse = selectedResponse.isCorrect;
+    // Store this for feedback
+    scenarioObj.selectedResponse = selectedResponse.text;
+    scenarioObj.isCorrectResponse = isCorrectResponse;
+    if (isCorrectResponse) {
+        score += 5; // Add points for correct response
+    }
+    // Hide response selection and show feedback
     document.getElementById('response-selection').classList.add('hidden');
-    // Show feedback
     document.getElementById('feedback').classList.remove('hidden');
-    // Placeholder feedback
-    document.getElementById('feedback').textContent = "Feedback will appear here.";
-    // After feedback, load next scenario or end game
-    // For now, we'll just reload the tactic selection
-    setTimeout(() => {
-        document.getElementById('feedback').classList.add('hidden');
-        document.getElementById('tactic-selection').classList.remove('hidden');
-        loadScenario();
-    }, 3000);
+    showFeedback(scenarioObj);
 }
 
 // Function to end the game
@@ -118,4 +132,27 @@ function backToMenu() {
     document.getElementById('high-scores').classList.add('hidden');
     // Show main menu
     document.getElementById('main-menu').classList.remove('hidden');
+}
+
+// Function to show feedback
+function showFeedback(scenarioObj) {
+    let feedbackText = '';
+    if (!scenarioObj.isCorrectTactic) {
+        feedbackText += `Incorrect tactic selected. The correct tactic is ${scenarioObj.correctTactic}. ${scenarioObj.explanation.tactic}\n`;
+    } else {
+        feedbackText += `Correct tactic selected! ${scenarioObj.explanation.tactic}\n`;
+    }
+    if (!scenarioObj.isCorrectResponse) {
+        feedbackText += `Incorrect response selected. ${scenarioObj.explanation.response}`;
+    } else {
+        feedbackText += `Correct response selected! ${scenarioObj.explanation.response}`;
+    }
+    document.getElementById('feedback').textContent = feedbackText;
+    // Move to the next scenario after a delay
+    currentScenarioIndex++;
+    setTimeout(() => {
+        document.getElementById('feedback').classList.add('hidden');
+        document.getElementById('tactic-selection').classList.remove('hidden');
+        loadScenario();
+    }, 5000);
 }
