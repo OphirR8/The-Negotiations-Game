@@ -1,0 +1,28 @@
+[
+    {
+        "id": 1,
+        "scenario": "You are negotiating a salary increase with your boss.",
+        "difficulty": "Easy",
+        "correctTactic": "Mirroring",
+        "tactics": ["Mirroring", "Labeling", "Accusation Audit"],
+        "responses": [
+            {
+                "text": "So, you're saying the budget is tight right now?",
+                "isCorrect": true
+            },
+            {
+                "text": "I deserve a raise because I've worked here for two years.",
+                "isCorrect": false
+            },
+            {
+                "text": "If you don't give me a raise, I'll look for another job.",
+                "isCorrect": false
+            }
+        ],
+        "explanation": {
+            "tactic": "Mirroring is effective here to show you're listening.",
+            "response": "The correct response mirrors your boss's concern."
+        }
+    }
+    // Add more scenarios here
+]
