@@ -9,23 +9,86 @@ function formatTime(seconds) {
     return `Time: ${minutes.toString().padStart(2, '0')}:${secondsPart.toString().padStart(2, '0')}`;
 }
 
+function showDifficultySelection() {
+  document.getElementById('main-menu').classList.add('hidden');
+  document.getElementById('difficulty-selection').classList.remove('hidden');
+}
+
+function selectDifficulty(difficulty) {
+  currentDifficulty = difficulty;
+  document.getElementById('difficulty-selection').classList.add('hidden');
+  startGame();
+}
+
 // Function to start the game
 function startGame() {
-    // Hide main menu
-    document.getElementById('main-menu').classList.add('hidden');
-    // Show game screen
-    document.getElementById('game-screen').classList.remove('hidden');
-    // Reset timer
-    secondsElapsed = 0;
+  // Hide main menu or difficulty selection
+  document.getElementById('main-menu').classList.add('hidden');
+  document.getElementById('difficulty-selection').classList.add('hidden');
+  // Show game screen
+  document.getElementById('game-screen').classList.remove('hidden');
+  // Reset variables
+  currentTacticIndex = 0;
+  score = 0;
+  secondsElapsed = 0;
+  document.getElementById('timer').textContent = formatTime(secondsElapsed);
+  // Start timer
+  timerInterval = setInterval(() => {
+    secondsElapsed++;
     document.getElementById('timer').textContent = formatTime(secondsElapsed);
-    // Start timer
-    timerInterval = setInterval(() => {
-        secondsElapsed++;
-        document.getElementById('timer').textContent = formatTime(secondsElapsed);
-    }, 1000);
-    // Load first scenario
-    loadScenario();
+  }, 1000);
+  // Load first tactic
+  loadTactic();
 }
+
+function loadTactic() {
+  if (currentTacticIndex < tacticsData.length) {
+    const tacticObj = tacticsData[currentTacticIndex];
+    document.getElementById('scenario').textContent = tacticObj.scenario;
+    loadOptions(tacticObj);
+  } else {
+    endGame();
+  }
+}
+
+function loadOptions(tacticObj) {
+  const levelData = tacticObj.levels[currentDifficulty];
+  const options = [
+    levelData.correctOption,
+    ...levelData.wrongOptions
+  ];
+  // Shuffle options
+  options.sort(() => Math.random() - 0.5);
+
+  const optionsContainer = document.getElementById('tactic-options');
+  optionsContainer.innerHTML = '';
+  options.forEach(option => {
+    const button = document.createElement('button');
+    button.textContent = option;
+    button.onclick = () => selectOption(option, tacticObj);
+    optionsContainer.appendChild(button);
+  });
+}
+
+function selectOption(selectedOption, tacticObj) {
+  const levelData = tacticObj.levels[currentDifficulty];
+  const isCorrect = selectedOption === levelData.correctOption;
+
+  if (isCorrect) {
+    score += 10; // Adjust scoring as desired
+  }
+
+  // Show feedback
+  showFeedback(isCorrect, levelData.explanation);
+
+  // Move to the next tactic after a delay
+  currentTacticIndex++;
+  setTimeout(() => {
+    document.getElementById('feedback').classList.add('hidden');
+    loadTactic();
+  }, 5000);
+}
+
 
 let tacticsData = [];
 let currentTacticIndex = 0;
@@ -168,24 +231,12 @@ function backToMenu() {
 }
 
 // Function to show feedback
-function showFeedback(scenarioObj) {
-    let feedbackText = '';
-    if (!scenarioObj.isCorrectTactic) {
-        feedbackText += `Incorrect tactic selected. The correct tactic is ${scenarioObj.correctTactic}. ${scenarioObj.explanation.tactic}\n`;
-    } else {
-        feedbackText += `Correct tactic selected! ${scenarioObj.explanation.tactic}\n`;
-    }
-    if (!scenarioObj.isCorrectResponse) {
-        feedbackText += `Incorrect response selected. ${scenarioObj.explanation.response}`;
-    } else {
-        feedbackText += `Correct response selected! ${scenarioObj.explanation.response}`;
-    }
-    document.getElementById('feedback').textContent = feedbackText;
-    // Move to the next scenario after a delay
-    currentScenarioIndex++;
-    setTimeout(() => {
-        document.getElementById('feedback').classList.add('hidden');
-        document.getElementById('tactic-selection').classList.remove('hidden');
-        loadScenario();
-    }, 5000);
+function showFeedback(isCorrect, explanation) {
+  const feedbackElement = document.getElementById('feedback');
+  feedbackElement.classList.remove('hidden');
+  if (isCorrect) {
+    feedbackElement.textContent = `Correct! ${explanation}`;
+  } else {
+    feedbackElement.textContent = `Incorrect. ${explanation}`;
+  }
 }
