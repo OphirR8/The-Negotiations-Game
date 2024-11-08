@@ -105,10 +105,41 @@ function selectResponse(selectedResponse, scenarioObj) {
 // Function to end the game
 function endGame() {
     clearInterval(timerInterval);
+    // Save score if it's a high score
+    saveHighScore();
     // Hide game screen
     document.getElementById('game-screen').classList.add('hidden');
-    // Show high scores (we'll implement this later)
+    // Show high scores
     showHighScores();
+}
+
+// Function to save high score
+function saveHighScore() {
+    const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
+    const newScore = {
+        score: score,
+        time: secondsElapsed,
+        date: new Date().toLocaleDateString()
+    };
+    highScores.push(newScore);
+    // Sort and keep top 5
+    highScores.sort((a, b) => b.score - a.score || a.time - b.time);
+    highScores.splice(5);
+    localStorage.setItem('highScores', JSON.stringify(highScores));
+}
+
+// Function to show high scores
+function showHighScores() {
+    document.getElementById('main-menu').classList.add('hidden');
+    document.getElementById('high-scores').classList.remove('hidden');
+    const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
+    const scoreList = document.getElementById('score-list');
+    scoreList.innerHTML = '';
+    highScores.forEach((entry, index) => {
+        const li = document.createElement('li');
+        li.textContent = `#${index + 1} - Score: ${entry.score}, Time: ${formatTime(entry.time)}, Date: ${entry.date}`;
+        scoreList.appendChild(li);
+    });
 }
 
 // Function to show the learn page
