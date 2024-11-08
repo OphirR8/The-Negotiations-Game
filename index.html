@@ -7,12 +7,21 @@
 </head>
 <body>
     <!-- Main Menu -->
-    <div id="main-menu" class="menu-screen">
-        <h1>The Negotiations Game</h1>
-        <button onclick="startGame()">Start Game</button>
-        <button onclick="showLearnPage()">Learn</button>
-        <button onclick="showHighScores()">High Scores</button>
-    </div>
+<div id="main-menu" class="menu-screen">
+  <h1>The Negotiations Game</h1>
+  <button onclick="showDifficultySelection()">Start Game</button>
+  <button onclick="showLearnPage()">Learn</button>
+  <button onclick="showHighScores()">High Scores</button>
+</div>
+
+    <!-- Difficulty Selection -->
+<div id="difficulty-selection" class="hidden">
+  <h2>Select Difficulty</h2>
+  <button onclick="selectDifficulty('Easy')">Easy</button>
+  <button onclick="selectDifficulty('Medium')">Medium</button>
+  <button onclick="selectDifficulty('Hard')">Hard</button>
+</div>
+
 
     <!-- Game Screen -->
     <div id="game-screen" class="hidden">
