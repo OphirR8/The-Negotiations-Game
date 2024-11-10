@@ -33,7 +33,14 @@ function selectDifficulty(difficulty) {
   startGame();
 }
 
-// Function to start the game
+// Function to shuffle the tacticsData array
+function shuffleTactics() {
+  for (let i = tacticsData.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [tacticsData[i], tacticsData[j]] = [tacticsData[j], tacticsData[i]];
+  }
+}
+
 function startGame() {
   // Hide main menu or difficulty selection
   document.getElementById('main-menu').classList.add('hidden');
@@ -45,6 +52,9 @@ function startGame() {
   score = 0;
   secondsElapsed = 0;
   document.getElementById('timer').textContent = formatTime(secondsElapsed);
+  document.getElementById('score').textContent = `Score: ${score}`;
+  // Shuffle tacticsData for a randomized order
+  shuffleTactics();
   // Start timer
   timerInterval = setInterval(() => {
     secondsElapsed++;
