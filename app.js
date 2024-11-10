@@ -242,11 +242,14 @@ function backToMenu() {
 
 // Function to show feedback
 function showFeedback(isCorrect, explanation) {
-  const feedbackElement = document.getElementById('feedback');
-  feedbackElement.classList.remove('hidden');
-  if (isCorrect) {
-    feedbackElement.innerHTML = `<p><strong>Correct!</strong> ${explanation}</p>`;
-  } else {
-    feedbackElement.innerHTML = `<p><strong>Incorrect.</strong> ${explanation}</p>`;
-  }
+    const feedbackElement = document.getElementById('feedback');
+    feedbackElement.classList.remove('hidden', 'correct', 'incorrect');
+    if (isCorrect) {
+        feedbackElement.classList.add('correct');
+        feedbackElement.innerHTML = `<p><strong>Correct!</strong> ${explanation}</p>`;
+    } else {
+        feedbackElement.classList.add('incorrect');
+        feedbackElement.innerHTML = `<p><strong>Incorrect.</strong> ${explanation}</p>`;
+    }
 }
+
