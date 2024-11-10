@@ -93,11 +93,27 @@ function loadOptions(tacticObj) {
 
 function selectOption(selectedOption, tacticObj) {
   const levelData = tacticObj.levels[currentDifficulty];
-  const isCorrect = selectedOption === levelData.correctOption;
+
+  // Normalize the selected option and correct option
+  const normalizeString = (str) => {
+    return str
+      .trim()
+      .replace(/[“”‘’]/g, '"') // Replace curly quotes with straight quotes
+      .replace(/[–—]/g, '-')   // Replace en-dashes and em-dashes with hyphens
+      .toLowerCase();
+  };
+
+  const normalizedSelectedOption = normalizeString(selectedOption);
+  const normalizedCorrectOption = normalizeString(levelData.correctOption);
+
+  const isCorrect = normalizedSelectedOption === normalizedCorrectOption;
 
   if (isCorrect) {
     score += 10; // Adjust scoring as desired
   }
+
+  // Update score display regardless of whether the answer is correct
+  document.getElementById('score').textContent = `Score: ${score}`;
 
   // Show feedback
   showFeedback(isCorrect, levelData.explanation);
@@ -109,6 +125,7 @@ function selectOption(selectedOption, tacticObj) {
     loadTactic();
   }, 5000);
 }
+
 
 // Function to show feedback
 function showFeedback(isCorrect, explanation) {
