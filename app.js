@@ -182,13 +182,14 @@ function loadTactics() {
       <h3>${tacticObj.tactic}</h3>
       <p><strong>Description:</strong> ${tacticObj.description}</p>
       <p><strong>Purpose:</strong> ${tacticObj.purpose}</p>
-      <p><strong>Example Scenario:</strong> ${tacticObj.example.scenario}</p>
-      <p><strong>Example Response:</strong> ${tacticObj.example.response}</p>
-      <p><strong>Outcome:</strong> ${tacticObj.example.outcome}</p>
+      <p class="indented"><strong>Example Scenario:</strong> ${tacticObj.example.scenario}</p>
+      <p class="indented"><strong>Example Response:</strong> ${tacticObj.example.response}</p>
+      <p class="indented"><strong>Outcome:</strong> ${tacticObj.example.outcome}</p>
     `;
     tacticList.appendChild(tacticDiv);
   });
 }
+
 
 
 // Function to go back to the main menu
