@@ -2,6 +2,13 @@
   {
     "tacticID": 1,
     "tactic": "Mirroring",
+    "description": "Mirroring involves repeating the last few words or a key phrase the other person has said. It encourages them to elaborate and shows you’re actively listening.",
+    "purpose": "Build rapport, gather more information, and encourage the other party to keep talking.",
+    "example": {
+      "scenario": "A colleague says, 'This deadline is going to be tough to meet.'",
+      "response": "Tough to meet?",
+      "outcome": "The colleague expands, 'Yes, we’re short on resources, and the client keeps changing the requirements.'"
+    },
     "scenario": "A client says, 'I’m not sure this solution fits our team’s needs.'",
     "levels": {
       "Easy": {
@@ -33,6 +40,13 @@
   {
     "tacticID": 2,
     "tactic": "Labeling",
+    "description": "Labeling involves identifying and verbalizing the other person’s emotions or concerns. Use phrases like, 'It sounds like…,' 'It seems like…,' or 'It looks like…' to reflect their feelings.",
+    "purpose": "Show empathy, build trust, and diffuse negative emotions.",
+    "example": {
+      "scenario": "A client says, 'I’m not sure this product is worth the cost.'",
+      "response": "It sounds like you’re concerned about the return on investment.",
+      "outcome": "The client feels understood and clarifies their concerns: 'Exactly. I need to be sure it will save us time.'"
+    },
     "scenario": "A customer says, 'I feel like this is too expensive for us.'",
     "levels": {
       "Easy": {
@@ -64,6 +78,13 @@
   {
     "tacticID": 3,
     "tactic": "Tactical Empathy",
+    "description": "Tactical empathy is about understanding the other person’s perspective and feelings without necessarily agreeing with them. It creates a foundation for collaboration.",
+    "purpose": "Foster connection, reduce defensiveness, and encourage openness.",
+    "example": {
+      "scenario": "A manager says, 'This project isn’t going to work—it’s too risky.'",
+      "response": "I can see why this feels risky given the tight timeline and resource demands.",
+      "outcome": "The manager opens up, and you can discuss ways to mitigate the risks."
+    },
     "scenario": "A coworker says, 'I’m overwhelmed with the number of tasks I have.'",
     "levels": {
       "Easy": {
@@ -95,6 +116,13 @@
   {
     "tacticID": 4,
     "tactic": "Calibrated Questions",
+    "description": "These are open-ended questions that begin with 'What' or 'How.' They invite the other party to think and provide valuable insights.",
+    "purpose": "Uncover priorities, gather information, and encourage problem-solving.",
+    "example": {
+      "scenario": "A team member says, 'We can’t meet this deadline.'",
+      "response": "What resources would help us meet the deadline?",
+      "outcome": "The team member shares specific needs, enabling you to find a solution."
+    },
     "scenario": "A manager says, 'This timeline is impossible for my team.'",
     "levels": {
       "Easy": {
@@ -123,9 +151,16 @@
       }
     }
   },
-  {
+    {
     "tacticID": 5,
     "tactic": "Accusation Audit",
+    "description": "Preemptively acknowledge potential objections or negative assumptions the other person might have about you or your proposal.",
+    "purpose": "Disarm objections and reduce defensiveness.",
+    "example": {
+      "scenario": "A prospect says, 'I feel like you’re just trying to sell me something.'",
+      "response": "You might feel like I’m focused on selling rather than understanding your needs.",
+      "outcome": "The prospect relaxes and opens up, 'That’s exactly it—I need to see how this fits us.'"
+    },
     "scenario": "A prospect says, 'I feel like you’re just trying to sell me something I don’t need.'",
     "levels": {
       "Easy": {
@@ -157,6 +192,13 @@
   {
     "tacticID": 6,
     "tactic": "No-Oriented Questions",
+    "description": "Frame questions to encourage the other person to say 'No.' People feel safer and more in control when saying 'No,' which lowers their defenses.",
+    "purpose": "Build trust, uncover concerns, and guide the conversation.",
+    "example": {
+      "scenario": "A client hesitates, saying, 'I’m not sure about this.'",
+      "response": "Would it be a mistake to explore this further?",
+      "outcome": "The client says 'No,' lowering their guard and agreeing to continue the discussion."
+    },
     "scenario": "A customer says, 'I’m not sure if this product is right for us.'",
     "levels": {
       "Easy": {
@@ -188,6 +230,17 @@
   {
     "tacticID": 7,
     "tactic": "The Rule of Three",
+    "description": "Secure agreement or understanding three times during a conversation to confirm commitment and uncover hidden objections.",
+    "purpose": "Reinforce alignment and ensure clarity.",
+    "example": {
+      "scenario": "A customer says, 'We’re ready to move forward.'",
+      "response": [
+        "First Confirmation: 'So, you’re happy with the pricing, right?'",
+        "Second Confirmation: 'And the delivery schedule works for you?'",
+        "Third Confirmation: 'So, we’re all set to finalize the agreement?'"
+      ],
+      "outcome": "Ensures the customer is genuinely ready, reducing the risk of last-minute surprises."
+    },
     "scenario": "A vendor says, 'I agree to the terms, but I want to confirm a few details.'",
     "levels": {
       "Easy": {
@@ -219,6 +272,13 @@
   {
     "tacticID": 8,
     "tactic": "Late-Night FM DJ Voice",
+    "description": "Speak in a calm, slow, and soothing tone to de-escalate tension and project authority.",
+    "purpose": "Reduce stress, build confidence, and control the emotional tone of the conversation.",
+    "example": {
+      "scenario": "A client says, 'This decision is stressing me out.'",
+      "response": "(Calmly) 'I understand. Let’s take a step back and go through everything together.'",
+      "outcome": "The client feels reassured and more comfortable moving forward."
+    },
     "scenario": "A customer says, 'I’m really stressed about committing to this.'",
     "levels": {
       "Easy": {
@@ -250,6 +310,13 @@
   {
     "tacticID": 9,
     "tactic": "The 'That’s Right' Moment",
+    "description": "Earn a 'That’s right' response by summarizing the other person’s concerns or perspective accurately.",
+    "purpose": "Validate their feelings and create alignment.",
+    "example": {
+      "scenario": "A colleague says, 'This project feels like it’s not worth the effort.'",
+      "response": "It sounds like you’re frustrated with the amount of work compared to the results.",
+      "outcome": "The colleague says, 'That’s right,' signaling alignment and openness to further discussion."
+    },
     "scenario": "A colleague says, 'This project is taking too much of our time and resources.'",
     "levels": {
       "Easy": {
@@ -266,7 +333,7 @@
           "That’s how projects go sometimes.",
           "Maybe we need to work harder."
         ],
-        "explanation": "Reflecting their concerns accurately invites the 'That’s right' response. Minimizing their concerns creates resistance."
+                "explanation": "Reflecting their concerns accurately invites the 'That’s right' response. Minimizing their concerns creates resistance."
       },
       "Hard": {
         "correctOption": "It sounds like the project’s demands are affecting productivity and morale.",
@@ -281,6 +348,13 @@
   {
     "tacticID": 10,
     "tactic": "The Black Swan Theory",
+    "description": "Identify hidden, critical pieces of information that could dramatically shift the negotiation’s outcome.",
+    "purpose": "Uncover unknown factors and adapt your strategy.",
+    "example": {
+      "scenario": "A vendor says, 'We’re hesitating because of internal discussions.'",
+      "response": "Who else needs to be involved to move this forward?",
+      "outcome": "You learn that a senior manager has concerns, allowing you to address them directly."
+    },
     "scenario": "A supplier says, 'We’re hesitant to commit to your terms right now.'",
     "levels": {
       "Easy": {
@@ -312,6 +386,13 @@
   {
     "tacticID": 11,
     "tactic": "Anchoring with Extreme Requests",
+    "description": "Start with a bold or slightly extreme offer to set a favorable reference point.",
+    "purpose": "Influence perceptions of value and create room for concessions.",
+    "example": {
+      "scenario": "A buyer says, 'We’re looking for a price of $15,000.'",
+      "response": "For this level of service, our standard price is $25,000, but we can explore adjustments.",
+      "outcome": "The higher anchor frames the negotiation, making $20,000 seem like a fair compromise."
+    },
     "scenario": "A client is negotiating the price of your service and says, 'We need a lower price to move forward.'",
     "levels": {
       "Easy": {
