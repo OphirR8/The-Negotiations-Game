@@ -41,15 +41,25 @@ function startGame() {
   loadTactic();
 }
 
-function loadTactic() {
-  if (currentTacticIndex < tacticsData.length) {
-    const tacticObj = tacticsData[currentTacticIndex];
-    document.getElementById('scenario').textContent = tacticObj.scenario;
-    loadOptions(tacticObj);
-  } else {
-    endGame();
-  }
+function loadTactics() {
+  const tacticList = document.getElementById('tactic-list');
+  tacticList.innerHTML = '';
+  tacticsData.forEach(tacticObj => {
+    const tacticDiv = document.createElement('div');
+    tacticDiv.className = 'tactic';
+    tacticDiv.innerHTML = `
+      <h3>${tacticObj.tactic}</h3>
+      <p><strong>Description:</strong> ${tacticObj.description}</p>
+      <p><strong>Purpose:</strong> ${tacticObj.purpose}</p>
+      <p><strong>Example Scenario:</strong> ${tacticObj.example.scenario}</p>
+      <p><strong>Example Response:</strong> ${tacticObj.example.response}</p>
+      <p><strong>Outcome:</strong> ${tacticObj.example.outcome}</p>
+    `;
+    tacticList.appendChild(tacticDiv);
+  });
 }
+
+
 
 function loadOptions(tacticObj) {
   const levelData = tacticObj.levels[currentDifficulty];
@@ -235,8 +245,8 @@ function showFeedback(isCorrect, explanation) {
   const feedbackElement = document.getElementById('feedback');
   feedbackElement.classList.remove('hidden');
   if (isCorrect) {
-    feedbackElement.textContent = `Correct! ${explanation}`;
+    feedbackElement.innerHTML = `<p><strong>Correct!</strong> ${explanation}</p>`;
   } else {
-    feedbackElement.textContent = `Incorrect. ${explanation}`;
+    feedbackElement.innerHTML = `<p><strong>Incorrect.</strong> ${explanation}</p>`;
   }
 }
