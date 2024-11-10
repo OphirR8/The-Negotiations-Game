@@ -8,9 +8,9 @@ let score = 0;
 
 // Function to format time
 function formatTime(seconds) {
-    const minutes = Math.floor(seconds / 60);
-    const secondsPart = seconds % 60;
-    return `Time: ${minutes.toString().padStart(2, '0')}:${secondsPart.toString().padStart(2, '0')}`;
+  const minutes = Math.floor(seconds / 60);
+  const secondsPart = seconds % 60;
+  return `Time: ${minutes.toString().padStart(2, '0')}:${secondsPart.toString().padStart(2, '0')}`;
 }
 
 // Fetch tactics data from JSON file
@@ -53,22 +53,26 @@ function startGame() {
   secondsElapsed = 0;
   document.getElementById('timer').textContent = formatTime(secondsElapsed);
   document.getElementById('score').textContent = `Score: ${score}`;
-  // Shuffle tacticsData for a randomized order
-  shuffleTactics();
+
   // Start timer
   timerInterval = setInterval(() => {
     secondsElapsed++;
     document.getElementById('timer').textContent = formatTime(secondsElapsed);
   }, 1000);
-  // Load first tactic after ensuring data is loaded
-  if (tacticsData.length > 0) {
-    loadTactic();
-  } else {
-    // Wait for data to load
-    setTimeout(() => {
+
+  // Wait until tacticsData is loaded before proceeding
+  function waitForDataAndStart() {
+    if (tacticsData.length > 0) {
+      // Data is loaded, shuffle and start
+      shuffleTactics();
       loadTactic();
-    }, 500);
+    } else {
+      // Data not yet loaded, wait and try again
+      setTimeout(waitForDataAndStart, 100);
+    }
   }
+
+  waitForDataAndStart();
 }
 
 // Function to load a tactic
@@ -136,7 +140,6 @@ function selectOption(selectedOption, tacticObj) {
   }, 5000);
 }
 
-
 // Function to show feedback
 function showFeedback(isCorrect, explanation) {
   const feedbackElement = document.getElementById('feedback');
@@ -197,7 +200,6 @@ function showLearnPage() {
   loadTactics(); // Make sure this function is called
 }
 
-
 // Function to load tactics into the Learn page
 function loadTactics() {
   const tacticList = document.getElementById('tactic-list');
@@ -216,9 +218,6 @@ function loadTactics() {
     tacticList.appendChild(tacticDiv);
   });
 }
-
-
-
 
 // Function to go back to the main menu
 function backToMenu() {
