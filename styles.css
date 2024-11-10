@@ -14,6 +14,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh; /* Full viewport height */
+    position: relative;
 }
 
 /* Container to Center Content */
@@ -186,15 +187,4 @@ ol li {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #16213E;
-}
-
-/* Animate Transitions Between Screens */
-.menu-screen, #game-screen, #learn-page, #high-scores, #difficulty-selection {
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out;
-}
-
-.hidden {
-    opacity: 0;
-    pointer-events: none;
 }
