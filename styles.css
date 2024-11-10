@@ -94,7 +94,6 @@ button:hover {
     margin-bottom: 5px;
 }
 
-
 /* Scenario and Feedback Styling */
 #scenario, #feedback {
     margin: 30px auto;
@@ -165,10 +164,10 @@ ol li {
     color: #FFFFFF;
 }
 
+/* Indentation for Example sections */
 .tactic .indented {
     margin-left: 20px; /* Adjust the value to increase or decrease indentation */
 }
-
 
 /* Responsive Design */
 @media (max-width: 600px) {
