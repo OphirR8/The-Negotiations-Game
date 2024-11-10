@@ -192,6 +192,7 @@ function loadTactics() {
 
 
 
+
 // Function to go back to the main menu
 function backToMenu() {
   // Hide all other screens
