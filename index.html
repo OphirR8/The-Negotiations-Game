@@ -1,72 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>The Negotiations Game</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>The Negotiations Game</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Main Menu -->
-<div id="main-menu" class="menu-screen">
-  <h1>The Negotiations Game</h1>
-  <button onclick="showDifficultySelection()">Start Game</button>
-  <button onclick="showLearnPage()">Learn</button>
-  <button onclick="showHighScores()">High Scores</button>
-</div>
+  <!-- Main Menu -->
+  <div id="main-menu" class="menu-screen">
+    <h1>The Negotiations Game</h1>
+    <button onclick="showDifficultySelection()">Start Game</button>
+    <button onclick="showLearnPage()">Learn</button>
+    <button onclick="showHighScores()">High Scores</button>
+  </div>
 
-    <!-- Difficulty Selection -->
-<div id="difficulty-selection" class="hidden">
-  <h2>Select Difficulty</h2>
-  <button onclick="selectDifficulty('Easy')">Easy</button>
-  <button onclick="selectDifficulty('Medium')">Medium</button>
-  <button onclick="selectDifficulty('Hard')">Hard</button>
-</div>
+  <!-- Difficulty Selection -->
+  <div id="difficulty-selection" class="hidden">
+    <h2>Select Difficulty</h2>
+    <button onclick="selectDifficulty('Easy')">Easy</button>
+    <button onclick="selectDifficulty('Medium')">Medium</button>
+    <button onclick="selectDifficulty('Hard')">Hard</button>
+  </div>
 
-
-    <!-- Game Screen -->
-    <div id="game-screen" class="hidden">
-        <!-- Timer -->
-        <div id="timer">Time: 00:00</div>
-        <!-- Scenario Display -->
-        <div id="scenario"></div>
-        <!-- Tactic Selection -->
-        <div id="tactic-selection">
-            <h3>Select the appropriate tactic:</h3>
-            <div id="tactic-options"></div>
-        </div>
-        <!-- Response Selection -->
-        <div id="response-selection" class="hidden">
-            <h3>Select the correct response:</h3>
-            <div id="response-options"></div>
-        </div>
-        <!-- Feedback -->
-        <div id="feedback" class="hidden"></div>
-        <!-- Stop Button -->
-        <button onclick="endGame()">Stop</button>
+  <!-- Game Screen -->
+  <div id="game-screen" class="hidden">
+    <!-- Timer -->
+    <div id="timer">Time: 00:00</div>
+    <!-- Scenario Display -->
+    <div id="scenario"></div>
+    <!-- Option Selection -->
+    <div id="tactic-selection">
+      <h3>Select the correct response:</h3>
+      <div id="tactic-options"></div>
     </div>
+    <!-- Feedback -->
+    <div id="feedback" class="hidden"></div>
+    <!-- Stop Button -->
+    <button onclick="endGame()">Stop</button>
+  </div>
 
-    <!-- Learn Page -->
-    <div id="learn-page" class="hidden">
-        <h2>Learn Negotiation Tactics</h2>
-        <div id="tactic-list"></div>
-        <button onclick="backToMenu()">Back to Menu</button>
-    </div>
+  <!-- Learn Page -->
+  <div id="learn-page" class="hidden">
+    <h2>Learn Negotiation Tactics</h2>
+    <div id="tactic-list"></div>
+    <button onclick="backToMenu()">Back to Menu</button>
+  </div>
 
-    <!-- High Scores -->
-    <div id="high-scores" class="hidden">
-        <h2>High Scores</h2>
-        <ol id="score-list"></ol>
-        <button onclick="backToMenu()">Back to Menu</button>
-    </div>
+  <!-- High Scores -->
+  <div id="high-scores" class="hidden">
+    <h2>High Scores</h2>
+    <ol id="score-list"></ol>
+    <button onclick="backToMenu()">Back to Menu</button>
+  </div>
 
-    <!-- Remove response selection from index.html -->
-<!-- Keep only one set of options -->
-<div id="tactic-selection">
-  <h3>Select the correct response:</h3>
-  <div id="tactic-options"></div>
-</div>
-
-
-    <script src="app.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
