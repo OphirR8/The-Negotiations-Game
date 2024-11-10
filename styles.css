@@ -1,55 +1,200 @@
-body {
+/* CSS Reset */
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #121212;
-    color: #FFFFFF;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.menu-screen, #game-screen, #learn-page, #high-scores {
+/* Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1A1A1D; /* Dark background */
+    color: #FFFFFF; /* White text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height */
+}
+
+/* Container to Center Content */
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
     text-align: center;
-    padding: 20px;
 }
 
-.hidden {
-    display: none;
+/* Heading Styling */
+h1, h2, h3 {
+    font-weight: 300;
+    margin-bottom: 20px;
 }
 
+h1 {
+    font-size: 3em;
+    color: #E94560; /* Accent color */
+}
+
+h2 {
+    font-size: 2.5em;
+    color: #E94560;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #F5F5F5;
+}
+
+/* Button Styling */
 button {
-    background-color: #1F1F1F;
+    background-color: #0F3460;
     color: #FFFFFF;
     border: none;
     padding: 15px 30px;
     margin: 10px;
-    font-size: 16px;
+    font-size: 1em;
     cursor: pointer;
+    border-radius: 30px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 button:hover {
-    background-color: #333333;
+    background-color: #16213E;
+    transform: translateY(-2px);
 }
 
+/* Screen and Menu Styling */
+.menu-screen, #game-screen, #learn-page, #high-scores, #difficulty-selection {
+    width: 100%;
+    padding: 40px 20px;
+}
+
+.hidden {
+    display: none;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.visible {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Timer Styling */
 #timer {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    font-size: 18px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.2em;
 }
 
+/* Scenario and Feedback Styling */
 #scenario, #feedback {
-    margin: 20px auto;
+    margin: 30px auto;
     max-width: 600px;
+    font-size: 1.2em;
+    line-height: 1.5em;
 }
 
-#tactic-options, #response-options, #tactic-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#feedback p {
+    margin-bottom: 15px;
 }
 
-#tactic-options button, #response-options button {
-    width: 80%;
+#feedback.correct {
+    color: #03C988; /* Success color */
 }
 
-h1, h2, h3 {
-    color: #E91E63;
+#feedback.incorrect {
+    color: #E94560; /* Error color */
+}
+
+#feedback strong {
+    font-weight: 500;
+}
+
+/* Options Styling */
+#tactic-options button {
+    width: 100%;
+    max-width: 500px;
+    margin: 10px auto;
+    border-radius: 15px;
+}
+
+/* List Styling */
+ol {
+    list-style: none;
+    padding: 0;
+}
+
+ol li {
+    background-color: #0F3460;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 15px;
+    font-size: 1.1em;
+    color: #FFFFFF;
+}
+
+/* Tactic List Styling */
+.tactic {
+    background-color: #1F1F1F;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 15px;
+    text-align: left;
+}
+
+.tactic h3 {
+    margin-bottom: 10px;
+    color: #E94560;
+}
+
+.tactic p {
+    margin-bottom: 10px;
+    color: #CCCCCC;
+}
+
+.tactic strong {
+    color: #FFFFFF;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    button {
+        padding: 12px 20px;
+        font-size: 0.9em;
+    }
+}
+
+/* Scrollbar Styling for WebKit Browsers */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1A1A1D;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #0F3460;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #16213E;
+}
+
+/* Animate Transitions Between Screens */
+.menu-screen, #game-screen, #learn-page, #high-scores, #difficulty-selection {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.hidden {
+    opacity: 0;
+    pointer-events: none;
 }
