@@ -29,21 +29,25 @@
     </div>
 
     <!-- Game Screen -->
-    <div id="game-screen" class="hidden">
-      <!-- Timer -->
-      <div id="timer">Time: 00:00</div>
-      <!-- Scenario Display -->
-      <div id="scenario"></div>
-      <!-- Option Selection -->
-      <div id="tactic-selection">
-        <h3>Select the correct response:</h3>
-        <div id="tactic-options"></div>
-      </div>
-      <!-- Feedback -->
-      <div id="feedback" class="hidden"></div>
-      <!-- Stop Button -->
-      <button onclick="endGame()">Stop</button>
-    </div>
+<div id="game-screen" class="hidden">
+  <!-- Timer and Score -->
+  <div id="game-info">
+    <div id="timer">Time: 00:00</div>
+    <div id="score">Score: 0</div>
+  </div>
+  <!-- Scenario Display -->
+  <div id="scenario"></div>
+  <!-- Option Selection -->
+  <div id="tactic-selection">
+    <h3>Select the correct response:</h3>
+    <div id="tactic-options"></div>
+  </div>
+  <!-- Feedback -->
+  <div id="feedback" class="hidden"></div>
+  <!-- Stop Button -->
+  <button onclick="endGame()">Stop</button>
+</div>
+
 
     <!-- Learn Page -->
     <div id="learn-page" class="hidden">
