@@ -167,8 +167,9 @@ function showHighScores() {
 function showLearnPage() {
   document.getElementById('main-menu').classList.add('hidden');
   document.getElementById('learn-page').classList.remove('hidden');
-  loadTactics(); // Ensure this function is called
+  loadTactics(); // Make sure this function is called
 }
+
 
 // Function to load tactics into the Learn page
 function loadTactics() {
@@ -179,15 +180,16 @@ function loadTactics() {
     tacticDiv.className = 'tactic';
     tacticDiv.innerHTML = `
       <h3>${tacticObj.tactic}</h3>
-      <p><strong>Description:</strong> ${tacticObj.description || ''}</p>
-      <p><strong>Purpose:</strong> ${tacticObj.purpose || ''}</p>
-      <p><strong>Example Scenario:</strong> ${tacticObj.example ? tacticObj.example.scenario : ''}</p>
-      <p><strong>Example Response:</strong> ${tacticObj.example ? tacticObj.example.response : ''}</p>
-      <p><strong>Outcome:</strong> ${tacticObj.example ? tacticObj.example.outcome : ''}</p>
+      <p><strong>Description:</strong> ${tacticObj.description}</p>
+      <p><strong>Purpose:</strong> ${tacticObj.purpose}</p>
+      <p><strong>Example Scenario:</strong> ${tacticObj.example.scenario}</p>
+      <p><strong>Example Response:</strong> ${tacticObj.example.response}</p>
+      <p><strong>Outcome:</strong> ${tacticObj.example.outcome}</p>
     `;
     tacticList.appendChild(tacticDiv);
   });
 }
+
 
 // Function to go back to the main menu
 function backToMenu() {
