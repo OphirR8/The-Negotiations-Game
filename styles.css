@@ -74,3 +74,36 @@ button:hover {
 #game-info div {
     font-size: 1.2rem;
 }
+
+/* Style for tactic headers */
+.tactic-header {
+  background-color: #0F3460;
+  color: #FFFFFF;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 1.2em;
+  border-radius: 5px;
+  margin: 10px 0;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.tactic-header:hover {
+  background-color: #16213E;
+}
+
+/* Style for the collapsible content */
+.tactic-content {
+  background-color: #1F1F1F;
+  color: #CCCCCC;
+  padding: 15px;
+  margin: 5px 0 15px 0;
+  border-radius: 5px;
+  text-align: left;
+}
+
+/* Indentation for example text */
+.tactic-content .indented {
+  margin-left: 20px; /* Adjust indentation as needed */
+}
+
