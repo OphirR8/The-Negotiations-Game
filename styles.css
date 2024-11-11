@@ -1,72 +1,131 @@
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+let timerInterval;
+let secondsElapsed = 0;
+let tacticsData = [];
+let currentScenarioIndex = 0;
+let score = 0;
+
+// Load Tactics Data
+fetch('tactics.json')
+  .then((response) => response.json())
+  .then((data) => {
+    tacticsData = data;
+    console.log("Tactics data loaded:", data);
+  })
+  .catch((error) => console.error("Error loading tactics.json:", error));
+
+function startGame() {
+  document.getElementById("main-menu").classList.add("hidden");
+  document.getElementById("game-screen").classList.remove("hidden");
+  resetGame();
 }
 
-body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #1A1A1D;
-  color: #FFFFFF;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+function resetGame() {
+  score = 0;
+  secondsElapsed = 0;
+  currentScenarioIndex = 0;
+  document.getElementById("score").textContent = `Score: ${score}`;
+  document.getElementById("timer").textContent = `Time: 00:00`;
+
+  timerInterval = setInterval(() => {
+    secondsElapsed++;
+    document.getElementById("timer").textContent = `Time: ${formatTime(secondsElapsed)}`;
+  }, 1000);
+
+  loadScenario();
 }
 
-.container {
-  width: 90%;
-  max-width: 800px;
-  margin: auto;
-  text-align: center;
+function loadScenario() {
+  if (currentScenarioIndex >= tacticsData.length) {
+    endGame();
+    return;
+  }
+
+  const scenario = tacticsData[currentScenarioIndex];
+  document.getElementById("scenario").textContent = scenario.scenario;
+
+  const options = [scenario.correctOption, ...scenario.wrongOptions];
+  shuffleArray(options);
+
+  const optionsContainer = document.getElementById("tactic-options");
+  optionsContainer.innerHTML = "";
+  options.forEach((option) => {
+    const button = document.createElement("button");
+    button.textContent = option;
+    button.onclick = () => selectOption(option, scenario);
+    optionsContainer.appendChild(button);
+  });
 }
 
-h1, h2, h3 {
-  font-weight: 300;
-  margin-bottom: 20px;
+function selectOption(selectedOption, scenario) {
+  const feedback = document.getElementById("feedback");
+  feedback.classList.remove("hidden");
+
+  if (selectedOption === scenario.correctOption) {
+    feedback.textContent = "Correct!";
+    feedback.style.color = "green";
+    score += 10;
+  } else {
+    feedback.textContent = "Incorrect.";
+    feedback.style.color = "red";
+  }
+
+  document.getElementById("score").textContent = `Score: ${score}`;
+
+  setTimeout(() => {
+    feedback.classList.add("hidden");
+    currentScenarioIndex++;
+    loadScenario();
+  }, 2000);
 }
 
-button {
-  background-color: #0F3460;
-  color: #FFFFFF;
-  border: none;
-  padding: 15px 30px;
-  margin: 10px;
-  font-size: 1em;
-  cursor: pointer;
-  border-radius: 10px;
-  transition: background-color 0.3s ease;
+function endGame() {
+  clearInterval(timerInterval);
+  alert(`Game over! Your final score is: ${score}`);
+  backToMenu();
 }
 
-button:hover {
-  background-color: #16213E;
+function backToMenu() {
+  document.querySelectorAll(".menu-screen, .hidden").forEach((el) => el.classList.add("hidden"));
+  document.getElementById("main-menu").classList.remove("hidden");
 }
 
-.hidden {
-  display: none;
+function showLearnPage() {
+  document.getElementById("main-menu").classList.add("hidden");
+  document.getElementById("learn-page").classList.remove("hidden");
+
+  const tacticList = document.getElementById("tactic-list");
+  tacticList.innerHTML = "";
+  tacticsData.forEach((tactic) => {
+    const tacticDiv = document.createElement("div");
+    tacticDiv.innerHTML = `
+      <h3>${tactic.tactic}</h3>
+      <p><strong>Description:</strong> ${tactic.description}</p>
+      <p><strong>Purpose:</strong> ${tactic.purpose}</p>
+    `;
+    tacticList.appendChild(tacticDiv);
+  });
 }
 
-#game-info {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
+function showHighScores() {
+  const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
+  const scoreList = document.getElementById("score-list");
+  scoreList.innerHTML = highScores
+    .map((score) => `<li>Score: ${score}</li>`)
+    .join("");
+
+  document.getElementById("main-menu").classList.add("hidden");
+  document.getElementById("high-scores").classList.remove("hidden");
 }
 
-#tactic-options button {
-  display: block;
-  margin: 10px auto;
-  width: 100%;
-  max-width: 500px;
+function formatTime(seconds) {
+  const mins = Math.floor(seconds / 60).toString().padStart(2, "0");
+  const secs = (seconds % 60).toString().padStart(2, "0");
+  return `${mins}:${secs}`;
 }
 
-ol {
-  list-style: none;
-}
-
-ol li {
-  background-color: #0F3460;
-  padding: 10px;
-  margin: 5px 0;
-  border-radius: 5px;
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
 }
