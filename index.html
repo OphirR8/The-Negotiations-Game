@@ -4,14 +4,12 @@
   <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
   <meta charset="UTF-8">
   <title>The Negotiations Game</title>
-  <!-- Include Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="container">
-    <!-- Main Menu -->
     <div id="main-menu" class="menu-screen">
       <h1>The Negotiations Game</h1>
       <button onclick="startGame()">Start Game</button>
@@ -19,7 +17,6 @@
       <button onclick="showHighScores()">High Scores</button>
     </div>
 
-    <!-- Game Screen -->
     <div id="game-screen" class="hidden">
       <div id="game-info">
         <div id="timer">Time: 00:00</div>
@@ -34,14 +31,12 @@
       <button onclick="endGame()">Stop</button>
     </div>
 
-    <!-- Learn Page -->
     <div id="learn-page" class="hidden">
       <h2>Learn Negotiation Tactics</h2>
       <div id="tactic-list"></div>
       <button onclick="backToMenu()">Back to Menu</button>
     </div>
 
-    <!-- High Scores -->
     <div id="high-scores" class="hidden">
       <h2>High Scores</h2>
       <ol id="score-list"></ol>
