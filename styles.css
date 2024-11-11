@@ -1,200 +1,133 @@
-/* CSS Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Body Styling */
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #1A1A1D; /* Dark background */
-    color: #FFFFFF; /* White text */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; /* Full viewport height */
-    position: relative;
+  font-family: 'Roboto', sans-serif;
+  background-color: #1A1A1D;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
-/* Container to Center Content */
 .container {
-    width: 90%;
-    max-width: 800px;
-    margin: auto;
-    text-align: center;
+  width: 90%;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
 }
 
-/* Heading Styling */
 h1, h2, h3 {
-    font-weight: 300;
-    margin-bottom: 20px;
+  font-weight: 300;
+  margin-bottom: 20px;
 }
 
 h1 {
-    font-size: 3em;
-    color: #E94560; /* Accent color */
+  font-size: 3em;
+  color: #E94560;
 }
 
 h2 {
-    font-size: 2.5em;
-    color: #E94560;
+  font-size: 2.5em;
+  color: #E94560;
 }
 
 h3 {
-    font-size: 1.5em;
-    color: #F5F5F5;
+  font-size: 1.5em;
+  color: #F5F5F5;
 }
 
-/* Button Styling */
 button {
-    background-color: #0F3460;
-    color: #FFFFFF;
-    border: none;
-    padding: 15px 30px;
-    margin: 10px;
-    font-size: 1em;
-    cursor: pointer;
-    border-radius: 30px; /* Rounded corners */
-    transition: background-color 0.3s, transform 0.3s;
+  background-color: #0F3460;
+  color: #FFFFFF;
+  border: none;
+  padding: 15px 30px;
+  margin: 10px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 button:hover {
-    background-color: #16213E;
-    transform: translateY(-2px);
-}
-
-/* Screen and Menu Styling */
-.menu-screen, #game-screen, #learn-page, #high-scores, #difficulty-selection {
-    width: 100%;
-    padding: 40px 20px;
+  background-color: #16213E;
+  transform: translateY(-2px);
 }
 
 .hidden {
-    display: none;
-    opacity: 0;
-    pointer-events: none;
+  display: none;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .visible {
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
 }
 
-/* Timer and Score Styling */
 #game-info {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    text-align: right;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  text-align: right;
 }
 
 #timer, #score {
-    font-size: 1.2em;
-    margin-bottom: 5px;
+  font-size: 1.2em;
+  margin-bottom: 5px;
 }
 
-/* Scenario and Feedback Styling */
 #scenario, #feedback {
-    margin: 30px auto;
-    max-width: 600px;
-    font-size: 1.2em;
-    line-height: 1.5em;
-}
-
-#feedback p {
-    margin-bottom: 15px;
+  margin: 30px auto;
+  max-width: 600px;
+  font-size: 1.2em;
+  line-height: 1.5em;
 }
 
 #feedback.correct {
-    color: #03C988; /* Success color */
+  color: #03C988;
 }
 
 #feedback.incorrect {
-    color: #E94560; /* Error color */
+  color: #E94560;
 }
 
-#feedback strong {
-    font-weight: 500;
-}
-
-/* Options Styling */
 #tactic-options button {
-    width: 100%;
-    max-width: 500px;
-    margin: 10px auto;
-    border-radius: 15px;
+  width: 100%;
+  max-width: 500px;
+  margin: 10px auto;
+  border-radius: 15px;
 }
 
-/* List Styling */
-ol {
-    list-style: none;
-    padding: 0;
-}
-
-ol li {
-    background-color: #0F3460;
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 15px;
-    font-size: 1.1em;
-    color: #FFFFFF;
-}
-
-/* Tactic List Styling */
 .tactic {
-    background-color: #1F1F1F;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 15px;
-    text-align: left;
+  background-color: #1F1F1F;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 15px;
+  text-align: left;
 }
 
 .tactic h3 {
-    margin-bottom: 10px;
-    color: #E94560;
+  margin-bottom: 10px;
+  color: #E94560;
 }
 
 .tactic p {
-    margin-bottom: 10px;
-    color: #CCCCCC;
+  margin-bottom: 10px;
+  color: #CCCCCC;
 }
 
-.tactic strong {
-    color: #FFFFFF;
-}
-
-/* Indentation for Example sections */
-.tactic .indented {
-    margin-left: 20px; /* Adjust the value to increase or decrease indentation */
-}
-
-/* Responsive Design */
 @media (max-width: 600px) {
-    h1 {
-        font-size: 2em;
-    }
+  h1 {
+    font-size: 2em;
+  }
 
-    button {
-        padding: 12px 20px;
-        font-size: 0.9em;
-    }
-}
-
-/* Scrollbar Styling for WebKit Browsers */
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: #1A1A1D;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #0F3460;
-    border-radius: 5px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #16213E;
+  button {
+    padding: 12px 20px;
+    font-size: 0.9em;
+  }
 }
