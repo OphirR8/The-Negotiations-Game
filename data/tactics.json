@@ -1628,6 +1628,198 @@
         ]
     },
     {
+    "tacticID": 9,
+    "tactic": "Emotional Labeling",
+    "description": "Identify and verbalize the emotions the other person might be feeling. Use phrases like 'It seems like...', 'It sounds like...', or 'It looks like...' to acknowledge their feelings.",
+    "purpose": "Show empathy, build trust, and create a connection by validating the other party’s emotions.",
+    "example": {
+        "scenario": "A customer says, 'I’m not sure this product is worth the cost.'",
+        "response": "It sounds like you’re concerned about the return on investment.",
+        "outcome": "The customer feels understood and clarifies their concern: 'Exactly. I need to be sure it will save us time and money.'"
+    },
+    "scenarios": [
+        {
+            "scenarioID": 1,
+            "scenario": "Negotiating a salary increase or benefits package with your employer.",
+            "correctOption": "It seems like you’re concerned about budget constraints right now.",
+            "wrongOptions": [
+                "Why haven’t you approved this raise yet?",
+                "I think this salary adjustment is more than fair."
+            ]
+        },
+        {
+            "scenarioID": 2,
+            "scenario": "Handling a customer’s objection to pricing during a sales pitch.",
+            "correctOption": "It sounds like you’re worried about how this fits within your budget.",
+            "wrongOptions": [
+                "Our pricing is justified for the value we offer.",
+                "Why don’t you think the price is reasonable?"
+            ]
+        },
+        {
+            "scenarioID": 3,
+            "scenario": "Convincing a supplier to offer better terms on a contract.",
+            "correctOption": "It looks like you’re worried about the risk to your margins.",
+            "wrongOptions": [
+                "Why don’t you want to offer better terms?",
+                "This adjustment is reasonable given our volume."
+            ]
+        },
+        {
+            "scenarioID": 4,
+            "scenario": "Resolving a conflict with a coworker over project responsibilities.",
+            "correctOption": "It seems like you feel the workload is uneven.",
+            "wrongOptions": [
+                "Why do you think the workload is unfair?",
+                "This isn’t the time to discuss workload—let’s focus on the task at hand."
+            ]
+        },
+        {
+            "scenarioID": 5,
+            "scenario": "Discussing a timeline extension for a project with a client.",
+            "correctOption": "It sounds like you’re worried about how this extension will affect your deadlines.",
+            "wrongOptions": [
+                "Why can’t you approve an extension?",
+                "This extension is necessary for the project’s success."
+            ]
+        },
+        {
+            "scenarioID": 6,
+            "scenario": "Negotiating a discount or additional service with a vendor.",
+            "correctOption": "It looks like you’re concerned about giving away too much.",
+            "wrongOptions": [
+                "Why can’t you just offer the discount?",
+                "This discount is critical for our deal."
+            ]
+        },
+        {
+            "scenarioID": 7,
+            "scenario": "Managing a disagreement with a partner over financial decisions at home.",
+            "correctOption": "It sounds like you’re worried about how this expense will impact our budget.",
+            "wrongOptions": [
+                "Why don’t you trust my decision?",
+                "This purchase is necessary, so we should proceed."
+            ]
+        },
+        {
+            "scenarioID": 8,
+            "scenario": "Convincing a skeptical team member to adopt a new process or tool.",
+            "correctOption": "It seems like you’re hesitant about whether this tool will meet our needs.",
+            "wrongOptions": [
+                "Why are you so against trying this tool?",
+                "This tool is the best option, and we should implement it immediately."
+            ]
+        },
+        {
+            "scenarioID": 9,
+            "scenario": "Handling a landlord’s rent increase request or negotiating lease terms.",
+            "correctOption": "It looks like you’re concerned about rising property costs.",
+            "wrongOptions": [
+                "Why do you think a rent increase is justified?",
+                "This increase is excessive, and I don’t agree with it."
+            ]
+        },
+        {
+            "scenarioID": 10,
+            "scenario": "Pitching an idea to stakeholders or a decision-maker in a high-stakes meeting.",
+            "correctOption": "It seems like you’re worried about the risks associated with this idea.",
+            "wrongOptions": [
+                "Why do you think this is a risky proposal?",
+                "This idea is risk-free and has guaranteed returns."
+            ]
+        },
+        {
+            "scenarioID": 11,
+            "scenario": "Convincing a hesitant prospect to sign up for a subscription service.",
+            "correctOption": "It sounds like you’re unsure about the long-term benefits of this service.",
+            "wrongOptions": [
+                "Why do you think this isn’t a good fit?",
+                "This service is perfect for you, and you should sign up now."
+            ]
+        },
+        {
+            "scenarioID": 12,
+            "scenario": "Handling a potential client’s request for a significant discount on your product.",
+            "correctOption": "It seems like you’re worried about whether this price fits your budget.",
+            "wrongOptions": [
+                "Why do you think this product is overpriced?",
+                "This price is final, and we can’t offer further discounts."
+            ]
+        },
+        {
+            "scenarioID": 13,
+            "scenario": "Addressing concerns about your product’s suitability during a product demonstration.",
+            "correctOption": "It sounds like you’re worried about whether this product will meet your needs.",
+            "wrongOptions": [
+                "Why do you think this product won’t work for you?",
+                "This product fits a wide range of requirements."
+            ]
+        },
+        {
+            "scenarioID": 14,
+            "scenario": "Negotiating a larger purchase order with an existing client.",
+            "correctOption": "It looks like you’re concerned about committing to a larger order.",
+            "wrongOptions": [
+                "Why do you think increasing the order is a risk?",
+                "We need you to increase the order to proceed."
+            ]
+        },
+        {
+            "scenarioID": 15,
+            "scenario": "Resolving a customer’s objection that a competitor offers a cheaper alternative.",
+            "correctOption": "It seems like you’re worried about balancing cost with value.",
+            "wrongOptions": [
+                "Why do you think their product is better?",
+                "Our product is superior despite the cost."
+            ]
+        },
+        {
+            "scenarioID": 16,
+            "scenario": "Handling a long sales cycle where the client wants more time to decide.",
+            "correctOption": "It sounds like you’re hesitant because you need more clarity.",
+            "wrongOptions": [
+                "Why do you think you need more time?",
+                "This decision should be straightforward."
+            ]
+        },
+        {
+            "scenarioID": 17,
+            "scenario": "Re-engaging a prospect who ghosted after initial interest.",
+            "correctOption": "It looks like you’re unsure about how we align with your needs.",
+            "wrongOptions": [
+                "Why haven’t you responded to my emails?",
+                "Let’s discuss why you stopped replying."
+            ]
+        },
+        {
+            "scenarioID": 18,
+            "scenario": "Convincing a client to upgrade to a higher-tier package or service.",
+            "correctOption": "It seems like you’re hesitant about whether the upgrade is worth the cost.",
+            "wrongOptions": [
+                "Why don’t you think upgrading is a good idea?",
+                "This upgrade is worth it, and you should proceed."
+            ]
+        },
+        {
+            "scenarioID": 19,
+            "scenario": "Overcoming objections from a group of decision-makers during a sales pitch.",
+            "correctOption": "It sounds like you’re concerned about aligning this decision with your goals.",
+            "wrongOptions": [
+                "Why don’t you think this solution will work?",
+                "This solution is the best option for your team."
+            ]
+        },
+        {
+            "scenarioID": 20,
+            "scenario": "Securing a meeting with a high-level executive who seems uninterested in your pitch.",
+            "correctOption": "It seems like you’re worried this meeting won’t provide enough value.",
+            "wrongOptions": [
+                "Why don’t you think this meeting is worthwhile?",
+                "This meeting is crucial for your success."
+            ]
+        }
+    },
+    {
         "tacticID": 10,
         "tactic": "The Black Swan Theory",
         "description": "Identify hidden, critical pieces of information that could dramatically shift the negotiation’s outcome.",
