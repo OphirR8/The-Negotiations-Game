@@ -7,11 +7,9 @@
   <!-- Include Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-  <!-- Link to the updated stylesheet -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Container to center content -->
   <div class="container">
     <!-- Main Menu -->
     <div id="main-menu" class="menu-screen">
@@ -23,21 +21,16 @@
 
     <!-- Game Screen -->
     <div id="game-screen" class="hidden">
-      <!-- Timer and Score -->
       <div id="game-info">
         <div id="timer">Time: 00:00</div>
         <div id="score">Score: 0</div>
       </div>
-      <!-- Scenario Display -->
       <div id="scenario"></div>
-      <!-- Option Selection -->
       <div id="tactic-selection">
         <h3>Select the correct response:</h3>
         <div id="tactic-options"></div>
       </div>
-      <!-- Feedback -->
       <div id="feedback" class="hidden"></div>
-      <!-- Stop Button -->
       <button onclick="endGame()">Stop</button>
     </div>
 
@@ -55,7 +48,6 @@
       <button onclick="backToMenu()">Back to Menu</button>
     </div>
   </div>
-  <!-- Include the JavaScript file -->
   <script src="app.js"></script>
 </body>
 </html>
