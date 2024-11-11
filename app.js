@@ -2,8 +2,9 @@
 let timerInterval;
 let secondsElapsed = 0;
 let tacticsData = [];
-let currentTacticIndex = 0;
-let score = 0; // Removed currentDifficulty variable
+let allScenarios = []; // New array to hold all scenarios
+let currentScenarioIndex = 0;
+let score = 0;
 
 // Function to format time
 function formatTime(seconds) {
@@ -23,13 +24,33 @@ fetch('data/tactics.json')
   })
   .catch((error) => console.error('Error loading tactics data:', error));
 
-// Removed showDifficultySelection() and selectDifficulty() functions
+// Function to flatten all scenarios into a single array
+function flattenScenarios() {
+  allScenarios = [];
+  tacticsData.forEach((tactic) => {
+    tactic.scenarios.forEach((scenario) => {
+      // Attach the tactic information to each scenario
+      allScenarios.push({
+        tacticID: tactic.tacticID,
+        tactic: tactic.tactic,
+        description: tactic.description,
+        purpose: tactic.purpose,
+        example: tactic.example,
+        scenarioID: scenario.scenarioID,
+        scenario: scenario.scenario,
+        correctOption: scenario.correctOption,
+        wrongOptions: scenario.wrongOptions,
+        explanation: tactic.explanation, // Assuming explanation is the same for all scenarios of a tactic
+      });
+    });
+  });
+}
 
-// Function to shuffle the tacticsData array
-function shuffleTactics() {
-  for (let i = tacticsData.length - 1; i > 0; i--) {
+// Function to shuffle the scenarios array
+function shuffleScenarios() {
+  for (let i = allScenarios.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
-    [tacticsData[i], tacticsData[j]] = [tacticsData[j], tacticsData[i]];
+    [allScenarios[i], allScenarios[j]] = [allScenarios[j], allScenarios[i]];
   }
 }
 
@@ -39,7 +60,7 @@ function startGame() {
   // Show game screen
   document.getElementById('game-screen').classList.remove('hidden');
   // Reset variables
-  currentTacticIndex = 0;
+  currentScenarioIndex = 0;
   score = 0;
   secondsElapsed = 0;
   document.getElementById('timer').textContent = formatTime(secondsElapsed);
@@ -54,9 +75,10 @@ function startGame() {
   // Wait until tacticsData is loaded before proceeding
   function waitForDataAndStart() {
     if (tacticsData.length > 0) {
-      // Data is loaded, shuffle and start
-      shuffleTactics();
-      loadTactic();
+      // Data is loaded, flatten and shuffle scenarios
+      flattenScenarios();
+      shuffleScenarios();
+      loadScenario();
     } else {
       // Data not yet loaded, wait and try again
       setTimeout(waitForDataAndStart, 100);
@@ -66,19 +88,19 @@ function startGame() {
   waitForDataAndStart();
 }
 
-// Function to load a tactic
-function loadTactic() {
-  if (currentTacticIndex < tacticsData.length) {
-    const tacticObj = tacticsData[currentTacticIndex];
-    document.getElementById('scenario').textContent = tacticObj.scenario;
-    loadOptions(tacticObj);
+// Function to load a scenario
+function loadScenario() {
+  if (currentScenarioIndex < allScenarios.length) {
+    const scenarioObj = allScenarios[currentScenarioIndex];
+    document.getElementById('scenario').textContent = scenarioObj.scenario;
+    loadOptions(scenarioObj);
   } else {
     endGame();
   }
 }
 
-function loadOptions(tacticObj) {
-  const options = tacticObj.options.slice(); // Copy the options array
+function loadOptions(scenarioObj) {
+  const options = [scenarioObj.correctOption, ...scenarioObj.wrongOptions];
   // Shuffle options
   options.sort(() => Math.random() - 0.5);
 
@@ -87,12 +109,12 @@ function loadOptions(tacticObj) {
   options.forEach((option) => {
     const button = document.createElement('button');
     button.textContent = option;
-    button.onclick = () => selectOption(option, tacticObj);
+    button.onclick = () => selectOption(option, scenarioObj);
     optionsContainer.appendChild(button);
   });
 }
 
-function selectOption(selectedOption, tacticObj) {
+function selectOption(selectedOption, scenarioObj) {
   // Normalize the selected option and correct option
   const normalizeString = (str) => {
     return str
@@ -103,7 +125,7 @@ function selectOption(selectedOption, tacticObj) {
   };
 
   const normalizedSelectedOption = normalizeString(selectedOption);
-  const normalizedCorrectOption = normalizeString(tacticObj.correctOption);
+  const normalizedCorrectOption = normalizeString(scenarioObj.correctOption);
 
   const isCorrect = normalizedSelectedOption === normalizedCorrectOption;
 
@@ -115,13 +137,13 @@ function selectOption(selectedOption, tacticObj) {
   document.getElementById('score').textContent = `Score: ${score}`;
 
   // Show feedback
-  showFeedback(isCorrect, tacticObj.explanation);
+  showFeedback(isCorrect, scenarioObj.explanation);
 
-  // Move to the next tactic after a delay
-  currentTacticIndex++;
+  // Move to the next scenario after a delay
+  currentScenarioIndex++;
   setTimeout(() => {
     document.getElementById('feedback').classList.add('hidden');
-    loadTactic();
+    loadScenario();
   }, 5000);
 }
 
@@ -198,10 +220,20 @@ function loadTactics() {
       <h3>${tacticObj.tactic}</h3>
       <p><strong>Description:</strong> ${tacticObj.description}</p>
       <p><strong>Purpose:</strong> ${tacticObj.purpose}</p>
-      <p class="indented"><strong>Example Scenario:</strong> ${tacticObj.example.scenario}</p>
-      <p class="indented"><strong>Example Response:</strong> ${tacticObj.example.response}</p>
-      <p class="indented"><strong>Outcome:</strong> ${tacticObj.example.outcome}</p>
     `;
+
+    // Add scenarios
+    tacticObj.scenarios.forEach((scenarioObj) => {
+      const scenarioDiv = document.createElement('div');
+      scenarioDiv.className = 'scenario';
+      scenarioDiv.innerHTML = `
+        <p class="indented"><strong>Scenario ${scenarioObj.scenarioID}:</strong> ${scenarioObj.scenario}</p>
+        <p class="indented"><strong>Correct Response:</strong> ${scenarioObj.correctOption}</p>
+        <p class="indented"><strong>Wrong Options:</strong> ${scenarioObj.wrongOptions.join('; ')}</p>
+      `;
+      tacticDiv.appendChild(scenarioDiv);
+    });
+
     tacticList.appendChild(tacticDiv);
   });
 }
