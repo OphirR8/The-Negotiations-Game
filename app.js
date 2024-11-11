@@ -3,35 +3,27 @@ let timerInterval;
 let secondsElapsed = 0;
 let tacticsData = [];
 let currentTacticIndex = 0;
-let currentDifficulty = 'Easy'; // Can be 'Easy', 'Medium', or 'Hard'
-let score = 0;
+let score = 0; // Removed currentDifficulty variable
 
 // Function to format time
 function formatTime(seconds) {
   const minutes = Math.floor(seconds / 60);
   const secondsPart = seconds % 60;
-  return `Time: ${minutes.toString().padStart(2, '0')}:${secondsPart.toString().padStart(2, '0')}`;
+  return `Time: ${minutes.toString().padStart(2, '0')}:${secondsPart
+    .toString()
+    .padStart(2, '0')}`;
 }
 
 // Fetch tactics data from JSON file
 fetch('data/tactics.json')
-  .then(response => response.json())
-  .then(data => {
+  .then((response) => response.json())
+  .then((data) => {
     tacticsData = data;
     console.log('Tactics Data Loaded:', tacticsData);
   })
-  .catch(error => console.error('Error loading tactics data:', error));
+  .catch((error) => console.error('Error loading tactics data:', error));
 
-function showDifficultySelection() {
-  document.getElementById('main-menu').classList.add('hidden');
-  document.getElementById('difficulty-selection').classList.remove('hidden');
-}
-
-function selectDifficulty(difficulty) {
-  currentDifficulty = difficulty;
-  document.getElementById('difficulty-selection').classList.add('hidden');
-  startGame();
-}
+// Removed showDifficultySelection() and selectDifficulty() functions
 
 // Function to shuffle the tacticsData array
 function shuffleTactics() {
@@ -42,9 +34,8 @@ function shuffleTactics() {
 }
 
 function startGame() {
-  // Hide main menu or difficulty selection
+  // Hide main menu
   document.getElementById('main-menu').classList.add('hidden');
-  document.getElementById('difficulty-selection').classList.add('hidden');
   // Show game screen
   document.getElementById('game-screen').classList.remove('hidden');
   // Reset variables
@@ -87,17 +78,13 @@ function loadTactic() {
 }
 
 function loadOptions(tacticObj) {
-  const levelData = tacticObj.levels[currentDifficulty];
-  const options = [
-    levelData.correctOption,
-    ...levelData.wrongOptions
-  ];
+  const options = tacticObj.options.slice(); // Copy the options array
   // Shuffle options
   options.sort(() => Math.random() - 0.5);
 
   const optionsContainer = document.getElementById('tactic-options');
   optionsContainer.innerHTML = '';
-  options.forEach(option => {
+  options.forEach((option) => {
     const button = document.createElement('button');
     button.textContent = option;
     button.onclick = () => selectOption(option, tacticObj);
@@ -106,19 +93,17 @@ function loadOptions(tacticObj) {
 }
 
 function selectOption(selectedOption, tacticObj) {
-  const levelData = tacticObj.levels[currentDifficulty];
-
   // Normalize the selected option and correct option
   const normalizeString = (str) => {
     return str
       .trim()
       .replace(/[“”‘’]/g, '"') // Replace curly quotes with straight quotes
-      .replace(/[–—]/g, '-')   // Replace en-dashes and em-dashes with hyphens
+      .replace(/[–—]/g, '-') // Replace en-dashes and em-dashes with hyphens
       .toLowerCase();
   };
 
   const normalizedSelectedOption = normalizeString(selectedOption);
-  const normalizedCorrectOption = normalizeString(levelData.correctOption);
+  const normalizedCorrectOption = normalizeString(tacticObj.correctOption);
 
   const isCorrect = normalizedSelectedOption === normalizedCorrectOption;
 
@@ -130,7 +115,7 @@ function selectOption(selectedOption, tacticObj) {
   document.getElementById('score').textContent = `Score: ${score}`;
 
   // Show feedback
-  showFeedback(isCorrect, levelData.explanation);
+  showFeedback(isCorrect, tacticObj.explanation);
 
   // Move to the next tactic after a delay
   currentTacticIndex++;
@@ -170,7 +155,7 @@ function saveHighScore() {
   const newScore = {
     score: score,
     time: secondsElapsed,
-    date: new Date().toLocaleDateString()
+    date: new Date().toLocaleDateString(),
   };
   highScores.push(newScore);
   // Sort and keep top 5
@@ -188,7 +173,9 @@ function showHighScores() {
   scoreList.innerHTML = '';
   highScores.forEach((entry, index) => {
     const li = document.createElement('li');
-    li.textContent = `#${index + 1} - Score: ${entry.score}, Time: ${formatTime(entry.time)}, Date: ${entry.date}`;
+    li.textContent = `#${index + 1} - Score: ${entry.score}, Time: ${formatTime(
+      entry.time
+    )}, Date: ${entry.date}`;
     scoreList.appendChild(li);
   });
 }
@@ -197,14 +184,14 @@ function showHighScores() {
 function showLearnPage() {
   document.getElementById('main-menu').classList.add('hidden');
   document.getElementById('learn-page').classList.remove('hidden');
-  loadTactics(); // Make sure this function is called
+  loadTactics(); // Ensure this function is called
 }
 
 // Function to load tactics into the Learn page
 function loadTactics() {
   const tacticList = document.getElementById('tactic-list');
   tacticList.innerHTML = '';
-  tacticsData.forEach(tacticObj => {
+  tacticsData.forEach((tacticObj) => {
     const tacticDiv = document.createElement('div');
     tacticDiv.className = 'tactic';
     tacticDiv.innerHTML = `
