@@ -27,22 +27,24 @@ fetch('./data/tactics.json')
 // Function to flatten all scenarios into a single array with a unique key
 function flattenScenarios() {
   allScenarios = [];
-  tacticsData.forEach((tactic) => {
+  tacticsData.forEach((tactic, index) => {
+    console.log(`Processing Tactic ${index + 1}:`, tactic.tactic);
     tactic.scenarios.forEach((scenario) => {
       allScenarios.push({
-        uniqueID: `${tactic.tacticID}-${scenario.scenarioID}`, // Combine Tactic ID and Scenario ID
+        ...scenario,
         tacticID: tactic.tacticID,
-        scenarioID: scenario.scenarioID,
         tactic: tactic.tactic,
         description: tactic.description,
         purpose: tactic.purpose,
         example: tactic.example,
-        ...scenario, // Spread scenario properties
       });
     });
   });
+  console.log('Flattened Scenarios:', allScenarios);
+  console.log('Total Scenarios:', allScenarios.length);
   shuffleScenarios();
 }
+
 
 // Shuffle the scenarios array
 function shuffleScenarios() {
