@@ -1,3 +1,4 @@
+/* CSS Reset */
 * {
   margin: 0;
   padding: 0;
@@ -38,7 +39,6 @@ h2 {
 
 h3 {
   font-size: 1.5em;
-  color: #F5F5F5;
 }
 
 button {
@@ -58,27 +58,19 @@ button:hover {
   transform: translateY(-2px);
 }
 
-.hidden {
-  display: none;
-  opacity: 0;
-  pointer-events: none;
+.menu-screen, #game-screen, #learn-page, #high-scores {
+  width: 100%;
+  padding: 40px 20px;
 }
 
-.visible {
-  opacity: 1;
-  transition: opacity 0.5s ease-in-out;
+.hidden {
+  display: none;
 }
 
 #game-info {
   position: absolute;
   top: 20px;
   right: 20px;
-  text-align: right;
-}
-
-#timer, #score {
-  font-size: 1.2em;
-  margin-bottom: 5px;
 }
 
 #scenario, #feedback {
@@ -96,38 +88,9 @@ button:hover {
   color: #E94560;
 }
 
-#tactic-options button {
-  width: 100%;
-  max-width: 500px;
-  margin: 10px auto;
+ol li {
+  background-color: #0F3460;
+  padding: 15px;
+  margin: 10px 0;
   border-radius: 15px;
-}
-
-.tactic {
-  background-color: #1F1F1F;
-  padding: 20px;
-  margin: 20px 0;
-  border-radius: 15px;
-  text-align: left;
-}
-
-.tactic h3 {
-  margin-bottom: 10px;
-  color: #E94560;
-}
-
-.tactic p {
-  margin-bottom: 10px;
-  color: #CCCCCC;
-}
-
-@media (max-width: 600px) {
-  h1 {
-    font-size: 2em;
-  }
-
-  button {
-    padding: 12px 20px;
-    font-size: 0.9em;
-  }
 }
