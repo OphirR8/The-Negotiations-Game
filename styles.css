@@ -1,131 +1,76 @@
-let timerInterval;
-let secondsElapsed = 0;
-let tacticsData = [];
-let currentScenarioIndex = 0;
-let score = 0;
-
-// Load Tactics Data
-fetch('tactics.json')
-  .then((response) => response.json())
-  .then((data) => {
-    tacticsData = data;
-    console.log("Tactics data loaded:", data);
-  })
-  .catch((error) => console.error("Error loading tactics.json:", error));
-
-function startGame() {
-  document.getElementById("main-menu").classList.add("hidden");
-  document.getElementById("game-screen").classList.remove("hidden");
-  resetGame();
+body {
+    font-family: Arial, sans-serif;
+    background-color: #282c34;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-function resetGame() {
-  score = 0;
-  secondsElapsed = 0;
-  currentScenarioIndex = 0;
-  document.getElementById("score").textContent = `Score: ${score}`;
-  document.getElementById("timer").textContent = `Time: 00:00`;
-
-  timerInterval = setInterval(() => {
-    secondsElapsed++;
-    document.getElementById("timer").textContent = `Time: ${formatTime(secondsElapsed)}`;
-  }, 1000);
-
-  loadScenario();
+.container {
+    text-align: center;
+    width: 80%;
+    max-width: 800px;
 }
 
-function loadScenario() {
-  if (currentScenarioIndex >= tacticsData.length) {
-    endGame();
-    return;
-  }
-
-  const scenario = tacticsData[currentScenarioIndex];
-  document.getElementById("scenario").textContent = scenario.scenario;
-
-  const options = [scenario.correctOption, ...scenario.wrongOptions];
-  shuffleArray(options);
-
-  const optionsContainer = document.getElementById("tactic-options");
-  optionsContainer.innerHTML = "";
-  options.forEach((option) => {
-    const button = document.createElement("button");
-    button.textContent = option;
-    button.onclick = () => selectOption(option, scenario);
-    optionsContainer.appendChild(button);
-  });
+.hidden {
+    display: none;
 }
 
-function selectOption(selectedOption, scenario) {
-  const feedback = document.getElementById("feedback");
-  feedback.classList.remove("hidden");
-
-  if (selectedOption === scenario.correctOption) {
-    feedback.textContent = "Correct!";
-    feedback.style.color = "green";
-    score += 10;
-  } else {
-    feedback.textContent = "Incorrect.";
-    feedback.style.color = "red";
-  }
-
-  document.getElementById("score").textContent = `Score: ${score}`;
-
-  setTimeout(() => {
-    feedback.classList.add("hidden");
-    currentScenarioIndex++;
-    loadScenario();
-  }, 2000);
+h1, h2 {
+    color: #61dafb;
 }
 
-function endGame() {
-  clearInterval(timerInterval);
-  alert(`Game over! Your final score is: ${score}`);
-  backToMenu();
+button {
+    background-color: #61dafb;
+    color: #282c34;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
 }
 
-function backToMenu() {
-  document.querySelectorAll(".menu-screen, .hidden").forEach((el) => el.classList.add("hidden"));
-  document.getElementById("main-menu").classList.remove("hidden");
+button:hover {
+    background-color: #21a1f1;
 }
 
-function showLearnPage() {
-  document.getElementById("main-menu").classList.add("hidden");
-  document.getElementById("learn-page").classList.remove("hidden");
-
-  const tacticList = document.getElementById("tactic-list");
-  tacticList.innerHTML = "";
-  tacticsData.forEach((tactic) => {
-    const tacticDiv = document.createElement("div");
-    tacticDiv.innerHTML = `
-      <h3>${tactic.tactic}</h3>
-      <p><strong>Description:</strong> ${tactic.description}</p>
-      <p><strong>Purpose:</strong> ${tactic.purpose}</p>
-    `;
-    tacticList.appendChild(tacticDiv);
-  });
+#tactic-options button {
+    display: block;
+    width: 100%;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #444;
+    color: #fff;
+    border: 1px solid #61dafb;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
 }
 
-function showHighScores() {
-  const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
-  const scoreList = document.getElementById("score-list");
-  scoreList.innerHTML = highScores
-    .map((score) => `<li>Score: ${score}</li>`)
-    .join("");
-
-  document.getElementById("main-menu").classList.add("hidden");
-  document.getElementById("high-scores").classList.remove("hidden");
+#tactic-options button:hover {
+    background-color: #61dafb;
+    color: #282c34;
 }
 
-function formatTime(seconds) {
-  const mins = Math.floor(seconds / 60).toString().padStart(2, "0");
-  const secs = (seconds % 60).toString().padStart(2, "0");
-  return `${mins}:${secs}`;
+#feedback.correct {
+    color: #03c988;
 }
 
-function shuffleArray(array) {
-  for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
+#feedback.incorrect {
+    color: #e94560;
+}
+
+#game-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#game-info div {
+    font-size: 1.2rem;
 }
