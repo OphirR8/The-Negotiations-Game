@@ -146,24 +146,43 @@ function showLearnPage() {
   loadTactics();
 }
 
-// Load tactics into Learn page
+// Load tactics into Learn page with collapsible design
 function loadTactics() {
   const tacticList = document.getElementById('tactic-list');
-  tacticList.innerHTML = '';
+  tacticList.innerHTML = ''; // Clear existing content
+
   tacticsData.forEach((tactic) => {
     const tacticDiv = document.createElement('div');
     tacticDiv.className = 'tactic';
-    tacticDiv.innerHTML = `
-      <h3>${tactic.tactic}</h3>
+
+    // Create the header for the tactic
+    const header = document.createElement('h3');
+    header.className = 'tactic-header';
+    header.textContent = tactic.tactic;
+    header.onclick = () => {
+      const content = tacticDiv.querySelector('.tactic-content');
+      content.style.display = content.style.display === 'none' ? 'block' : 'none';
+    };
+
+    // Create the collapsible content
+    const content = document.createElement('div');
+    content.className = 'tactic-content';
+    content.style.display = 'none'; // Initially hidden
+    content.innerHTML = `
       <p><strong>Description:</strong> ${tactic.description}</p>
       <p><strong>Purpose:</strong> ${tactic.purpose}</p>
-      <p><strong>Example:</strong> ${tactic.example.scenario}</p>
-      <p><strong>Response:</strong> ${tactic.example.response}</p>
-      <p><strong>Outcome:</strong> ${tactic.example.outcome}</p>
+      <p><strong>Example:</strong></p>
+      <p class="indented"><strong>Scenario:</strong> ${tactic.example.scenario}</p>
+      <p class="indented"><strong>Response:</strong> ${tactic.example.response}</p>
+      <p class="indented"><strong>Outcome:</strong> ${tactic.example.outcome}</p>
     `;
+
+    tacticDiv.appendChild(header);
+    tacticDiv.appendChild(content);
     tacticList.appendChild(tacticDiv);
   });
 }
+
 
 // Return to menu
 function backToMenu() {
