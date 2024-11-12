@@ -149,11 +149,19 @@ function loadOptions(scenarioObj) {
   });
 }
 
-// Handle answer selection
 function selectOption(selectedOption, scenarioObj) {
   console.log('Option selected:', selectedOption);
   const isCorrect = selectedOption === scenarioObj.correctOption;
-  console.log('Is Correct:', isCorrect);
+
+  // Highlight the selected button
+  const optionsContainer = document.getElementById('tactic-options');
+  Array.from(optionsContainer.children).forEach((button) => {
+    if (button.textContent === selectedOption) {
+      button.style.backgroundColor = isCorrect ? '#4caf50' : '#f44336'; // Green for correct, red for wrong
+      button.style.color = '#fff';
+    }
+    button.disabled = true; // Disable all buttons after selection
+  });
 
   if (isCorrect) {
     score += 10;
@@ -161,14 +169,14 @@ function selectOption(selectedOption, scenarioObj) {
   }
 
   document.getElementById('score').textContent = `Score: ${score}`;
-  showFeedback(isCorrect, scenarioObj);
 
+  // Automatically load the next scenario after 0.5 seconds
   currentScenarioIndex++;
   setTimeout(() => {
-    document.getElementById('feedback').classList.add('hidden');
     loadScenario();
-  }, 3000);
+  }, 500);
 }
+
 
 // Show feedback
 function showFeedback(isCorrect, scenarioObj) {
@@ -184,10 +192,34 @@ function showFeedback(isCorrect, scenarioObj) {
 function endGame() {
   console.log('Ending game');
   clearInterval(timerInterval);
+
+  // Save high score
+  const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
+  highScores.push({ score, time: secondsElapsed });
+  highScores.sort((a, b) => b.score - a.score || a.time - b.time); // Sort by score, then by time
+  localStorage.setItem('highScores', JSON.stringify(highScores.slice(0, 10))); // Keep top 10 scores
+
   alert(`Game Over!\nYour score: ${score}\nTime elapsed: ${formatTime(secondsElapsed)}`);
   document.getElementById('game-screen').classList.add('hidden');
   document.getElementById('main-menu').classList.remove('hidden');
 }
+
+function showHighScores() {
+  console.log('High Scores button clicked');
+  const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
+  const scoreList = document.getElementById('score-list');
+  scoreList.innerHTML = ''; // Clear existing content
+
+  highScores.forEach((entry, index) => {
+    const listItem = document.createElement('li');
+    listItem.textContent = `#${index + 1} - Score: ${entry.score}, Time: ${formatTime(entry.time)}`;
+    scoreList.appendChild(listItem);
+  });
+
+  document.getElementById('main-menu').classList.add('hidden');
+  document.getElementById('high-scores').classList.remove('hidden');
+}
+
 
 // Learn Page
 function showLearnPage() {
