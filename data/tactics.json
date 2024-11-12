@@ -12,7 +12,7 @@
         "scenarios": [
             {
                 "scenarioID": 1,
-                "scenario": "Negotiating a salary increase or benefits package with your employer.",
+                "scenario": "During your annual review, you mention wanting a salary increase. Your manager replies, 'We value your work, but the budget is tight right now.'",
                 "correctOption": "So, you’re saying the budget is tight right now?",
                 "wrongOptions": [
                     "I need this raise to match my market value.",
@@ -21,7 +21,7 @@
             },
             {
                 "scenarioID": 2,
-                "scenario": "Handling a customer’s objection to pricing during a sales pitch.",
+                "scenario": "A customer says during a sales pitch, 'I think this product is too expensive for us.'",
                 "correctOption": "Too expensive?",
                 "wrongOptions": [
                     "Our prices are competitive for the value we provide.",
@@ -30,8 +30,8 @@
             },
             {
                 "scenarioID": 3,
-                "scenario": "Convincing a supplier to offer better terms on a contract.",
-                "correctOption": "Better terms?",
+                "scenario": "A supplier tells you, 'We can't offer better terms at this moment.'",
+                "correctOption": "Can't offer better terms?",
                 "wrongOptions": [
                     "Why can’t you offer us more flexible terms?",
                     "What do we need to do to qualify for better terms?"
@@ -39,7 +39,7 @@
             },
             {
                 "scenarioID": 4,
-                "scenario": "Resolving a conflict with a coworker over project responsibilities.",
+                "scenario": "Your coworker says, 'I have too many tasks on my plate already.'",
                 "correctOption": "Too many tasks?",
                 "wrongOptions": [
                     "Why do you think the workload isn’t distributed fairly?",
@@ -48,8 +48,8 @@
             },
             {
                 "scenarioID": 5,
-                "scenario": "Discussing a timeline extension for a project with a client.",
-                "correctOption": "Timeline extension?",
+                "scenario": "A client mentions, 'I'm not sure we can adjust the project deadline.'",
+                "correctOption": "Adjust the project deadline?",
                 "wrongOptions": [
                     "We need more time because of unexpected delays.",
                     "How flexible can you be with the deadline?"
@@ -57,8 +57,8 @@
             },
             {
                 "scenarioID": 6,
-                "scenario": "Negotiating a discount or additional service with a vendor.",
-                "correctOption": "Discount?",
+                "scenario": "A vendor says, 'Providing a discount isn't possible at this time.'",
+                "correctOption": "Isn't possible?",
                 "wrongOptions": [
                     "What’s the best price you can offer?",
                     "Why don’t you consider a smaller discount?"
@@ -66,7 +66,7 @@
             },
             {
                 "scenarioID": 7,
-                "scenario": "Managing a disagreement with a partner over financial decisions at home.",
+                "scenario": "Your partner says, 'We have been overspending lately.'",
                 "correctOption": "Overspending?",
                 "wrongOptions": [
                     "Why do you think our budget is out of control?",
@@ -75,8 +75,8 @@
             },
             {
                 "scenarioID": 8,
-                "scenario": "Convincing a skeptical team member to adopt a new process or tool.",
-                "correctOption": "New process?",
+                "scenario": "A team member comments, 'I'm not sure about this new process you're suggesting.'",
+                "correctOption": "Not sure?",
                 "wrongOptions": [
                     "Let me show you why this is the best option.",
                     "We’re implementing this whether you like it or not."
@@ -84,8 +84,8 @@
             },
             {
                 "scenarioID": 9,
-                "scenario": "Handling a landlord’s rent increase request or negotiating lease terms.",
-                "correctOption": "Rent increase?",
+                "scenario": "Your landlord says, 'I'm planning to increase the rent next month.'",
+                "correctOption": "Increase the rent?",
                 "wrongOptions": [
                     "Why do you think a rent increase is necessary?",
                     "What would it take to keep the rent the same?"
@@ -93,7 +93,7 @@
             },
             {
                 "scenarioID": 10,
-                "scenario": "Pitching an idea to stakeholders or a decision-maker in a high-stakes meeting.",
+                "scenario": "In a meeting, a stakeholder says, 'This proposal seems too risky for us.'",
                 "correctOption": "Too risky?",
                 "wrongOptions": [
                     "Let me explain why this idea will work.",
@@ -102,7 +102,7 @@
             },
             {
                 "scenarioID": 11,
-                "scenario": "Convincing a hesitant prospect to sign up for a subscription service.",
+                "scenario": "A prospect tells you, 'I don't think this service is the right fit for us.'",
                 "correctOption": "Not the right fit?",
                 "wrongOptions": [
                     "Why do you think this isn’t a good fit?",
@@ -111,7 +111,7 @@
             },
             {
                 "scenarioID": 12,
-                "scenario": "Handling a potential client’s request for a significant discount on your product.",
+                "scenario": "A potential client says, 'We need a significant discount to consider your product.'",
                 "correctOption": "Significant discount?",
                 "wrongOptions": [
                     "Why do you feel our product isn’t worth the full price?",
@@ -120,8 +120,8 @@
             },
             {
                 "scenarioID": 13,
-                "scenario": "Addressing concerns about your product’s suitability during a product demonstration.",
-                "correctOption": "Not suitable?",
+                "scenario": "During a demo, the client says, 'I'm not sure this product suits our needs.'",
+                "correctOption": "Not sure it suits your needs?",
                 "wrongOptions": [
                     "What makes you feel that way?",
                     "Our product is designed to fit most needs."
@@ -129,8 +129,8 @@
             },
             {
                 "scenarioID": 14,
-                "scenario": "Negotiating a larger purchase order with an existing client.",
-                "correctOption": "Larger purchase?",
+                "scenario": "An existing client mentions, 'We're hesitant to place a larger order right now.'",
+                "correctOption": "Hesitant to place a larger order?",
                 "wrongOptions": [
                     "Why don’t you think this is a good idea?",
                     "Let me explain the benefits of a larger order."
@@ -138,7 +138,7 @@
             },
             {
                 "scenarioID": 15,
-                "scenario": "Resolving a customer’s objection that a competitor offers a cheaper alternative.",
+                "scenario": "A customer says, 'Your competitor offers a cheaper alternative.'",
                 "correctOption": "Cheaper alternative?",
                 "wrongOptions": [
                     "Our product offers better value in the long run.",
@@ -147,8 +147,8 @@
             },
             {
                 "scenarioID": 16,
-                "scenario": "Handling a long sales cycle where the client wants more time to decide.",
-                "correctOption": "More time?",
+                "scenario": "A client tells you, 'We need more time to make a decision.'",
+                "correctOption": "Need more time?",
                 "wrongOptions": [
                     "Why do you think you need more time?",
                     "What’s stopping you from making a decision today?"
@@ -156,7 +156,7 @@
             },
             {
                 "scenarioID": 17,
-                "scenario": "Re-engaging a prospect who ghosted after initial interest.",
+                "scenario": "A prospect hasn't responded, and when you reach out, they say, 'We've lost interest for now.'",
                 "correctOption": "Lost interest?",
                 "wrongOptions": [
                     "Why haven’t you responded?",
@@ -165,8 +165,8 @@
             },
             {
                 "scenarioID": 18,
-                "scenario": "Convincing a client to upgrade to a higher-tier package or service.",
-                "correctOption": "Higher tier?",
+                "scenario": "A client says, 'I'm not convinced about upgrading to a higher-tier package.'",
+                "correctOption": "Not convinced about upgrading?",
                 "wrongOptions": [
                     "Why don’t you see the value in upgrading?",
                     "Let me show you why this is a better option."
@@ -174,8 +174,8 @@
             },
             {
                 "scenarioID": 19,
-                "scenario": "Overcoming objections from a group of decision-makers during a sales pitch.",
-                "correctOption": "Not convinced?",
+                "scenario": "During a pitch, someone says, 'We have reservations about this solution.'",
+                "correctOption": "Reservations?",
                 "wrongOptions": [
                     "Let me address each of your objections one by one.",
                     "Why do you think this solution isn’t ideal?"
@@ -183,7 +183,7 @@
             },
             {
                 "scenarioID": 20,
-                "scenario": "Securing a meeting with a high-level executive who seems uninterested in your pitch.",
+                "scenario": "An executive responds to your meeting request with, 'I'm not interested in this proposal.'",
                 "correctOption": "Not interested?",
                 "wrongOptions": [
                     "What can I say to change your mind?",
@@ -205,7 +205,7 @@
         "scenarios": [
             {
                 "scenarioID": 1,
-                "scenario": "Negotiating a salary increase or benefits package with your employer.",
+                "scenario": "During a discussion about your compensation, your boss says, 'We have limited funds for raises this year.'",
                 "correctOption": "It sounds like you’re worried about budget constraints.",
                 "wrongOptions": [
                     "Why can’t you approve this raise?",
@@ -214,7 +214,7 @@
             },
             {
                 "scenarioID": 2,
-                "scenario": "Handling a customer’s objection to pricing during a sales pitch.",
+                "scenario": "A potential client says, 'The price is higher than we expected.'",
                 "correctOption": "It seems like you’re concerned about whether this fits your budget.",
                 "wrongOptions": [
                     "Our product is worth the price because of its value.",
@@ -223,7 +223,7 @@
             },
             {
                 "scenarioID": 3,
-                "scenario": "Convincing a supplier to offer better terms on a contract.",
+                "scenario": "Your supplier tells you, 'Extending better terms isn't feasible for us.'",
                 "correctOption": "It looks like you’re worried about giving us more favorable terms.",
                 "wrongOptions": [
                     "Why can’t you offer us better terms?",
@@ -232,16 +232,16 @@
             },
             {
                 "scenarioID": 4,
-                "scenario": "Resolving a conflict with a coworker over project responsibilities.",
+                "scenario": "A coworker says, 'I feel like I'm doing more than my share on this project.'",
                 "correctOption": "It seems like you feel overwhelmed with the workload.",
                 "wrongOptions": [
-                    "Why do you think this distribution is unfair?",
+                    "Why do you think the workload is uneven?",
                     "Let’s focus on completing the project first."
                 ]
             },
             {
                 "scenarioID": 5,
-                "scenario": "Discussing a timeline extension for a project with a client.",
+                "scenario": "Your client says, 'Delaying the project isn't an option for us.'",
                 "correctOption": "It sounds like you’re concerned about meeting your internal deadlines.",
                 "wrongOptions": [
                     "Why don’t you want to approve an extension?",
@@ -250,7 +250,7 @@
             },
             {
                 "scenarioID": 6,
-                "scenario": "Negotiating a discount or additional service with a vendor.",
+                "scenario": "A vendor mentions, 'Offering a discount would be difficult at this time.'",
                 "correctOption": "It looks like you’re hesitant about offering a larger discount.",
                 "wrongOptions": [
                     "Why can’t you provide us with a better price?",
@@ -259,7 +259,7 @@
             },
             {
                 "scenarioID": 7,
-                "scenario": "Managing a disagreement with a partner over financial decisions at home.",
+                "scenario": "Your partner says, 'I'm worried we're spending too much on non-essentials.'",
                 "correctOption": "It sounds like you’re worried about overspending.",
                 "wrongOptions": [
                     "Why do you think we’re spending too much?",
@@ -268,7 +268,7 @@
             },
             {
                 "scenarioID": 8,
-                "scenario": "Convincing a skeptical team member to adopt a new process or tool.",
+                "scenario": "A team member says, 'I don't think this new tool will help us.'",
                 "correctOption": "It seems like you’re hesitant about whether this tool will actually help.",
                 "wrongOptions": [
                     "Why don’t you see the value in this tool?",
@@ -277,7 +277,7 @@
             },
             {
                 "scenarioID": 9,
-                "scenario": "Handling a landlord’s rent increase request or negotiating lease terms.",
+                "scenario": "Your landlord says, 'I'm increasing the rent starting next month.'",
                 "correctOption": "It sounds like you’re concerned about rising property costs.",
                 "wrongOptions": [
                     "Why do you think a rent increase is necessary?",
@@ -286,7 +286,7 @@
             },
             {
                 "scenarioID": 10,
-                "scenario": "Pitching an idea to stakeholders or a decision-maker in a high-stakes meeting.",
+                "scenario": "In a proposal meeting, a stakeholder says, 'This seems like a risky move.'",
                 "correctOption": "It seems like you’re worried about the risks involved in this idea.",
                 "wrongOptions": [
                     "Why do you think this idea is risky?",
@@ -295,7 +295,7 @@
             },
             {
                 "scenarioID": 11,
-                "scenario": "Convincing a hesitant prospect to sign up for a subscription service.",
+                "scenario": "A potential subscriber says, 'I'm not sure this service is worth it for us.'",
                 "correctOption": "It looks like you’re unsure about the long-term value of this service.",
                 "wrongOptions": [
                     "Why do you think this isn’t worth it?",
@@ -304,7 +304,7 @@
             },
             {
                 "scenarioID": 12,
-                "scenario": "Handling a potential client’s request for a significant discount on your product.",
+                "scenario": "A client requests, 'We need you to lower your price significantly.'",
                 "correctOption": "It seems like you’re worried about affordability.",
                 "wrongOptions": [
                     "Why do you think the product is overpriced?",
@@ -313,7 +313,7 @@
             },
             {
                 "scenarioID": 13,
-                "scenario": "Addressing concerns about your product’s suitability during a product demonstration.",
+                "scenario": "During a product demo, the customer says, 'I'm not convinced this will solve our problem.'",
                 "correctOption": "It sounds like you’re concerned about whether this product will meet your specific needs.",
                 "wrongOptions": [
                     "Why do you think this product won’t work for you?",
@@ -322,7 +322,7 @@
             },
             {
                 "scenarioID": 14,
-                "scenario": "Negotiating a larger purchase order with an existing client.",
+                "scenario": "An existing client says, 'We're not ready to increase our order size.'",
                 "correctOption": "It looks like you’re worried about committing to a larger order.",
                 "wrongOptions": [
                     "Why do you think a larger order is a risk?",
@@ -331,7 +331,7 @@
             },
             {
                 "scenarioID": 15,
-                "scenario": "Resolving a customer’s objection that a competitor offers a cheaper alternative.",
+                "scenario": "A customer mentions, 'Another company offers a similar product for less.'",
                 "correctOption": "It seems like you’re worried about cost over value.",
                 "wrongOptions": [
                     "Why do you think their price is better?",
@@ -340,7 +340,7 @@
             },
             {
                 "scenarioID": 16,
-                "scenario": "Handling a long sales cycle where the client wants more time to decide.",
+                "scenario": "A client says, 'We need to think about this decision a bit longer.'",
                 "correctOption": "It sounds like you’re hesitant to commit because you need more clarity.",
                 "wrongOptions": [
                     "Why do you think you need more time?",
@@ -349,7 +349,7 @@
             },
             {
                 "scenarioID": 17,
-                "scenario": "Re-engaging a prospect who ghosted after initial interest.",
+                "scenario": "After reaching out, a prospect replies, 'We're putting this project on hold for now.'",
                 "correctOption": "It seems like you’re unsure about moving forward.",
                 "wrongOptions": [
                     "Why haven’t you responded to my follow-ups?",
@@ -358,8 +358,8 @@
             },
             {
                 "scenarioID": 18,
-                "scenario": "Convincing a client to upgrade to a higher-tier package or service.",
-                "correctOption": "It sounds like you’re worried about whether the upgrade is worth the cost.",
+                "scenario": "A client says, 'Upgrading doesn't seem necessary at this point.'",
+                "correctOption": "I understand why you might be hesitant to commit to a higher tier.",
                 "wrongOptions": [
                     "Why don’t you see the value in upgrading?",
                     "Let me explain why this higher tier is a better fit."
@@ -367,7 +367,7 @@
             },
             {
                 "scenarioID": 19,
-                "scenario": "Overcoming objections from a group of decision-makers during a sales pitch.",
+                "scenario": "During your pitch, a decision-maker says, 'We have some concerns about this solution.'",
                 "correctOption": "It seems like you’re concerned about aligning this solution with your goals.",
                 "wrongOptions": [
                     "Why don’t you think this will work?",
@@ -376,7 +376,7 @@
             },
             {
                 "scenarioID": 20,
-                "scenario": "Securing a meeting with a high-level executive who seems uninterested in your pitch.",
+                "scenario": "An executive says, 'I don't think this meeting is necessary.'",
                 "correctOption": "It sounds like you’re not seeing how this meeting would benefit you.",
                 "wrongOptions": [
                     "Why don’t you think this meeting is worthwhile?",
@@ -398,7 +398,7 @@
         "scenarios": [
             {
                 "scenarioID": 1,
-                "scenario": "Negotiating a salary increase or benefits package with your employer.",
+                "scenario": "Your boss says during a meeting, 'We can't approve raises at this time.'",
                 "correctOption": "I can see why this might be challenging given the current budget limitations.",
                 "wrongOptions": [
                     "You should just approve the raise—it’s deserved.",
@@ -407,7 +407,7 @@
             },
             {
                 "scenarioID": 2,
-                "scenario": "Handling a customer’s objection to pricing during a sales pitch.",
+                "scenario": "A client states, 'This solution is too expensive for us.'",
                 "correctOption": "I understand why the cost might feel high when looking at your current expenses.",
                 "wrongOptions": [
                     "The cost is justified based on the value.",
@@ -416,16 +416,16 @@
             },
             {
                 "scenarioID": 3,
-                "scenario": "Convincing a supplier to offer better terms on a contract.",
+                "scenario": "Your supplier says, 'Offering better terms isn't possible under our policy.'",
                 "correctOption": "I get that adjusting terms might feel risky for your margins.",
                 "wrongOptions": [
                     "Why don’t you want to offer better terms?",
-                    "You should consider this as a win-win for both of us."
+                    "If you can’t adjust the terms, we’ll need to look elsewhere."
                 ]
             },
             {
                 "scenarioID": 4,
-                "scenario": "Resolving a conflict with a coworker over project responsibilities.",
+                "scenario": "A team member complains, 'I'm swamped with tasks and can't take on more.'",
                 "correctOption": "I can see why it feels like the workload is uneven right now.",
                 "wrongOptions": [
                     "Why do you think it’s uneven?",
@@ -434,7 +434,7 @@
             },
             {
                 "scenarioID": 5,
-                "scenario": "Discussing a timeline extension for a project with a client.",
+                "scenario": "Your client says, 'Extending the deadline isn't feasible for us.'",
                 "correctOption": "I can see why adjusting the timeline might feel disruptive to your plans.",
                 "wrongOptions": [
                     "Why don’t you want to approve this extension?",
@@ -443,16 +443,16 @@
             },
             {
                 "scenarioID": 6,
-                "scenario": "Negotiating a discount or additional service with a vendor.",
+                "scenario": "A vendor tells you, 'We can't provide a discount at this level.'",
                 "correctOption": "I understand why offering a larger discount might feel difficult given your pricing structure.",
                 "wrongOptions": [
-                    "Why don’t you just lower the price?",
+                    "Why can’t you just lower the price?",
                     "This discount is necessary for us to proceed."
                 ]
             },
             {
                 "scenarioID": 7,
-                "scenario": "Managing a disagreement with a partner over financial decisions at home.",
+                "scenario": "Your partner expresses, 'I'm worried we're not saving enough for our future.'",
                 "correctOption": "I can see why you’re concerned about overspending given our recent expenses.",
                 "wrongOptions": [
                     "Why are you so focused on this issue?",
@@ -461,7 +461,7 @@
             },
             {
                 "scenarioID": 8,
-                "scenario": "Convincing a skeptical team member to adopt a new process or tool.",
+                "scenario": "A colleague says, 'Implementing this new tool will disrupt our current workflow.'",
                 "correctOption": "I understand why adopting a new tool feels like a big change for the team.",
                 "wrongOptions": [
                     "Why don’t you just trust that this will work?",
@@ -470,7 +470,7 @@
             },
             {
                 "scenarioID": 9,
-                "scenario": "Handling a landlord’s rent increase request or negotiating lease terms.",
+                "scenario": "Your landlord informs you, 'Due to market changes, I need to increase the rent.'",
                 "correctOption": "I can see why rising property costs might make this increase feel necessary.",
                 "wrongOptions": [
                     "Why are you increasing the rent now?",
@@ -479,7 +479,7 @@
             },
             {
                 "scenarioID": 10,
-                "scenario": "Pitching an idea to stakeholders or a decision-maker in a high-stakes meeting.",
+                "scenario": "A decision-maker says, 'Your proposal seems too ambitious for us at this time.'",
                 "correctOption": "I get why this proposal might feel risky given your current priorities.",
                 "wrongOptions": [
                     "Why do you think this idea is risky?",
@@ -488,7 +488,7 @@
             },
             {
                 "scenarioID": 11,
-                "scenario": "Convincing a hesitant prospect to sign up for a subscription service.",
+                "scenario": "A prospect mentions, 'I'm hesitant to lock into a long-term contract.'",
                 "correctOption": "I understand why you might be hesitant to commit to a long-term subscription.",
                 "wrongOptions": [
                     "Why do you think this isn’t worth it?",
@@ -497,7 +497,7 @@
             },
             {
                 "scenarioID": 12,
-                "scenario": "Handling a potential client’s request for a significant discount on your product.",
+                "scenario": "A client requests, 'We need a significant discount to move forward.'",
                 "correctOption": "I can see why you’d ask for a discount given your budget constraints.",
                 "wrongOptions": [
                     "Why do you think this product is overpriced?",
@@ -506,7 +506,7 @@
             },
             {
                 "scenarioID": 13,
-                "scenario": "Addressing concerns about your product’s suitability during a product demonstration.",
+                "scenario": "A customer says, 'I'm not certain this solution fits our unique needs.'",
                 "correctOption": "I understand why you might feel unsure about whether this product fits your needs.",
                 "wrongOptions": [
                     "Why do you think this product won’t work?",
@@ -515,7 +515,7 @@
             },
             {
                 "scenarioID": 14,
-                "scenario": "Negotiating a larger purchase order with an existing client.",
+                "scenario": "An existing client tells you, 'We're not comfortable increasing our order at this time.'",
                 "correctOption": "I get why committing to a larger order might feel like a risk right now.",
                 "wrongOptions": [
                     "Why do you think increasing the order is risky?",
@@ -524,7 +524,7 @@
             },
             {
                 "scenarioID": 15,
-                "scenario": "Resolving a customer’s objection that a competitor offers a cheaper alternative.",
+                "scenario": "A customer notes, 'We can get a similar product for less elsewhere.'",
                 "correctOption": "I understand why their lower price might feel appealing.",
                 "wrongOptions": [
                     "Why do you think their price is better?",
@@ -533,7 +533,7 @@
             },
             {
                 "scenarioID": 16,
-                "scenario": "Handling a long sales cycle where the client wants more time to decide.",
+                "scenario": "A client says, 'We need to delay our decision until next quarter.'",
                 "correctOption": "I get why taking more time might feel necessary for such an important decision.",
                 "wrongOptions": [
                     "Why do you think you need more time?",
@@ -542,7 +542,7 @@
             },
             {
                 "scenarioID": 17,
-                "scenario": "Re-engaging a prospect who ghosted after initial interest.",
+                "scenario": "A prospect replies, 'We've decided to put this project on hold indefinitely.'",
                 "correctOption": "I can see why you might have had second thoughts after our last conversation.",
                 "wrongOptions": [
                     "Why haven’t you responded to my follow-ups?",
@@ -551,7 +551,7 @@
             },
             {
                 "scenarioID": 18,
-                "scenario": "Convincing a client to upgrade to a higher-tier package or service.",
+                "scenario": "A client says, 'Upgrading right now isn't feasible for us.'",
                 "correctOption": "I understand why moving to a higher tier might feel like a big commitment.",
                 "wrongOptions": [
                     "Why don’t you see the value in upgrading?",
@@ -560,7 +560,7 @@
             },
             {
                 "scenarioID": 19,
-                "scenario": "Overcoming objections from a group of decision-makers during a sales pitch.",
+                "scenario": "A group of stakeholders expresses, 'We're not sure this solution aligns with our strategy.'",
                 "correctOption": "I can see why it might feel difficult to align this with your team’s goals.",
                 "wrongOptions": [
                     "Why do you think this solution won’t work?",
@@ -569,7 +569,7 @@
             },
             {
                 "scenarioID": 20,
-                "scenario": "Securing a meeting with a high-level executive who seems uninterested in your pitch.",
+                "scenario": "An executive responds, 'I don't think meeting is necessary at this point.'",
                 "correctOption": "I understand why this might not feel like a priority right now.",
                 "wrongOptions": [
                     "Why don’t you think this meeting is worthwhile?",
@@ -578,6 +578,7 @@
             }
         ]
     },
+    [
     {
         "tacticID": 4,
         "tactic": "Calibrated Questions",
@@ -591,7 +592,7 @@
         "scenarios": [
             {
                 "scenarioID": 1,
-                "scenario": "Negotiating a salary increase or benefits package with your employer.",
+                "scenario": "During your performance review, you ask for a raise, and your employer responds, 'We can't offer salary increases due to budget constraints.'",
                 "correctOption": "What factors are limiting the budget for salary increases?",
                 "wrongOptions": [
                     "Why can’t you approve my raise?",
@@ -600,7 +601,7 @@
             },
             {
                 "scenarioID": 2,
-                "scenario": "Handling a customer’s objection to pricing during a sales pitch.",
+                "scenario": "A customer says, 'Your product's price is beyond our budget.'",
                 "correctOption": "What aspects of the pricing are most concerning to you?",
                 "wrongOptions": [
                     "Why do you think the price is too high?",
@@ -609,7 +610,7 @@
             },
             {
                 "scenarioID": 3,
-                "scenario": "Convincing a supplier to offer better terms on a contract.",
+                "scenario": "A supplier tells you, 'We can't extend better terms under our current agreement.'",
                 "correctOption": "What can we do to make offering better terms easier for you?",
                 "wrongOptions": [
                     "Why can’t you just offer better terms?",
@@ -618,7 +619,7 @@
             },
             {
                 "scenarioID": 4,
-                "scenario": "Resolving a conflict with a coworker over project responsibilities.",
+                "scenario": "Your coworker mentions, 'I'm overwhelmed with my current workload.'",
                 "correctOption": "How do you think we could distribute the workload more effectively?",
                 "wrongOptions": [
                     "Why do you think the workload is uneven?",
@@ -627,7 +628,7 @@
             },
             {
                 "scenarioID": 5,
-                "scenario": "Discussing a timeline extension for a project with a client.",
+                "scenario": "A client says, 'We can't afford any delays on this project.'",
                 "correctOption": "What challenges would extending the timeline create for you?",
                 "wrongOptions": [
                     "Why don’t you want to approve this extension?",
@@ -636,7 +637,7 @@
             },
             {
                 "scenarioID": 6,
-                "scenario": "Negotiating a discount or additional service with a vendor.",
+                "scenario": "A vendor states, 'Providing a discount isn't possible with our current pricing model.'",
                 "correctOption": "What criteria do you use to determine discounts?",
                 "wrongOptions": [
                     "Why can’t you just give us a better price?",
@@ -645,7 +646,7 @@
             },
             {
                 "scenarioID": 7,
-                "scenario": "Managing a disagreement with a partner over financial decisions at home.",
+                "scenario": "Your partner says, 'I'm concerned about how much we're spending on dining out.'",
                 "correctOption": "What expenses are most concerning to you right now?",
                 "wrongOptions": [
                     "Why do you think we’re overspending?",
@@ -654,7 +655,7 @@
             },
             {
                 "scenarioID": 8,
-                "scenario": "Convincing a skeptical team member to adopt a new process or tool.",
+                "scenario": "A team member remarks, 'I'm not convinced this new software will help us.'",
                 "correctOption": "What concerns do you have about adopting this new tool?",
                 "wrongOptions": [
                     "Why don’t you believe this tool will work?",
@@ -663,7 +664,7 @@
             },
             {
                 "scenarioID": 9,
-                "scenario": "Handling a landlord’s rent increase request or negotiating lease terms.",
+                "scenario": "Your landlord notifies you, 'Due to increased costs, I'm raising your rent next month.'",
                 "correctOption": "What factors are influencing the decision to raise the rent?",
                 "wrongOptions": [
                     "Why are you raising the rent?",
@@ -672,7 +673,7 @@
             },
             {
                 "scenarioID": 10,
-                "scenario": "Pitching an idea to stakeholders or a decision-maker in a high-stakes meeting.",
+                "scenario": "In a meeting, a stakeholder says, 'We're hesitant to approve this project.'",
                 "correctOption": "What concerns do you have about moving forward with this idea?",
                 "wrongOptions": [
                     "Why do you think this idea won’t work?",
@@ -681,7 +682,7 @@
             },
             {
                 "scenarioID": 11,
-                "scenario": "Convincing a hesitant prospect to sign up for a subscription service.",
+                "scenario": "A prospect says, 'I'm not ready to commit to a subscription right now.'",
                 "correctOption": "What factors are making you hesitant to sign up?",
                 "wrongOptions": [
                     "Why don’t you think this service is worth it?",
@@ -690,7 +691,7 @@
             },
             {
                 "scenarioID": 12,
-                "scenario": "Handling a potential client’s request for a significant discount on your product.",
+                "scenario": "A potential client says, 'We need a lower price to proceed with this purchase.'",
                 "correctOption": "What aspects of our product make you feel it’s worth less than the current price?",
                 "wrongOptions": [
                     "Why do you think our product is overpriced?",
@@ -699,7 +700,7 @@
             },
             {
                 "scenarioID": 13,
-                "scenario": "Addressing concerns about your product’s suitability during a product demonstration.",
+                "scenario": "During a product demo, the client mentions, 'I'm not sure this will integrate with our systems.'",
                 "correctOption": "What specific features do you feel might not meet your needs?",
                 "wrongOptions": [
                     "Why do you think this product won’t work for you?",
@@ -708,7 +709,7 @@
             },
             {
                 "scenarioID": 14,
-                "scenario": "Negotiating a larger purchase order with an existing client.",
+                "scenario": "An existing client says, 'We can't commit to increasing our order size right now.'",
                 "correctOption": "What challenges do you foresee with increasing your order size?",
                 "wrongOptions": [
                     "Why don’t you want to place a larger order?",
@@ -717,7 +718,7 @@
             },
             {
                 "scenarioID": 15,
-                "scenario": "Resolving a customer’s objection that a competitor offers a cheaper alternative.",
+                "scenario": "A customer says, 'Your competitor offers similar features at a lower cost.'",
                 "correctOption": "What factors are most important to you besides cost?",
                 "wrongOptions": [
                     "Why do you think their lower price is better?",
@@ -726,7 +727,7 @@
             },
             {
                 "scenarioID": 16,
-                "scenario": "Handling a long sales cycle where the client wants more time to decide.",
+                "scenario": "A client mentions, 'We need more time to make a decision on this proposal.'",
                 "correctOption": "What information would help you make a more confident decision?",
                 "wrongOptions": [
                     "Why do you think you need more time?",
@@ -735,7 +736,7 @@
             },
             {
                 "scenarioID": 17,
-                "scenario": "Re-engaging a prospect who ghosted after initial interest.",
+                "scenario": "After reaching out, a prospect replies, 'We've had to shift our focus elsewhere.'",
                 "correctOption": "What changed since we last spoke?",
                 "wrongOptions": [
                     "Why haven’t you responded to my emails?",
@@ -744,7 +745,7 @@
             },
             {
                 "scenarioID": 18,
-                "scenario": "Convincing a client to upgrade to a higher-tier package or service.",
+                "scenario": "A client says, 'I'm hesitant to upgrade to a higher-tier package.'",
                 "correctOption": "What additional value would you need to see to consider upgrading?",
                 "wrongOptions": [
                     "Why don’t you think upgrading is worth it?",
@@ -753,7 +754,7 @@
             },
             {
                 "scenarioID": 19,
-                "scenario": "Overcoming objections from a group of decision-makers during a sales pitch.",
+                "scenario": "During a sales pitch, a decision-maker says, 'We're not convinced this solution fits our needs.'",
                 "correctOption": "What aspects of this solution do you feel don’t align with your team’s goals?",
                 "wrongOptions": [
                     "Why don’t you think this solution will work?",
@@ -762,7 +763,7 @@
             },
             {
                 "scenarioID": 20,
-                "scenario": "Securing a meeting with a high-level executive who seems uninterested in your pitch.",
+                "scenario": "An executive responds to your pitch with, 'I'm not interested in scheduling a meeting at this time.'",
                 "correctOption": "What would make this meeting valuable for you?",
                 "wrongOptions": [
                     "Why don’t you think this meeting is worthwhile?",
@@ -784,8 +785,8 @@
         "scenarios": [
             {
                 "scenarioID": 1,
-                "scenario": "Negotiating a salary increase or benefits package with your employer.",
-                "correctOption": "You might think I’m only asking for this raise because I’m unhappy here.",
+                "scenario": "Your manager tells you, 'Now isn't the time for salary discussions.'",
+                "correctOption": "You might think I’m only asking for this raise because I’m not satisfied with my job.",
                 "wrongOptions": [
                     "I know this is a hard conversation, but I deserve this raise.",
                     "If you don’t approve this, I might need to look elsewhere."
@@ -793,8 +794,8 @@
             },
             {
                 "scenarioID": 2,
-                "scenario": "Handling a customer’s objection to pricing during a sales pitch.",
-                "correctOption": "You might feel like this price is too high for your current budget.",
+                "scenario": "A customer says, 'This price is just too high for us.'",
+                "correctOption": "You might feel like this price doesn't reflect the value you’re seeking.",
                 "wrongOptions": [
                     "Let me explain why this price is justified.",
                     "What makes you think this price is unreasonable?"
@@ -802,7 +803,7 @@
             },
             {
                 "scenarioID": 3,
-                "scenario": "Convincing a supplier to offer better terms on a contract.",
+                "scenario": "A supplier informs you, 'We can't offer better terms than what's outlined.'",
                 "correctOption": "You’re probably worried that offering better terms will impact your margins.",
                 "wrongOptions": [
                     "Why don’t you want to offer better terms?",
@@ -811,7 +812,7 @@
             },
             {
                 "scenarioID": 4,
-                "scenario": "Resolving a conflict with a coworker over project responsibilities.",
+                "scenario": "A coworker says, 'I feel like I'm being asked to do more than everyone else.'",
                 "correctOption": "It might feel like I’m asking you to take on more work than is fair.",
                 "wrongOptions": [
                     "We’re all busy, so let’s just focus on getting the job done.",
@@ -820,7 +821,7 @@
             },
             {
                 "scenarioID": 5,
-                "scenario": "Discussing a timeline extension for a project with a client.",
+                "scenario": "A client says, 'We can't extend the deadline any further.'",
                 "correctOption": "You might feel like we’re not prioritizing your project enough by asking for more time.",
                 "wrongOptions": [
                     "We need this extension because of delays on your end.",
@@ -829,7 +830,7 @@
             },
             {
                 "scenarioID": 6,
-                "scenario": "Negotiating a discount or additional service with a vendor.",
+                "scenario": "A vendor tells you, 'Offering a discount isn't something we can do right now.'",
                 "correctOption": "You might think I’m asking for too much with this discount request.",
                 "wrongOptions": [
                     "I need this discount to make this deal worthwhile.",
@@ -838,7 +839,7 @@
             },
             {
                 "scenarioID": 7,
-                "scenario": "Managing a disagreement with a partner over financial decisions at home.",
+                "scenario": "Your partner says, 'I don't agree with this large purchase you're proposing.'",
                 "correctOption": "It might feel like I’m not considering your concerns about the budget.",
                 "wrongOptions": [
                     "Why do you think this expense is such a big deal?",
@@ -847,7 +848,7 @@
             },
             {
                 "scenarioID": 8,
-                "scenario": "Convincing a skeptical team member to adopt a new process or tool.",
+                "scenario": "A team member says, 'You're pushing this new tool without hearing our concerns.'",
                 "correctOption": "You might think I’m pushing this tool without fully understanding your concerns.",
                 "wrongOptions": [
                     "We need to adopt this tool because it’s better for the team.",
@@ -856,7 +857,7 @@
             },
             {
                 "scenarioID": 9,
-                "scenario": "Handling a landlord’s rent increase request or negotiating lease terms.",
+                "scenario": "Your landlord says, 'I'm increasing the rent starting next month.'",
                 "correctOption": "You might feel like I’m undervaluing the property by asking to keep the rent the same.",
                 "wrongOptions": [
                     "Why are you increasing the rent when it’s already high?",
@@ -865,7 +866,7 @@
             },
             {
                 "scenarioID": 10,
-                "scenario": "Pitching an idea to stakeholders or a decision-maker in a high-stakes meeting.",
+                "scenario": "In a meeting, a stakeholder says, 'This proposal doesn't align with our current strategy.'",
                 "correctOption": "You might think I’m pushing this idea without considering the risks involved.",
                 "wrongOptions": [
                     "Why don’t you think this idea will work?",
@@ -874,7 +875,7 @@
             },
             {
                 "scenarioID": 11,
-                "scenario": "Convincing a hesitant prospect to sign up for a subscription service.",
+                "scenario": "A prospect says, 'I'm not sure this service is worth the investment.'",
                 "correctOption": "You might feel like this subscription won’t offer enough value for your needs.",
                 "wrongOptions": [
                     "Let me explain why this service is perfect for you.",
@@ -883,7 +884,7 @@
             },
             {
                 "scenarioID": 12,
-                "scenario": "Handling a potential client’s request for a significant discount on your product.",
+                "scenario": "A potential client says, 'We need you to significantly lower your price.'",
                 "correctOption": "You might think I’m undervaluing your business by not agreeing to the discount.",
                 "wrongOptions": [
                     "Why do you feel our pricing isn’t fair?",
@@ -892,7 +893,7 @@
             },
             {
                 "scenarioID": 13,
-                "scenario": "Addressing concerns about your product’s suitability during a product demonstration.",
+                "scenario": "During a demo, a client says, 'This solution doesn't seem tailored to our needs.'",
                 "correctOption": "You might feel like this product isn’t tailored enough to your specific needs.",
                 "wrongOptions": [
                     "Why do you think this product won’t work for you?",
@@ -901,7 +902,7 @@
             },
             {
                 "scenarioID": 14,
-                "scenario": "Negotiating a larger purchase order with an existing client.",
+                "scenario": "An existing client says, 'We can't agree to increase our purchase order.'",
                 "correctOption": "You might think I’m asking for too much by suggesting a larger order.",
                 "wrongOptions": [
                     "Why don’t you want to place a larger order?",
@@ -910,7 +911,7 @@
             },
             {
                 "scenarioID": 15,
-                "scenario": "Resolving a customer’s objection that a competitor offers a cheaper alternative.",
+                "scenario": "A customer says, 'We're considering a cheaper alternative from a competitor.'",
                 "correctOption": "You might feel like I’m ignoring the importance of cost in your decision.",
                 "wrongOptions": [
                     "Why do you think their price is better?",
@@ -919,7 +920,7 @@
             },
             {
                 "scenarioID": 16,
-                "scenario": "Handling a long sales cycle where the client wants more time to decide.",
+                "scenario": "A client says, 'We need more time before making a decision.'",
                 "correctOption": "You might feel like I’m pressuring you to make a decision before you’re ready.",
                 "wrongOptions": [
                     "Why do you think you need more time?",
@@ -928,7 +929,7 @@
             },
             {
                 "scenarioID": 17,
-                "scenario": "Re-engaging a prospect who ghosted after initial interest.",
+                "scenario": "A prospect hasn't responded, and when contacted, they say, 'I'm still not ready to proceed.'",
                 "correctOption": "You might feel like I haven’t addressed all of your concerns yet.",
                 "wrongOptions": [
                     "Why haven’t you responded to my follow-ups?",
@@ -937,7 +938,7 @@
             },
             {
                 "scenarioID": 18,
-                "scenario": "Convincing a client to upgrade to a higher-tier package or service.",
+                "scenario": "A client says, 'Upgrading doesn't seem to offer enough benefits for us.'",
                 "correctOption": "You might feel like this upgrade doesn’t offer enough added value.",
                 "wrongOptions": [
                     "Why don’t you think upgrading is worth it?",
@@ -946,7 +947,7 @@
             },
             {
                 "scenarioID": 19,
-                "scenario": "Overcoming objections from a group of decision-makers during a sales pitch.",
+                "scenario": "In a sales meeting, a group of decision-makers expresses, 'We're not convinced this solution fits our organization.'",
                 "correctOption": "You might feel like this solution doesn’t align well with your organization’s priorities.",
                 "wrongOptions": [
                     "Why don’t you think this solution will work?",
@@ -955,7 +956,7 @@
             },
             {
                 "scenarioID": 20,
-                "scenario": "Securing a meeting with a high-level executive who seems uninterested in your pitch.",
+                "scenario": "An executive replies to your meeting request with, 'I don't think this meeting is necessary.'",
                 "correctOption": "You might feel like this meeting won’t be a good use of your time.",
                 "wrongOptions": [
                     "Why don’t you think this meeting is worthwhile?",
@@ -964,6 +965,7 @@
             }
         ]
     },
+        [
     {
         "tacticID": 6,
         "tactic": "No-Oriented Questions",
@@ -977,7 +979,7 @@
         "scenarios": [
             {
                 "scenarioID": 1,
-                "scenario": "Negotiating a salary increase or benefits package with your employer.",
+                "scenario": "Your employer says, 'We can't offer salary increases right now due to financial constraints.'",
                 "correctOption": "Would it be unreasonable to ask for a salary adjustment given my contributions?",
                 "wrongOptions": [
                     "Do you think I deserve a raise?",
@@ -986,7 +988,7 @@
             },
             {
                 "scenarioID": 2,
-                "scenario": "Handling a customer’s objection to pricing during a sales pitch.",
+                "scenario": "A customer tells you, 'We're considering other options because of your pricing.'",
                 "correctOption": "Would it be a mistake to consider how this fits your needs despite the cost?",
                 "wrongOptions": [
                     "Do you think this product is too expensive?",
@@ -995,7 +997,7 @@
             },
             {
                 "scenarioID": 3,
-                "scenario": "Convincing a supplier to offer better terms on a contract.",
+                "scenario": "A supplier says, 'We can't extend better payment terms under our current agreement.'",
                 "correctOption": "Would it be unreasonable to explore better terms for this partnership?",
                 "wrongOptions": [
                     "Can you offer better terms for us?",
@@ -1004,7 +1006,7 @@
             },
             {
                 "scenarioID": 4,
-                "scenario": "Resolving a conflict with a coworker over project responsibilities.",
+                "scenario": "Your coworker mentions, 'I don't have capacity to take on additional tasks.'",
                 "correctOption": "Would it be unfair to revisit how tasks are divided?",
                 "wrongOptions": [
                     "Do you think this workload is fair?",
@@ -1013,7 +1015,7 @@
             },
             {
                 "scenarioID": 5,
-                "scenario": "Discussing a timeline extension for a project with a client.",
+                "scenario": "A client says, 'We can't delay the project's deadline any further.'",
                 "correctOption": "Would it be a mistake to explore how an extension could help deliver better results?",
                 "wrongOptions": [
                     "Do you think an extension is unreasonable?",
@@ -1022,7 +1024,7 @@
             },
             {
                 "scenarioID": 6,
-                "scenario": "Negotiating a discount or additional service with a vendor.",
+                "scenario": "A vendor tells you, 'We can't offer any discounts at this time.'",
                 "correctOption": "Would it be unreasonable to ask for a discount given our order volume?",
                 "wrongOptions": [
                     "Can you offer us a discount?",
@@ -1031,7 +1033,7 @@
             },
             {
                 "scenarioID": 7,
-                "scenario": "Managing a disagreement with a partner over financial decisions at home.",
+                "scenario": "Your partner says, 'We shouldn't spend money on non-essential items right now.'",
                 "correctOption": "Would it be unreasonable to revisit our spending priorities?",
                 "wrongOptions": [
                     "Do you think we’re overspending?",
@@ -1040,7 +1042,7 @@
             },
             {
                 "scenarioID": 8,
-                "scenario": "Convincing a skeptical team member to adopt a new process or tool.",
+                "scenario": "A team member says, 'I don't think we should implement this new process.'",
                 "correctOption": "Would it be a mistake to try this tool for a trial period?",
                 "wrongOptions": [
                     "Do you think this tool won’t work?",
@@ -1049,7 +1051,7 @@
             },
             {
                 "scenarioID": 9,
-                "scenario": "Handling a landlord’s rent increase request or negotiating lease terms.",
+                "scenario": "Your landlord informs you, 'I'm raising your rent starting next month.'",
                 "correctOption": "Would it be a mistake to reconsider the timing of the rent increase?",
                 "wrongOptions": [
                     "Do you think the rent increase is justified?",
@@ -1058,7 +1060,7 @@
             },
             {
                 "scenarioID": 10,
-                "scenario": "Pitching an idea to stakeholders or a decision-maker in a high-stakes meeting.",
+                "scenario": "A stakeholder says during a meeting, 'We're not interested in pursuing this idea.'",
                 "correctOption": "Would it be a mistake to explore this idea further before deciding?",
                 "wrongOptions": [
                     "Can you see why this idea is valuable?",
@@ -1067,7 +1069,7 @@
             },
             {
                 "scenarioID": 11,
-                "scenario": "Convincing a hesitant prospect to sign up for a subscription service.",
+                "scenario": "A prospect says, 'We're not ready to sign up for your service.'",
                 "correctOption": "Would it be a mistake to try this subscription for one month?",
                 "wrongOptions": [
                     "Do you think this subscription is worth it?",
@@ -1076,7 +1078,7 @@
             },
             {
                 "scenarioID": 12,
-                "scenario": "Handling a potential client’s request for a significant discount on your product.",
+                "scenario": "A potential client says, 'We need a significant discount to consider your product.'",
                 "correctOption": "Would it be unreasonable to consider the value this product brings despite the cost?",
                 "wrongOptions": [
                     "Do you think our product is overpriced?",
@@ -1085,7 +1087,7 @@
             },
             {
                 "scenarioID": 13,
-                "scenario": "Addressing concerns about your product’s suitability during a product demonstration.",
+                "scenario": "During a product demo, the client says, 'I don't think this will work for us.'",
                 "correctOption": "Would it be a mistake to look at how this product fits your needs?",
                 "wrongOptions": [
                     "Do you think this product won’t work for you?",
@@ -1094,7 +1096,7 @@
             },
             {
                 "scenarioID": 14,
-                "scenario": "Negotiating a larger purchase order with an existing client.",
+                "scenario": "An existing client mentions, 'We're not interested in increasing our order size.'",
                 "correctOption": "Would it be a mistake to explore the benefits of a larger order?",
                 "wrongOptions": [
                     "Do you think a larger order makes sense?",
@@ -1103,7 +1105,7 @@
             },
             {
                 "scenarioID": 15,
-                "scenario": "Resolving a customer’s objection that a competitor offers a cheaper alternative.",
+                "scenario": "A customer says, 'We're considering a cheaper option from a competitor.'",
                 "correctOption": "Would it be a mistake to consider the additional value we bring despite the price difference?",
                 "wrongOptions": [
                     "Do you think their product is better?",
@@ -1112,7 +1114,7 @@
             },
             {
                 "scenarioID": 16,
-                "scenario": "Handling a long sales cycle where the client wants more time to decide.",
+                "scenario": "A client says, 'We need more time before making a decision.'",
                 "correctOption": "Would it be a mistake to revisit the decision now rather than waiting longer?",
                 "wrongOptions": [
                     "Do you think you need more time to decide?",
@@ -1121,7 +1123,7 @@
             },
             {
                 "scenarioID": 17,
-                "scenario": "Re-engaging a prospect who ghosted after initial interest.",
+                "scenario": "A prospect hasn't responded, and when you reach out, they say, 'We're still evaluating our options.'",
                 "correctOption": "Would it be a mistake to reconnect and discuss how we can help?",
                 "wrongOptions": [
                     "Can you tell me why you haven’t responded?",
@@ -1130,7 +1132,7 @@
             },
             {
                 "scenarioID": 18,
-                "scenario": "Convincing a client to upgrade to a higher-tier package or service.",
+                "scenario": "A client tells you, 'Upgrading isn't something we're considering right now.'",
                 "correctOption": "Would it be a mistake to explore the added benefits of upgrading?",
                 "wrongOptions": [
                     "Do you think upgrading is worth it?",
@@ -1139,7 +1141,7 @@
             },
             {
                 "scenarioID": 19,
-                "scenario": "Overcoming objections from a group of decision-makers during a sales pitch.",
+                "scenario": "During a sales pitch, a decision-maker says, 'We're not convinced this is the right solution.'",
                 "correctOption": "Would it be unreasonable to consider this as a potential solution to your problem?",
                 "wrongOptions": [
                     "Do you think this solution doesn’t work for you?",
@@ -1148,7 +1150,7 @@
             },
             {
                 "scenarioID": 20,
-                "scenario": "Securing a meeting with a high-level executive who seems uninterested in your pitch.",
+                "scenario": "An executive responds, 'I'm not interested in scheduling a meeting right now.'",
                 "correctOption": "Would it be a mistake to explore how this meeting could benefit you?",
                 "wrongOptions": [
                     "Do you think this meeting isn’t valuable?",
@@ -1174,7 +1176,7 @@
         "scenarios": [
             {
                 "scenarioID": 1,
-                "scenario": "Negotiating a salary increase or benefits package with your employer.",
+                "scenario": "Your manager says, 'We can consider your request for a raise.'",
                 "correctOption": [
                     "First: 'So, you agree my performance has exceeded expectations, right?'",
                     "Second: 'And you see the value I bring to the team, correct?'",
@@ -1187,7 +1189,7 @@
             },
             {
                 "scenarioID": 2,
-                "scenario": "Handling a customer’s objection to pricing during a sales pitch.",
+                "scenario": "A customer says, 'Your product seems like a good fit.'",
                 "correctOption": [
                     "First: 'So, you find the features beneficial for your team, right?'",
                     "Second: 'And the implementation process works for your timeline, correct?'",
@@ -1200,7 +1202,7 @@
             },
             {
                 "scenarioID": 3,
-                "scenario": "Convincing a supplier to offer better terms on a contract.",
+                "scenario": "A supplier agrees, 'We can discuss adjusting the terms.'",
                 "correctOption": [
                     "First: 'So, these volumes align with your capacity, correct?'",
                     "Second: 'And we’re both benefiting from this agreement, right?'",
@@ -1213,7 +1215,7 @@
             },
             {
                 "scenarioID": 4,
-                "scenario": "Resolving a conflict with a coworker over project responsibilities.",
+                "scenario": "Your coworker says, 'I'm open to redistributing tasks.'",
                 "correctOption": [
                     "First: 'So, you agree that the workload is currently uneven?'",
                     "Second: 'And you feel more balance would improve efficiency, right?'",
@@ -1226,7 +1228,7 @@
             },
             {
                 "scenarioID": 5,
-                "scenario": "Discussing a timeline extension for a project with a client.",
+                "scenario": "A client agrees, 'An extension could be beneficial.'",
                 "correctOption": [
                     "First: 'So, you see how the current timeline might impact quality, right?'",
                     "Second: 'And you agree that extending could improve results, correct?'",
@@ -1239,7 +1241,7 @@
             },
             {
                 "scenarioID": 6,
-                "scenario": "Negotiating a discount or additional service with a vendor.",
+                "scenario": "A vendor says, 'We can offer a discount for your order.'",
                 "correctOption": [
                     "First: 'So, this volume meets the threshold for a discount, right?'",
                     "Second: 'And providing this discount aligns with your policy, correct?'",
@@ -1252,7 +1254,7 @@
             },
             {
                 "scenarioID": 7,
-                "scenario": "Managing a disagreement with a partner over financial decisions at home.",
+                "scenario": "Your partner agrees, 'We can adjust our spending habits.'",
                 "correctOption": [
                     "First: 'So, you agree we need to cut back on unnecessary expenses, right?'",
                     "Second: 'And we both want to focus on saving for future goals, correct?'",
@@ -1265,7 +1267,7 @@
             },
             {
                 "scenarioID": 8,
-                "scenario": "Convincing a skeptical team member to adopt a new process or tool.",
+                "scenario": "A team member says, 'I'm willing to give the new tool a try.'",
                 "correctOption": [
                     "First: 'So, you see how this tool could save time, right?'",
                     "Second: 'And implementing it would simplify workflows, correct?'",
@@ -1278,7 +1280,7 @@
             },
             {
                 "scenarioID": 9,
-                "scenario": "Handling a landlord’s rent increase request or negotiating lease terms.",
+                "scenario": "Your landlord says, 'We can discuss the rent terms.'",
                 "correctOption": [
                     "First: 'So, you agree this property has been well-maintained, right?'",
                     "Second: 'And the current rent reflects its market value, correct?'",
@@ -1291,7 +1293,7 @@
             },
             {
                 "scenarioID": 10,
-                "scenario": "Pitching an idea to stakeholders or a decision-maker in a high-stakes meeting.",
+                "scenario": "A stakeholder says, 'Your idea has potential.'",
                 "correctOption": [
                     "First: 'So, this idea aligns with your objectives, right?'",
                     "Second: 'And implementing it would address your challenges, correct?'",
@@ -1304,7 +1306,7 @@
             },
             {
                 "scenarioID": 11,
-                "scenario": "Convincing a hesitant prospect to sign up for a subscription service.",
+                "scenario": "A prospect says, 'We're interested in your service.'",
                 "correctOption": [
                     "First: 'So, this subscription aligns with your needs, right?'",
                     "Second: 'And the pricing works within your budget, correct?'",
@@ -1317,7 +1319,7 @@
             },
             {
                 "scenarioID": 12,
-                "scenario": "Handling a potential client’s request for a significant discount on your product.",
+                "scenario": "A client says, 'Your product meets our requirements.'",
                 "correctOption": [
                     "First: 'So, you agree the product meets your requirements, right?'",
                     "Second: 'And the value outweighs the cost, correct?'",
@@ -1330,7 +1332,7 @@
             },
             {
                 "scenarioID": 13,
-                "scenario": "Addressing concerns about your product’s suitability during a product demonstration.",
+                "scenario": "During a demo, the client says, 'This could work for us.'",
                 "correctOption": [
                     "First: 'So, you see how this feature fits your workflow, right?'",
                     "Second: 'And this functionality addresses your pain points, correct?'",
@@ -1343,7 +1345,7 @@
             },
             {
                 "scenarioID": 14,
-                "scenario": "Negotiating a larger purchase order with an existing client.",
+                "scenario": "An existing client says, 'We might consider increasing our order.'",
                 "correctOption": [
                     "First: 'So, increasing the order benefits your supply chain, right?'",
                     "Second: 'And larger volumes improve efficiency, correct?'",
@@ -1356,7 +1358,7 @@
             },
             {
                 "scenarioID": 15,
-                "scenario": "Resolving a customer’s objection that a competitor offers a cheaper alternative.",
+                "scenario": "A customer says, 'Your product offers more features.'",
                 "correctOption": [
                     "First: 'So, our product offers greater value, right?'",
                     "Second: 'And the long-term benefits outweigh the cost, correct?'",
@@ -1369,7 +1371,7 @@
             },
             {
                 "scenarioID": 16,
-                "scenario": "Handling a long sales cycle where the client wants more time to decide.",
+                "scenario": "A client says, 'We're close to making a decision.'",
                 "correctOption": [
                     "First: 'So, this solution addresses your challenges, right?'",
                     "Second: 'And it aligns with your long-term goals, correct?'",
@@ -1382,7 +1384,7 @@
             },
             {
                 "scenarioID": 17,
-                "scenario": "Re-engaging a prospect who ghosted after initial interest.",
+                "scenario": "A prospect says, 'I'm interested in reconnecting.'",
                 "correctOption": [
                     "First: 'So, you’re still interested in solving the challenges we discussed, right?'",
                     "Second: 'And our solution still aligns with your goals, correct?'",
@@ -1395,7 +1397,7 @@
             },
             {
                 "scenarioID": 18,
-                "scenario": "Convincing a client to upgrade to a higher-tier package or service.",
+                "scenario": "A client says, 'We're considering the upgrade.'",
                 "correctOption": [
                     "First: 'So, you see how the upgrade offers additional benefits, right?'",
                     "Second: 'And these features align with your growing needs, correct?'",
@@ -1408,7 +1410,7 @@
             },
             {
                 "scenarioID": 19,
-                "scenario": "Overcoming objections from a group of decision-makers during a sales pitch.",
+                "scenario": "Decision-makers say, 'Your solution addresses our concerns.'",
                 "correctOption": [
                     "First: 'So, this solution addresses the key concerns your team has, right?'",
                     "Second: 'And implementing it aligns with your strategic goals, correct?'",
@@ -1421,7 +1423,7 @@
             },
             {
                 "scenarioID": 20,
-                "scenario": "Securing a meeting with a high-level executive who seems uninterested in your pitch.",
+                "scenario": "An executive says, 'Your proposal is interesting.'",
                 "correctOption": [
                     "First: 'So, this meeting aligns with your company’s goals, right?'",
                     "Second: 'And it could address key challenges you’re facing, correct?'",
@@ -1434,7 +1436,7 @@
             }
         ]
     },
-    {
+            {
         "tacticID": 8,
         "tactic": "Late-Night FM DJ Voice",
         "description": "Speak in a calm, slow, and soothing tone to de-escalate tension and project authority.",
@@ -1447,7 +1449,7 @@
         "scenarios": [
             {
                 "scenarioID": 1,
-                "scenario": "Negotiating a salary increase or benefits package with your employer.",
+                "scenario": "During a salary negotiation, your employer says, 'We can't offer a raise right now.'",
                 "correctOption": "(Calmly) 'I understand this might feel like a challenging decision. Let’s explore the options together.'",
                 "wrongOptions": [
                     "Why don’t you think this raise is fair?",
@@ -1456,7 +1458,7 @@
             },
             {
                 "scenarioID": 2,
-                "scenario": "Handling a customer’s objection to pricing during a sales pitch.",
+                "scenario": "A customer says, 'Your product is too expensive for us.'",
                 "correctOption": "(In a calm tone) 'I understand the cost might feel significant right now. Let’s look at how this fits your long-term goals.'",
                 "wrongOptions": [
                     "Our pricing is competitive compared to the market.",
@@ -1465,7 +1467,7 @@
             },
             {
                 "scenarioID": 3,
-                "scenario": "Convincing a supplier to offer better terms on a contract.",
+                "scenario": "A supplier tells you, 'We can't offer better terms at this time.'",
                 "correctOption": "(In a soothing tone) 'I understand adjusting terms might feel risky for you. Let’s discuss how we can find a win-win.'",
                 "wrongOptions": [
                     "Why can’t you just agree to better terms?",
@@ -1474,7 +1476,7 @@
             },
             {
                 "scenarioID": 4,
-                "scenario": "Resolving a conflict with a coworker over project responsibilities.",
+                "scenario": "Your coworker says, 'I'm overwhelmed with my workload and can't take on more tasks.'",
                 "correctOption": "(Calmly) 'I understand you might feel overloaded right now. Let’s figure out a way to balance this.'",
                 "wrongOptions": [
                     "You need to take on more tasks to balance the workload.",
@@ -1483,7 +1485,7 @@
             },
             {
                 "scenarioID": 5,
-                "scenario": "Discussing a timeline extension for a project with a client.",
+                "scenario": "A client says, 'We can't extend the project deadline any further.'",
                 "correctOption": "(Calmly) 'I understand asking for more time might feel like a setback. Let’s discuss how this could help deliver the best results.'",
                 "wrongOptions": [
                     "You need to approve this extension because it’s necessary.",
@@ -1492,7 +1494,7 @@
             },
             {
                 "scenarioID": 6,
-                "scenario": "Negotiating a discount or additional service with a vendor.",
+                "scenario": "A vendor tells you, 'We can't offer any discounts right now.'",
                 "correctOption": "(In a soothing tone) 'I understand a discount might feel like a big concession. Let’s explore how this could work for both of us.'",
                 "wrongOptions": [
                     "Why are you hesitant to offer a discount?",
@@ -1501,7 +1503,7 @@
             },
             {
                 "scenarioID": 7,
-                "scenario": "Managing a disagreement with a partner over financial decisions at home.",
+                "scenario": "Your partner says, 'I don't think we should make this big purchase right now.'",
                 "correctOption": "(Calmly) 'I understand you might feel concerned about this expense. Let’s talk through the priorities together.'",
                 "wrongOptions": [
                     "Why do you think this purchase isn’t justified?",
@@ -1510,7 +1512,7 @@
             },
             {
                 "scenarioID": 8,
-                "scenario": "Convincing a skeptical team member to adopt a new process or tool.",
+                "scenario": "A team member says, 'Implementing this new tool will disrupt our current process.'",
                 "correctOption": "(In a calm tone) 'I understand this tool might feel like a big change. Let’s take it step by step and see how it works.'",
                 "wrongOptions": [
                     "We need to adopt this tool because it’s the best option.",
@@ -1519,7 +1521,7 @@
             },
             {
                 "scenarioID": 9,
-                "scenario": "Handling a landlord’s rent increase request or negotiating lease terms.",
+                "scenario": "Your landlord says, 'I'm increasing your rent starting next month.'",
                 "correctOption": "(In a soothing tone) 'I understand raising the rent might feel necessary to you. Let’s explore a solution that works for both of us.'",
                 "wrongOptions": [
                     "Why do you think the rent increase is fair?",
@@ -1528,7 +1530,7 @@
             },
             {
                 "scenarioID": 10,
-                "scenario": "Pitching an idea to stakeholders or a decision-maker in a high-stakes meeting.",
+                "scenario": "A stakeholder says, 'Your proposal seems too risky for us.'",
                 "correctOption": "(Calmly) 'I understand this proposal might feel like a risk. Let’s go through how it aligns with your goals.'",
                 "wrongOptions": [
                     "Why do you think this idea is too risky?",
@@ -1537,7 +1539,7 @@
             },
             {
                 "scenarioID": 11,
-                "scenario": "Convincing a hesitant prospect to sign up for a subscription service.",
+                "scenario": "A prospect says, 'I'm not sure about committing to a subscription service.'",
                 "correctOption": "(In a calm tone) 'I understand committing to a subscription might feel overwhelming. Let’s discuss how it fits your needs.'",
                 "wrongOptions": [
                     "Why don’t you think this subscription is worth it?",
@@ -1546,7 +1548,7 @@
             },
             {
                 "scenarioID": 12,
-                "scenario": "Handling a potential client’s request for a significant discount on your product.",
+                "scenario": "A client says, 'We need a significant discount to proceed.'",
                 "correctOption": "(In a soothing tone) 'I understand a discount might feel like the best option right now. Let’s look at the overall value we’re providing.'",
                 "wrongOptions": [
                     "Why do you think the price isn’t fair?",
@@ -1555,7 +1557,7 @@
             },
             {
                 "scenarioID": 13,
-                "scenario": "Addressing concerns about your product’s suitability during a product demonstration.",
+                "scenario": "During a product demo, the client says, 'I'm not sure this solution fits our needs.'",
                 "correctOption": "(Calmly) 'I understand you might feel unsure about how this product fits your needs. Let’s go through it together.'",
                 "wrongOptions": [
                     "Why do you think this product won’t work for you?",
@@ -1564,7 +1566,7 @@
             },
             {
                 "scenarioID": 14,
-                "scenario": "Negotiating a larger purchase order with an existing client.",
+                "scenario": "An existing client says, 'We can't commit to increasing our order size.'",
                 "correctOption": "(In a calm tone) 'I understand committing to a larger order might feel risky. Let’s explore how it could benefit your operations.'",
                 "wrongOptions": [
                     "Why don’t you think a larger order is beneficial?",
@@ -1573,7 +1575,7 @@
             },
             {
                 "scenarioID": 15,
-                "scenario": "Resolving a customer’s objection that a competitor offers a cheaper alternative.",
+                "scenario": "A customer says, 'We're considering a cheaper alternative from a competitor.'",
                 "correctOption": "(Calmly) 'I understand the competitor’s pricing might feel appealing. Let’s discuss the overall value we bring.'",
                 "wrongOptions": [
                     "Why do you think their product is better?",
@@ -1582,7 +1584,7 @@
             },
             {
                 "scenarioID": 16,
-                "scenario": "Handling a long sales cycle where the client wants more time to decide.",
+                "scenario": "A client says, 'We need more time before making a decision.'",
                 "correctOption": "(In a soothing tone) 'I understand taking more time might feel necessary. Let’s review the decision together.'",
                 "wrongOptions": [
                     "Why do you need more time to decide?",
@@ -1591,7 +1593,7 @@
             },
             {
                 "scenarioID": 17,
-                "scenario": "Re-engaging a prospect who ghosted after initial interest.",
+                "scenario": "A prospect hasn't responded, and when contacted, they say, 'We're still evaluating our options.'",
                 "correctOption": "(Calmly) 'I understand you might have had other priorities come up. Let’s reconnect and see how we can help.'",
                 "wrongOptions": [
                     "Why haven’t you responded to my emails?",
@@ -1600,7 +1602,7 @@
             },
             {
                 "scenarioID": 18,
-                "scenario": "Convincing a client to upgrade to a higher-tier package or service.",
+                "scenario": "A client says, 'Upgrading doesn't seem necessary at this point.'",
                 "correctOption": "(In a calm tone) 'I understand upgrading might feel like a big decision. Let’s go over the added benefits step by step.'",
                 "wrongOptions": [
                     "Why don’t you see the value in upgrading?",
@@ -1609,7 +1611,7 @@
             },
             {
                 "scenarioID": 19,
-                "scenario": "Overcoming objections from a group of decision-makers during a sales pitch.",
+                "scenario": "In a sales meeting, a decision-maker says, 'We're not sure this solution aligns with our strategy.'",
                 "correctOption": "(Calmly) 'I understand this proposal might feel like a big commitment. Let’s discuss how it aligns with your goals.'",
                 "wrongOptions": [
                     "Why don’t you think this solution will work?",
@@ -1618,8 +1620,8 @@
             },
             {
                 "scenarioID": 20,
-                "scenario": "Securing a meeting with a high-level executive who seems uninterested in your pitch.",
-                "correctOption": "(In a soothingtone) 'I understand this meeting might not feel like a priority right now. Let’s explore how it could align with your goals.'",
+                "scenario": "An executive says, 'I don't think this meeting is necessary at this time.'",
+                "correctOption": "(In a soothing tone) 'I understand this meeting might not feel like a priority right now. Let’s explore how it could align with your goals.'",
                 "wrongOptions": [
                     "Why don’t you think this meeting is worthwhile?",
                     "This meeting is important, and you should prioritize it."
@@ -1628,197 +1630,197 @@
         ]
     },
     {
-    "tacticID": 9,
-    "tactic": "Emotional Labeling",
-    "description": "Identify and verbalize the emotions the other person might be feeling. Use phrases like 'It seems like...', 'It sounds like...', or 'It looks like...' to acknowledge their feelings.",
-    "purpose": "Show empathy, build trust, and create a connection by validating the other party’s emotions.",
-    "example": {
-        "scenario": "A customer says, 'I’m not sure this product is worth the cost.'",
-        "response": "It sounds like you’re concerned about the return on investment.",
-        "outcome": "The customer feels understood and clarifies their concern: 'Exactly. I need to be sure it will save us time and money.'"
-    },
-    "scenarios": [
-        {
-            "scenarioID": 1,
-            "scenario": "Negotiating a salary increase or benefits package with your employer.",
-            "correctOption": "It seems like you’re concerned about budget constraints right now.",
-            "wrongOptions": [
-                "Why haven’t you approved this raise yet?",
-                "I think this salary adjustment is more than fair."
-            ]
+        "tacticID": 9,
+        "tactic": "Emotional Labeling",
+        "description": "Identify and verbalize the emotions the other person might be feeling. Use phrases like 'It seems like...', 'It sounds like...', or 'It looks like...' to acknowledge their feelings.",
+        "purpose": "Show empathy, build trust, and create a connection by validating the other party’s emotions.",
+        "example": {
+            "scenario": "A customer says, 'I’m not sure this product is worth the cost.'",
+            "response": "It sounds like you’re concerned about the return on investment.",
+            "outcome": "The customer feels understood and clarifies their concern: 'Exactly. I need to be sure it will save us time and money.'"
         },
-        {
-            "scenarioID": 2,
-            "scenario": "Handling a customer’s objection to pricing during a sales pitch.",
-            "correctOption": "It sounds like you’re worried about how this fits within your budget.",
-            "wrongOptions": [
-                "Our pricing is justified for the value we offer.",
-                "Why don’t you think the price is reasonable?"
-            ]
-        },
-        {
-            "scenarioID": 3,
-            "scenario": "Convincing a supplier to offer better terms on a contract.",
-            "correctOption": "It looks like you’re worried about the risk to your margins.",
-            "wrongOptions": [
-                "Why don’t you want to offer better terms?",
-                "This adjustment is reasonable given our volume."
-            ]
-        },
-        {
-            "scenarioID": 4,
-            "scenario": "Resolving a conflict with a coworker over project responsibilities.",
-            "correctOption": "It seems like you feel the workload is uneven.",
-            "wrongOptions": [
-                "Why do you think the workload is unfair?",
-                "This isn’t the time to discuss workload—let’s focus on the task at hand."
-            ]
-        },
-        {
-            "scenarioID": 5,
-            "scenario": "Discussing a timeline extension for a project with a client.",
-            "correctOption": "It sounds like you’re worried about how this extension will affect your deadlines.",
-            "wrongOptions": [
-                "Why can’t you approve an extension?",
-                "This extension is necessary for the project’s success."
-            ]
-        },
-        {
-            "scenarioID": 6,
-            "scenario": "Negotiating a discount or additional service with a vendor.",
-            "correctOption": "It looks like you’re concerned about giving away too much.",
-            "wrongOptions": [
-                "Why can’t you just offer the discount?",
-                "This discount is critical for our deal."
-            ]
-        },
-        {
-            "scenarioID": 7,
-            "scenario": "Managing a disagreement with a partner over financial decisions at home.",
-            "correctOption": "It sounds like you’re worried about how this expense will impact our budget.",
-            "wrongOptions": [
-                "Why don’t you trust my decision?",
-                "This purchase is necessary, so we should proceed."
-            ]
-        },
-        {
-            "scenarioID": 8,
-            "scenario": "Convincing a skeptical team member to adopt a new process or tool.",
-            "correctOption": "It seems like you’re hesitant about whether this tool will meet our needs.",
-            "wrongOptions": [
-                "Why are you so against trying this tool?",
-                "This tool is the best option, and we should implement it immediately."
-            ]
-        },
-        {
-            "scenarioID": 9,
-            "scenario": "Handling a landlord’s rent increase request or negotiating lease terms.",
-            "correctOption": "It looks like you’re concerned about rising property costs.",
-            "wrongOptions": [
-                "Why do you think a rent increase is justified?",
-                "This increase is excessive, and I don’t agree with it."
-            ]
-        },
-        {
-            "scenarioID": 10,
-            "scenario": "Pitching an idea to stakeholders or a decision-maker in a high-stakes meeting.",
-            "correctOption": "It seems like you’re worried about the risks associated with this idea.",
-            "wrongOptions": [
-                "Why do you think this is a risky proposal?",
-                "This idea is risk-free and has guaranteed returns."
-            ]
-        },
-        {
-            "scenarioID": 11,
-            "scenario": "Convincing a hesitant prospect to sign up for a subscription service.",
-            "correctOption": "It sounds like you’re unsure about the long-term benefits of this service.",
-            "wrongOptions": [
-                "Why do you think this isn’t a good fit?",
-                "This service is perfect for you, and you should sign up now."
-            ]
-        },
-        {
-            "scenarioID": 12,
-            "scenario": "Handling a potential client’s request for a significant discount on your product.",
-            "correctOption": "It seems like you’re worried about whether this price fits your budget.",
-            "wrongOptions": [
-                "Why do you think this product is overpriced?",
-                "This price is final, and we can’t offer further discounts."
-            ]
-        },
-        {
-            "scenarioID": 13,
-            "scenario": "Addressing concerns about your product’s suitability during a product demonstration.",
-            "correctOption": "It sounds like you’re worried about whether this product will meet your needs.",
-            "wrongOptions": [
-                "Why do you think this product won’t work for you?",
-                "This product fits a wide range of requirements."
-            ]
-        },
-        {
-            "scenarioID": 14,
-            "scenario": "Negotiating a larger purchase order with an existing client.",
-            "correctOption": "It looks like you’re concerned about committing to a larger order.",
-            "wrongOptions": [
-                "Why do you think increasing the order is a risk?",
-                "We need you to increase the order to proceed."
-            ]
-        },
-        {
-            "scenarioID": 15,
-            "scenario": "Resolving a customer’s objection that a competitor offers a cheaper alternative.",
-            "correctOption": "It seems like you’re worried about balancing cost with value.",
-            "wrongOptions": [
-                "Why do you think their product is better?",
-                "Our product is superior despite the cost."
-            ]
-        },
-        {
-            "scenarioID": 16,
-            "scenario": "Handling a long sales cycle where the client wants more time to decide.",
-            "correctOption": "It sounds like you’re hesitant because you need more clarity.",
-            "wrongOptions": [
-                "Why do you think you need more time?",
-                "This decision should be straightforward."
-            ]
-        },
-        {
-            "scenarioID": 17,
-            "scenario": "Re-engaging a prospect who ghosted after initial interest.",
-            "correctOption": "It looks like you’re unsure about how we align with your needs.",
-            "wrongOptions": [
-                "Why haven’t you responded to my emails?",
-                "Let’s discuss why you stopped replying."
-            ]
-        },
-        {
-            "scenarioID": 18,
-            "scenario": "Convincing a client to upgrade to a higher-tier package or service.",
-            "correctOption": "It seems like you’re hesitant about whether the upgrade is worth the cost.",
-            "wrongOptions": [
-                "Why don’t you think upgrading is a good idea?",
-                "This upgrade is worth it, and you should proceed."
-            ]
-        },
-        {
-            "scenarioID": 19,
-            "scenario": "Overcoming objections from a group of decision-makers during a sales pitch.",
-            "correctOption": "It sounds like you’re concerned about aligning this decision with your goals.",
-            "wrongOptions": [
-                "Why don’t you think this solution will work?",
-                "This solution is the best option for your team."
-            ]
-        },
-        {
-            "scenarioID": 20,
-            "scenario": "Securing a meeting with a high-level executive who seems uninterested in your pitch.",
-            "correctOption": "It seems like you’re worried this meeting won’t provide enough value.",
-            "wrongOptions": [
-                "Why don’t you think this meeting is worthwhile?",
-                "This meeting is crucial for your success."
-            ]
-        }
-    ]
+        "scenarios": [
+            {
+                "scenarioID": 1,
+                "scenario": "During a salary negotiation, your employer says, 'We have limited funds for raises this year due to budget cuts.'",
+                "correctOption": "It seems like you’re concerned about budget constraints right now.",
+                "wrongOptions": [
+                    "Why haven’t you approved this raise yet?",
+                    "I think this salary adjustment is more than fair."
+                ]
+            },
+            {
+                "scenarioID": 2,
+                "scenario": "A potential client says, 'The price is higher than we expected, and we have a tight budget.'",
+                "correctOption": "It sounds like you’re worried about how this fits within your budget.",
+                "wrongOptions": [
+                    "Our pricing is justified for the value we offer.",
+                    "Why don’t you think the price is reasonable?"
+                ]
+            },
+            {
+                "scenarioID": 3,
+                "scenario": "Your supplier tells you, 'We can't offer better terms; our policies don't allow it.'",
+                "correctOption": "It looks like you’re worried about the risk to your margins.",
+                "wrongOptions": [
+                    "Why don’t you want to offer better terms?",
+                    "This adjustment is reasonable given our volume."
+                ]
+            },
+            {
+                "scenarioID": 4,
+                "scenario": "A coworker says, 'I feel like I'm being assigned all the tough tasks on this project.'",
+                "correctOption": "It seems like you feel the workload is uneven.",
+                "wrongOptions": [
+                    "Why do you think the workload is unfair?",
+                    "This isn’t the time to discuss workload—let’s focus on the task at hand."
+                ]
+            },
+            {
+                "scenarioID": 5,
+                "scenario": "Your client says, 'We can't afford any delays; our launch date is fixed.'",
+                "correctOption": "It sounds like you’re worried about how this extension will affect your deadlines.",
+                "wrongOptions": [
+                    "Why can’t you approve an extension?",
+                    "This extension is necessary for the project’s success."
+                ]
+            },
+            {
+                "scenarioID": 6,
+                "scenario": "A vendor mentions, 'Giving a discount of that size would hurt our profitability.'",
+                "correctOption": "It looks like you’re concerned about giving away too much.",
+                "wrongOptions": [
+                    "Why can’t you just offer the discount?",
+                    "This discount is critical for our deal."
+                ]
+            },
+            {
+                "scenarioID": 7,
+                "scenario": "Your partner says, 'I'm worried we're spending too much on non-essential items lately.'",
+                "correctOption": "It sounds like you’re worried about how this expense will impact our budget.",
+                "wrongOptions": [
+                    "Why don’t you trust my decision?",
+                    "This purchase is necessary, so we should proceed."
+                ]
+            },
+            {
+                "scenarioID": 8,
+                "scenario": "A team member says, 'I don't think this new tool will integrate well with our current systems.'",
+                "correctOption": "It seems like you’re hesitant about whether this tool will meet our needs.",
+                "wrongOptions": [
+                    "Why are you so against trying this tool?",
+                    "This tool is the best option, and we should implement it immediately."
+                ]
+            },
+            {
+                "scenarioID": 9,
+                "scenario": "Your landlord tells you, 'Due to increased property taxes, I have to raise your rent.'",
+                "correctOption": "It looks like you’re concerned about rising property costs.",
+                "wrongOptions": [
+                    "Why do you think a rent increase is justified?",
+                    "This increase is excessive, and I don’t agree with it."
+                ]
+            },
+            {
+                "scenarioID": 10,
+                "scenario": "In a proposal meeting, a stakeholder says, 'This project seems too ambitious for our current capabilities.'",
+                "correctOption": "It seems like you’re worried about the risks associated with this idea.",
+                "wrongOptions": [
+                    "Why do you think this is a risky proposal?",
+                    "This idea is risk-free and has guaranteed returns."
+                ]
+            },
+            {
+                "scenarioID": 11,
+                "scenario": "A potential subscriber says, 'I'm not sure your service offers what we need.'",
+                "correctOption": "It sounds like you’re unsure about the long-term benefits of this service.",
+                "wrongOptions": [
+                    "Why do you think this isn’t a good fit?",
+                    "This service is perfect for you, and you should sign up now."
+                ]
+            },
+            {
+                "scenarioID": 12,
+                "scenario": "A client requests, 'We need you to lower your price by 20% to proceed.'",
+                "correctOption": "It seems like you’re worried about whether this price fits your budget.",
+                "wrongOptions": [
+                    "Why do you think this product is overpriced?",
+                    "This price is final, and we can’t offer further discounts."
+                ]
+            },
+            {
+                "scenarioID": 13,
+                "scenario": "During a product demonstration, the client says, 'I'm concerned this software won't meet our specific requirements.'",
+                "correctOption": "It sounds like you’re worried about whether this product will meet your needs.",
+                "wrongOptions": [
+                    "Why do you think this product won’t work for you?",
+                    "This product fits a wide range of requirements."
+                ]
+            },
+            {
+                "scenarioID": 14,
+                "scenario": "An existing client says, 'We're not comfortable increasing our order size due to market uncertainties.'",
+                "correctOption": "It looks like you’re concerned about committing to a larger order.",
+                "wrongOptions": [
+                    "Why do you think increasing the order is a risk?",
+                    "We need you to increase the order to proceed."
+                ]
+            },
+            {
+                "scenarioID": 15,
+                "scenario": "A customer says, 'We might go with a competitor who offers a similar product for less.'",
+                "correctOption": "It seems like you’re worried about balancing cost with value.",
+                "wrongOptions": [
+                    "Why do you think their product is better?",
+                    "Our product is superior despite the cost."
+                ]
+            },
+            {
+                "scenarioID": 16,
+                "scenario": "A client tells you, 'We need more time to evaluate this proposal thoroughly.'",
+                "correctOption": "It sounds like you’re hesitant because you need more clarity.",
+                "wrongOptions": [
+                    "Why do you think you need more time?",
+                    "This decision should be straightforward."
+                ]
+            },
+            {
+                "scenarioID": 17,
+                "scenario": "After following up, a prospect says, 'We've decided to postpone this project indefinitely.'",
+                "correctOption": "It looks like you’re unsure about how we align with your needs.",
+                "wrongOptions": [
+                    "Why haven’t you responded to my emails?",
+                    "Let’s discuss why you stopped replying."
+                ]
+            },
+            {
+                "scenarioID": 18,
+                "scenario": "A client says, 'Upgrading doesn't seem necessary for us right now given our current usage.'",
+                "correctOption": "It seems like you’re hesitant about whether the upgrade is worth the cost.",
+                "wrongOptions": [
+                    "Why don’t you think upgrading is a good idea?",
+                    "This upgrade is worth it, and you should proceed."
+                ]
+            },
+            {
+                "scenarioID": 19,
+                "scenario": "During a sales pitch, a decision-maker says, 'We're not sure this solution aligns with our company's direction.'",
+                "correctOption": "It sounds like you’re concerned about aligning this decision with your goals.",
+                "wrongOptions": [
+                    "Why don’t you think this solution will work?",
+                    "This solution is the best option for your team."
+                ]
+            },
+            {
+                "scenarioID": 20,
+                "scenario": "An executive responds to your meeting request with, 'I don't see the need for this meeting at this point.'",
+                "correctOption": "It seems like you’re worried this meeting won’t provide enough value.",
+                "wrongOptions": [
+                    "Why don’t you think this meeting is worthwhile?",
+                    "This meeting is crucial for your success."
+                ]
+            }
+        ]
     },
     {
         "tacticID": 10,
@@ -1833,7 +1835,7 @@
         "scenarios": [
             {
                 "scenarioID": 1,
-                "scenario": "Negotiating a salary increase or benefits package with your employer.",
+                "scenario": "During a salary negotiation, your employer says, 'We can't approve a raise at this time.'",
                 "correctOption": "What other priorities might be affecting the decision to approve this raise?",
                 "wrongOptions": [
                     "Why haven’t you approved this yet?",
@@ -1842,7 +1844,7 @@
             },
             {
                 "scenarioID": 2,
-                "scenario": "Handling a customer’s objection to pricing during a sales pitch.",
+                "scenario": "A customer says, 'Your product is great, but we're considering other options due to the price.'",
                 "correctOption": "What other factors are influencing your decision beyond the price?",
                 "wrongOptions": [
                     "Why don’t you agree this price is fair?",
@@ -1851,7 +1853,7 @@
             },
             {
                 "scenarioID": 3,
-                "scenario": "Convincing a supplier to offer better terms on a contract.",
+                "scenario": "A supplier tells you, 'We can't offer better terms; it's against our policy.'",
                 "correctOption": "What challenges might we not be seeing on your end regarding better terms?",
                 "wrongOptions": [
                     "Why can’t you offer better terms?",
@@ -1860,7 +1862,7 @@
             },
             {
                 "scenarioID": 4,
-                "scenario": "Resolving a conflict with a coworker over project responsibilities.",
+                "scenario": "Your coworker says, 'I can't take on more tasks right now.'",
                 "correctOption": "What other concerns might be making this workload division feel unfair to you?",
                 "wrongOptions": [
                     "Why do you think the workload is uneven?",
@@ -1869,7 +1871,7 @@
             },
             {
                 "scenarioID": 5,
-                "scenario": "Discussing a timeline extension for a project with a client.",
+                "scenario": "A client states, 'We can't extend the project deadline any further.'",
                 "correctOption": "What other stakeholders might have concerns about extending the timeline?",
                 "wrongOptions": [
                     "Why don’t you think this extension is a good idea?",
@@ -1878,7 +1880,7 @@
             },
             {
                 "scenarioID": 6,
-                "scenario": "Negotiating a discount or additional service with a vendor.",
+                "scenario": "A vendor says, 'We can't offer any discounts at this time.'",
                 "correctOption": "What internal policies or constraints might be affecting your ability to offer a discount?",
                 "wrongOptions": [
                     "Why can’t you offer us a discount?",
@@ -1887,7 +1889,7 @@
             },
             {
                 "scenarioID": 7,
-                "scenario": "Managing a disagreement with a partner over financial decisions at home.",
+                "scenario": "Your partner says, 'I don't think we should make this big purchase right now.'",
                 "correctOption": "What other financial concerns might be making this decision feel difficult?",
                 "wrongOptions": [
                     "Why don’t you think this expense is justified?",
@@ -1896,7 +1898,7 @@
             },
             {
                 "scenarioID": 8,
-                "scenario": "Convincing a skeptical team member to adopt a new process or tool.",
+                "scenario": "A team member mentions, 'I don't think implementing this new tool is a good idea.'",
                 "correctOption": "What hidden challenges might you foresee in adopting this tool?",
                 "wrongOptions": [
                     "Why can’t you just trust this tool will work?",
@@ -1905,7 +1907,7 @@
             },
             {
                 "scenarioID": 9,
-                "scenario": "Handling a landlord’s rent increase request or negotiating lease terms.",
+                "scenario": "Your landlord says, 'I'm increasing your rent due to market rates.'",
                 "correctOption": "What other factors are contributing to the need for a rent increase?",
                 "wrongOptions": [
                     "Why do you think this increase is fair?",
@@ -1914,7 +1916,7 @@
             },
             {
                 "scenarioID": 10,
-                "scenario": "Pitching an idea to stakeholders or a decision-maker in a high-stakes meeting.",
+                "scenario": "In a meeting, a stakeholder says, 'We're hesitant to approve this project.'",
                 "correctOption": "What hidden risks or challenges might you see with this proposal?",
                 "wrongOptions": [
                     "Why don’t you think this idea will work?",
@@ -1923,7 +1925,7 @@
             },
             {
                 "scenarioID": 11,
-                "scenario": "Convincing a hesitant prospect to sign up for a subscription service.",
+                "scenario": "A prospect tells you, 'We're not ready to sign up for your service.'",
                 "correctOption": "What other considerations might be making you hesitant to commit?",
                 "wrongOptions": [
                     "Why don’t you think this subscription is worth it?",
@@ -1932,7 +1934,7 @@
             },
             {
                 "scenarioID": 12,
-                "scenario": "Handling a potential client’s request for a significant discount on your product.",
+                "scenario": "A potential client says, 'We need a significant discount to consider your product.'",
                 "correctOption": "What additional concerns might be driving the need for a discount?",
                 "wrongOptions": [
                     "Why do you think this product is overpriced?",
@@ -1941,7 +1943,7 @@
             },
             {
                 "scenarioID": 13,
-                "scenario": "Addressing concerns about your product’s suitability during a product demonstration.",
+                "scenario": "During a product demo, the client says, 'I don't think this will meet our needs.'",
                 "correctOption": "What specific challenges might you be worried this product can’t address?",
                 "wrongOptions": [
                     "Why do you think this product won’t work for you?",
@@ -1950,7 +1952,7 @@
             },
             {
                 "scenarioID": 14,
-                "scenario": "Negotiating a larger purchase order with an existing client.",
+                "scenario": "An existing client mentions, 'We're not comfortable increasing our order size right now.'",
                 "correctOption": "What other priorities might make committing to a larger order difficult?",
                 "wrongOptions": [
                     "Why don’t you think a larger order makes sense?",
@@ -1959,7 +1961,7 @@
             },
             {
                 "scenarioID": 15,
-                "scenario": "Resolving a customer’s objection that a competitor offers a cheaper alternative.",
+                "scenario": "A customer says, 'We're considering a cheaper alternative from a competitor.'",
                 "correctOption": "What other factors might be driving your preference for the competitor?",
                 "wrongOptions": [
                     "Why do you think their product is better?",
@@ -1968,7 +1970,7 @@
             },
             {
                 "scenarioID": 16,
-                "scenario": "Handling a long sales cycle where the client wants more time to decide.",
+                "scenario": "A client says, 'We need more time before making a decision.'",
                 "correctOption": "What other priorities might be delaying your decision?",
                 "wrongOptions": [
                     "Why do you think you need more time?",
@@ -1977,7 +1979,7 @@
             },
             {
                 "scenarioID": 17,
-                "scenario": "Re-engaging a prospect who ghosted after initial interest.",
+                "scenario": "A prospect hasn't responded, and when contacted, they say, 'Our priorities have shifted.'",
                 "correctOption": "What changed on your end that might have shifted priorities since we last spoke?",
                 "wrongOptions": [
                     "Why haven’t you responded to my follow-ups?",
@@ -1986,7 +1988,7 @@
             },
             {
                 "scenarioID": 18,
-                "scenario": "Convincing a client to upgrade to a higher-tier package or service.",
+                "scenario": "A client says, 'Upgrading isn't something we're considering at the moment.'",
                 "correctOption": "What other factors might be making this upgrade feel like a big commitment?",
                 "wrongOptions": [
                     "Why don’t you think upgrading is worth it?",
@@ -1995,7 +1997,7 @@
             },
             {
                 "scenarioID": 19,
-                "scenario": "Overcoming objections from a group of decision-makers during a sales pitch.",
+                "scenario": "During a sales pitch, decision-makers express, 'We're not convinced this solution is right for us.'",
                 "correctOption": "What concerns might your team have that haven’t been shared yet?",
                 "wrongOptions": [
                     "Why don’t you think this solution will work?",
@@ -2004,7 +2006,7 @@
             },
             {
                 "scenarioID": 20,
-                "scenario": "Securing a meeting with a high-level executive who seems uninterested in your pitch.",
+                "scenario": "An executive replies to your meeting request with, 'I don't think this meeting is necessary right now.'",
                 "correctOption": "What other priorities might be making this meeting feel less important right now?",
                 "wrongOptions": [
                     "Why don’t you think this meeting is worthwhile?",
@@ -2012,8 +2014,8 @@
                 ]
             }
         ]
-    },
-    {
+        },
+        {
         "tacticID": 11,
         "tactic": "Anchoring with Extreme Requests",
         "description": "Start with a bold or slightly extreme offer to set a favorable reference point.",
@@ -2026,7 +2028,7 @@
         "scenarios": [
             {
                 "scenarioID": 1,
-                "scenario": "Negotiating a salary increase or benefits package with your employer.",
+                "scenario": "During a salary negotiation, your employer says, 'We might be able to offer a small raise.'",
                 "correctOption": "Given my contributions, I’m looking for a 20% raise. Let’s start there and discuss options.",
                 "wrongOptions": [
                     "Can we agree on a modest raise of 5%?",
@@ -2035,7 +2037,7 @@
             },
             {
                 "scenarioID": 2,
-                "scenario": "Handling a customer’s objection to pricing during a sales pitch.",
+                "scenario": "A customer says, 'Your product is too expensive; we have a budget of $10,000.'",
                 "correctOption": "Our typical pricing starts at $20,000, but let’s explore a package that fits your budget.",
                 "wrongOptions": [
                     "Our product is competitively priced; can you agree to this cost?",
@@ -2044,7 +2046,7 @@
             },
             {
                 "scenarioID": 3,
-                "scenario": "Convincing a supplier to offer better terms on a contract.",
+                "scenario": "A supplier tells you, 'Our standard payment terms are 30 days.'",
                 "correctOption": "We’re looking for 90-day payment terms. Can you work with that?",
                 "wrongOptions": [
                     "Would you consider extending to 60 days?",
@@ -2053,7 +2055,7 @@
             },
             {
                 "scenarioID": 4,
-                "scenario": "Resolving a conflict with a coworker over project responsibilities.",
+                "scenario": "Your coworker says, 'I can help with a few additional tasks.'",
                 "correctOption": "I’d like to take on the leadership role for the entire project. How does that sound?",
                 "wrongOptions": [
                     "Can we share responsibilities evenly?",
@@ -2062,7 +2064,7 @@
             },
             {
                 "scenarioID": 5,
-                "scenario": "Discussing a timeline extension for a project with a client.",
+                "scenario": "A client mentions, 'We can possibly allow a one-week extension.'",
                 "correctOption": "To ensure the best quality, we’ll need an additional three weeks. Does that work for you?",
                 "wrongOptions": [
                     "Would you consider extending the timeline by a week?",
@@ -2071,7 +2073,7 @@
             },
             {
                 "scenarioID": 6,
-                "scenario": "Negotiating a discount or additional service with a vendor.",
+                "scenario": "A vendor says, 'We can offer you a 5% discount on this order.'",
                 "correctOption": "For an order of this size, we’re expecting a 30% discount. Can you accommodate that?",
                 "wrongOptions": [
                     "Could you consider a 10% discount?",
@@ -2080,7 +2082,7 @@
             },
             {
                 "scenarioID": 7,
-                "scenario": "Managing a disagreement with a partner over financial decisions at home.",
+                "scenario": "Your partner says, 'Maybe we can save a little more each month.'",
                 "correctOption": "I’d like us to set aside 40% of our income for savings this year. How does that sound?",
                 "wrongOptions": [
                     "Can we save 10% more than we did last year?",
@@ -2089,7 +2091,7 @@
             },
             {
                 "scenarioID": 8,
-                "scenario": "Convincing a skeptical team member to adopt a new process or tool.",
+                "scenario": "A team member says, 'We could try the new tool on a small project.'",
                 "correctOption": "Let’s implement the tool across all teams immediately. Do you see any challenges with that?",
                 "wrongOptions": [
                     "Can we test it out with one small team first?",
@@ -2098,7 +2100,7 @@
             },
             {
                 "scenarioID": 9,
-                "scenario": "Handling a landlord’s rent increase request or negotiating lease terms.",
+                "scenario": "Your landlord tells you, 'I'm planning a small rent increase next month.'",
                 "correctOption": "We’re looking to keep the rent unchanged for the next two years. Can you agree to that?",
                 "wrongOptions": [
                     "Can we agree to a smaller increase for now?",
@@ -2107,7 +2109,7 @@
             },
             {
                 "scenarioID": 10,
-                "scenario": "Pitching an idea to stakeholders or a decision-maker in a high-stakes meeting.",
+                "scenario": "In a meeting, a stakeholder says, 'We have a budget of $200,000 for new projects.'",
                 "correctOption": "We’re proposing a $500,000 budget for this project to maximize its potential. Can we start there?",
                 "wrongOptions": [
                     "Could we start with a smaller budget and scale up later?",
@@ -2116,7 +2118,7 @@
             },
             {
                 "scenarioID": 11,
-                "scenario": "Convincing a hesitant prospect to sign up for a subscription service.",
+                "scenario": "A prospect says, 'We're interested in your basic plan at $100 per month.'",
                 "correctOption": "Our premium annual plan is $1,500, but we can explore a smaller plan if needed.",
                 "wrongOptions": [
                     "Would you consider our basic monthly plan for $100?",
@@ -2125,7 +2127,7 @@
             },
             {
                 "scenarioID": 12,
-                "scenario": "Handling a potential client’s request for a significant discount on your product.",
+                "scenario": "A potential client says, 'We can offer $10,000 for your product.'",
                 "correctOption": "Our regular price is $25,000, but let’s discuss how we can tailor a package for you.",
                 "wrongOptions": [
                     "Would you agree to $15,000 as a compromise?",
@@ -2134,7 +2136,7 @@
             },
             {
                 "scenarioID": 13,
-                "scenario": "Addressing concerns about your product’s suitability during a product demonstration.",
+                "scenario": "During a demo, the client says, 'We're interested in your entry-level model.'",
                 "correctOption": "Our top-tier model is designed for companies of your size and is priced at $30,000. Does that align with your needs?",
                 "wrongOptions": [
                     "Would you like to see our entry-level model instead?",
@@ -2143,7 +2145,7 @@
             },
             {
                 "scenarioID": 14,
-                "scenario": "Negotiating a larger purchase order with an existing client.",
+                "scenario": "An existing client says, 'We might increase our order by 10%.'",
                 "correctOption": "We’d like to increase the order by 50% to maximize efficiency. How does that sound?",
                 "wrongOptions": [
                     "Can we try a modest increase of 10% for now?",
@@ -2152,7 +2154,7 @@
             },
             {
                 "scenarioID": 15,
-                "scenario": "Resolving a customer’s objection that a competitor offers a cheaper alternative.",
+                "scenario": "A customer mentions, 'Your competitor offers similar features at a lower cost.'",
                 "correctOption": "Our product includes premium support and advanced features, which justify the $20,000 price point. Can we start there?",
                 "wrongOptions": [
                     "Would you consider a discount to match their price?",
@@ -2161,7 +2163,7 @@
             },
             {
                 "scenarioID": 16,
-                "scenario": "Handling a long sales cycle where the client wants more time to decide.",
+                "scenario": "A client says, 'We need more time to make a decision.'",
                 "correctOption": "Let’s finalize the agreement this week to secure the current terms. Does that work for you?",
                 "wrongOptions": [
                     "Would you like more time to review the terms?",
@@ -2170,7 +2172,7 @@
             },
             {
                 "scenarioID": 17,
-                "scenario": "Re-engaging a prospect who ghosted after initial interest.",
+                "scenario": "A prospect who hasn't responded says, 'We're still thinking about your proposal.'",
                 "correctOption": "We’d like to offer you our most comprehensive package for $10,000. Does that align with your needs?",
                 "wrongOptions": [
                     "Would you prefer to discuss a smaller package?",
@@ -2179,7 +2181,7 @@
             },
             {
                 "scenarioID": 18,
-                "scenario": "Convincing a client to upgrade to a higher-tier package or service.",
+                "scenario": "A client says, 'We're considering upgrading to the next tier.'",
                 "correctOption": "Our highest tier offers the best value at $50,000 annually. Let’s start there and adjust if needed.",
                 "wrongOptions": [
                     "Would you like to discuss a mid-tier package instead?",
@@ -2188,7 +2190,7 @@
             },
             {
                 "scenarioID": 19,
-                "scenario": "Overcoming objections from a group of decision-makers during a sales pitch.",
+                "scenario": "During a pitch, decision-makers say, 'We're looking for a small-scale solution.'",
                 "correctOption": "We propose an enterprise-wide implementation starting at $100,000. How does that fit your goals?",
                 "wrongOptions": [
                     "Can we begin with a smaller-scale solution?",
@@ -2197,7 +2199,7 @@
             },
             {
                 "scenarioID": 20,
-                "scenario": "Securing a meeting with a high-level executive who seems uninterested in your pitch.",
+                "scenario": "An executive responds to your meeting request with, 'I can give you 15 minutes next week.'",
                 "correctOption": "I’d like to schedule a full hour to explore how we can support your team’s growth. Can you commit to that?",
                 "wrongOptions": [
                     "Can we schedule a quick 15-minute call?",
@@ -2205,5 +2207,7 @@
                 ]
             }
         ]
-    }
+    }       
+]
+    ]
 ]
