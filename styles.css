@@ -107,3 +107,35 @@ button:hover {
   margin-left: 20px; /* Adjust indentation as needed */
 }
 
+/* Learn Page Styling */
+#learn-page {
+  background-color: #f9f9f9; /* Light gray background */
+  color: #333; /* Dark text for readability */
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.tactic-header {
+  background-color: #4caf50; /* Green header for each tactic */
+  color: #fff;
+  padding: 10px;
+  margin: 5px 0;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.tactic-content {
+  background-color: #fff; /* White content area */
+  color: #333;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#tactic-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Two-column layout */
+  gap: 20px;
+}
