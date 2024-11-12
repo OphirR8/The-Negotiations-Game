@@ -226,14 +226,40 @@ function showLearnPage() {
   console.log('Learn button clicked');
   document.getElementById('main-menu').classList.add('hidden');
   document.getElementById('learn-page').classList.remove('hidden');
-  loadTactics();
+  loadTactics(); // Load tactics for the Learn Page
 }
+
 
 // Load tactics into Learn page
 function loadTactics() {
   console.log('Loading tactics for Learn Page');
+
+  // Only fetch if tacticsData is empty
   if (tacticsData.length === 0) {
-    fetchDataAndStartGame(); // Load all files if not already loaded
+    const filePromises = tacticFiles.map((file) =>
+      fetch(file)
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+          }
+          return response.json();
+        })
+        .catch((error) => {
+          console.error(`Error loading file ${file}:`, error);
+          return []; // Return an empty array for failed fetches
+        })
+    );
+
+    Promise.all(filePromises)
+      .then((dataArrays) => {
+        tacticsData = dataArrays.flat(); // Merge all tactic data
+        console.log('Tactics Data Loaded for Learn Page:', tacticsData);
+        renderTactics(); // Render Learn Page content after loading
+      })
+      .catch((error) => {
+        console.error('Error loading tactics data:', error);
+        alert('Failed to load tactics data. Please try again later.');
+      });
   } else {
     console.log('Tactics data already loaded');
     renderTactics();
