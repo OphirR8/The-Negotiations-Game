@@ -1165,11 +1165,7 @@
                 "purpose": "Reinforce alignment and ensure clarity.",
                 "example": {
                     "scenario": "A customer says, 'We’re ready to move forward.'",
-                    "response": [
-                        "First Confirmation: 'So, you’re happy with the pricing, right?'",
-                        "Second Confirmation: 'And the delivery schedule works for you?'",
-                        "Third Confirmation: 'So, we’re all set to finalize the agreement?'"
-                    ],
+                    "response": "First Confirmation: 'So, you’re happy with the pricing, right?', Second Confirmation: 'And the delivery schedule works for you?', Third Confirmation: 'So, we’re all set to finalize the agreement?'",
                     "outcome": "Ensures the customer is genuinely ready, reducing the risk of last-minute surprises."
                 },
                 "scenarios": [
