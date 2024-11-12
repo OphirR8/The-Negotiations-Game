@@ -15,14 +15,46 @@ function formatTime(seconds) {
     .padStart(2, '0')}`;
 }
 
-// Fetch tactics data from JSON file
-fetch('./data/tactics.json')
-  .then((response) => response.json())
-  .then((data) => {
-    tacticsData = data;
-    console.log('Tactics Data Loaded:', tacticsData);
-  })
-  .catch((error) => console.error('Error loading tactics data:', error));
+// Function to fetch data and start the game
+function fetchDataAndStartGame() {
+  fetch('./data/tactics.json')
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+      console.log('Fetch response:', response);
+      return response.json();
+    })
+    .then((data) => {
+      tacticsData = data;
+      console.log('Tactics Data Loaded:', tacticsData);
+      startGame(); // Start the game after data is loaded
+    })
+    .catch((error) => {
+      console.error('Error loading tactics data:', error);
+      alert('Failed to load game data. Please try again later.');
+    });
+}
+
+// Start the game
+function startGame() {
+  document.getElementById('main-menu').classList.add('hidden');
+  document.getElementById('game-screen').classList.remove('hidden');
+  currentScenarioIndex = 0;
+  score = 0;
+  secondsElapsed = 0;
+  document.getElementById('timer').textContent = formatTime(secondsElapsed);
+  document.getElementById('score').textContent = `Score: ${score}`;
+
+  timerInterval = setInterval(() => {
+    secondsElapsed++;
+    document.getElementById('timer').textContent = formatTime(secondsElapsed);
+  }, 1000);
+
+  flattenScenarios();
+  shuffleScenarios();
+  loadScenario();
+}
 
 // Function to flatten all scenarios into a single array with a unique key
 function flattenScenarios() {
@@ -45,7 +77,6 @@ function flattenScenarios() {
   shuffleScenarios();
 }
 
-
 // Shuffle the scenarios array
 function shuffleScenarios() {
   for (let i = allScenarios.length - 1; i > 0; i--) {
@@ -54,37 +85,15 @@ function shuffleScenarios() {
   }
 }
 
-// Start the game
-function startGame() {
-  document.getElementById('main-menu').classList.add('hidden');
-  document.getElementById('game-screen').classList.remove('hidden');
-  currentScenarioIndex = 0;
-  score = 0;
-  secondsElapsed = 0;
-  document.getElementById('timer').textContent = formatTime(secondsElapsed);
-  document.getElementById('score').textContent = `Score: ${score}`;
-
-  timerInterval = setInterval(() => {
-    secondsElapsed++;
-    document.getElementById('timer').textContent = formatTime(secondsElapsed);
-  }, 1000);
-
-  function waitForDataAndStart() {
-    if (tacticsData.length > 0) {
-      flattenScenarios();
-      shuffleScenarios();
-      loadScenario();
-    } else {
-      setTimeout(waitForDataAndStart, 100);
-    }
-  }
-  waitForDataAndStart();
-}
-
 // Load a scenario
 function loadScenario() {
   if (currentScenarioIndex < allScenarios.length) {
     const scenarioObj = allScenarios[currentScenarioIndex];
+    if (!scenarioObj) {
+      console.error('Scenario object is undefined at index:', currentScenarioIndex);
+      endGame();
+      return;
+    }
     document.getElementById('scenario').textContent = scenarioObj.scenario;
     loadOptions(scenarioObj);
   } else {
@@ -94,6 +103,10 @@ function loadScenario() {
 
 // Load answer options
 function loadOptions(scenarioObj) {
+  if (!scenarioObj.correctOption || !scenarioObj.wrongOptions) {
+    console.error('Missing correctOption or wrongOptions in scenario:', scenarioObj);
+    return;
+  }
   const options = [scenarioObj.correctOption, ...scenarioObj.wrongOptions];
   options.sort(() => Math.random() - 0.5);
 
@@ -137,6 +150,7 @@ function showFeedback(isCorrect, scenarioObj) {
 // End the game
 function endGame() {
   clearInterval(timerInterval);
+  alert(`Game Over!\nYour score: ${score}\nTime elapsed: ${formatTime(secondsElapsed)}`);
   document.getElementById('game-screen').classList.add('hidden');
   document.getElementById('main-menu').classList.remove('hidden');
 }
@@ -150,6 +164,21 @@ function showLearnPage() {
 
 // Load tactics into Learn page with collapsible design
 function loadTactics() {
+  if (tacticsData.length === 0) {
+    // Data not loaded yet, fetch it
+    fetch('./data/tactics.json')
+      .then((response) => response.json())
+      .then((data) => {
+        tacticsData = data;
+        renderTactics();
+      })
+      .catch((error) => console.error('Error loading tactics data:', error));
+  } else {
+    renderTactics();
+  }
+}
+
+function renderTactics() {
   const tacticList = document.getElementById('tactic-list');
   tacticList.innerHTML = ''; // Clear existing content
 
@@ -185,9 +214,14 @@ function loadTactics() {
   });
 }
 
-
 // Return to menu
 function backToMenu() {
   document.getElementById('learn-page').classList.add('hidden');
+  document.getElementById('high-scores').classList.add('hidden');
   document.getElementById('main-menu').classList.remove('hidden');
+}
+
+// High Scores (Placeholder function)
+function showHighScores() {
+  alert('High Scores feature is under development.');
 }
