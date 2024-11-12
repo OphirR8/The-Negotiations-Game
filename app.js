@@ -54,7 +54,7 @@ function startGame() {
   }, 1000);
 
   flattenScenarios();
-  shuffleScenarios();
+  // Removed duplicate shuffleScenarios() call to prevent double shuffling
   loadScenario();
 }
 
