@@ -1,6 +1,7 @@
+/* General body styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #282c34;
+    background-color: #282c34; /* Dark background for game screen */
     color: #fff;
     margin: 0;
     padding: 0;
@@ -16,14 +17,17 @@ body {
     max-width: 800px;
 }
 
+/* Hidden elements */
 .hidden {
     display: none;
 }
 
+/* Headings */
 h1, h2 {
     color: #61dafb;
 }
 
+/* Buttons */
 button {
     background-color: #61dafb;
     color: #282c34;
@@ -39,6 +43,18 @@ button:hover {
     background-color: #21a1f1;
 }
 
+/* Game information */
+#game-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#game-info div {
+    font-size: 1.2rem;
+}
+
+/* Tactic options buttons */
 #tactic-options button {
     display: block;
     width: 100%;
@@ -57,6 +73,7 @@ button:hover {
     color: #282c34;
 }
 
+/* Feedback messages */
 #feedback.correct {
     color: #03c988;
 }
@@ -65,77 +82,62 @@ button:hover {
     color: #e94560;
 }
 
-#game-info {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
+/* Learn Page Styling */
+#learn-page {
+    background-color: #f5f5f5; /* Light gray for Learn Page */
+    color: #333; /* Dark text for readability */
+    padding: 20px;
+    font-family: Arial, sans-serif;
 }
 
-#game-info div {
+/* Tactic headers for Learn Page */
+#tactic-list .tactic-header {
+    background-color: #4caf50; /* Green header for each tactic */
+    color: #fff;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
     font-size: 1.2rem;
+    transition: background-color 0.3s;
 }
 
-/* Style for tactic headers */
-.tactic-header {
-  background-color: #0F3460;
-  color: #FFFFFF;
-  padding: 15px;
-  cursor: pointer;
-  font-size: 1.2em;
-  border-radius: 5px;
-  margin: 10px 0;
-  text-align: center;
-  transition: background-color 0.3s;
+#tactic-list .tactic-header:hover {
+    background-color: #388e3c;
 }
 
-.tactic-header:hover {
-  background-color: #16213E;
-}
-
-/* Style for the collapsible content */
-.tactic-content {
-  background-color: #1F1F1F;
-  color: #CCCCCC;
-  padding: 15px;
-  margin: 5px 0 15px 0;
-  border-radius: 5px;
-  text-align: left;
+/* Tactic content for Learn Page */
+#tactic-list .tactic-content {
+    background-color: #fff; /* White content area */
+    color: #333;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    text-align: left;
+    font-size: 0.9rem;
 }
 
 /* Indentation for example text */
-.tactic-content .indented {
-  margin-left: 20px; /* Adjust indentation as needed */
+#tactic-list .tactic-content .indented {
+    margin-left: 20px; /* Adjust indentation */
 }
 
-/* Learn Page Styling */
-#learn-page {
-  background-color: #f9f9f9; /* Light gray background */
-  color: #333; /* Dark text for readability */
-  padding: 20px;
-  font-family: Arial, sans-serif;
-}
-
-.tactic-header {
-  background-color: #4caf50; /* Green header for each tactic */
-  color: #fff;
-  padding: 10px;
-  margin: 5px 0;
-  cursor: pointer;
-  border-radius: 5px;
-  text-align: center;
-}
-
-.tactic-content {
-  background-color: #fff; /* White content area */
-  color: #333;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  margin-bottom: 10px;
-}
-
+/* Two-column layout for tactics */
 #tactic-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Two-column layout */
-  gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px;
+}
+
+/* Correct/Incorrect button feedback */
+button.correct {
+    background-color: #4caf50 !important; /* Green for correct */
+    color: #fff !important;
+}
+
+button.incorrect {
+    background-color: #f44336 !important; /* Red for incorrect */
+    color: #fff !important;
 }
