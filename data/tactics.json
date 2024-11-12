@@ -964,8 +964,7 @@
                 }
             ]
         },
-        [
-            {
+        {
                 "tacticID": 6,
                 "tactic": "No-Oriented Questions",
                 "description": "Frame questions to encourage the other person to say 'No.' People feel safer and more in control when saying 'No,' which lowers their defenses.",
