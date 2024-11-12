@@ -1178,9 +1178,7 @@
                         "scenarioID": 1,
                         "scenario": "Your manager says, 'We can consider your request for a raise.'",
                         "correctOption": [
-                            "First: 'So, you agree my performance has exceeded expectations, right?'",
-                            "Second: 'And you see the value I bring to the team, correct?'",
-                            "Third: 'So, we’re aligned on the importance of adjusting my salary?'"
+                            "So, you agree my performance has exceeded expectations, right?",
                         ],
                         "wrongOptions": [
                             "Do you think I deserve a raise?",
@@ -1191,9 +1189,7 @@
                         "scenarioID": 2,
                         "scenario": "A customer says, 'Your product seems like a good fit.'",
                         "correctOption": [
-                            "First: 'So, you find the features beneficial for your team, right?'",
-                            "Second: 'And the implementation process works for your timeline, correct?'",
-                            "Third: 'So, the value aligns with your goals?'"
+                            "So, you find the features beneficial for your team, right?",
                         ],
                         "wrongOptions": [
                             "Do you think the price is worth it?",
@@ -1204,9 +1200,7 @@
                         "scenarioID": 3,
                         "scenario": "A supplier agrees, 'We can discuss adjusting the terms.'",
                         "correctOption": [
-                            "First: 'So, these volumes align with your capacity, correct?'",
-                            "Second: 'And we’re both benefiting from this agreement, right?'",
-                            "Third: 'So, we’re in agreement to adjust the payment terms?'"
+                            "So, these volumes align with your capacity, correct?",
                         ],
                         "wrongOptions": [
                             "Can you confirm the new terms?",
@@ -1217,9 +1211,7 @@
                         "scenarioID": 4,
                         "scenario": "Your coworker says, 'I'm open to redistributing tasks.'",
                         "correctOption": [
-                            "First: 'So, you agree that the workload is currently uneven?'",
-                            "Second: 'And you feel more balance would improve efficiency, right?'",
-                            "Third: 'So, we’re aligned on redistributing tasks?'"
+                            "So, you agree that the workload is currently uneven?",
                         ],
                         "wrongOptions": [
                             "Can you take on more tasks?",
@@ -1230,9 +1222,7 @@
                         "scenarioID": 5,
                         "scenario": "A client agrees, 'An extension could be beneficial.'",
                         "correctOption": [
-                            "First: 'So, you see how the current timeline might impact quality, right?'",
-                            "Second: 'And you agree that extending could improve results, correct?'",
-                            "Third: 'So, we’re in agreement to move the deadline?'"
+                            "So, you see how the current timeline might impact quality, right?",
                         ],
                         "wrongOptions": [
                             "Can we agree to extend the timeline?",
@@ -1243,9 +1233,7 @@
                         "scenarioID": 6,
                         "scenario": "A vendor says, 'We can offer a discount for your order.'",
                         "correctOption": [
-                            "First: 'So, this volume meets the threshold for a discount, right?'",
-                            "Second: 'And providing this discount aligns with your policy, correct?'",
-                            "Third: 'So, we’re aligned on applying this discount?'"
+                            "So, this volume meets the threshold for a discount, right?",
                         ],
                         "wrongOptions": [
                             "Can you confirm the discount?",
@@ -1256,9 +1244,7 @@
                         "scenarioID": 7,
                         "scenario": "Your partner agrees, 'We can adjust our spending habits.'",
                         "correctOption": [
-                            "First: 'So, you agree we need to cut back on unnecessary expenses, right?'",
-                            "Second: 'And we both want to focus on saving for future goals, correct?'",
-                            "Third: 'So, we’re aligned on prioritizing this purchase?'"
+                            "So, you agree we need to cut back on unnecessary expenses, right?",
                         ],
                         "wrongOptions": [
                             "Can you agree this is a good decision?",
@@ -1269,9 +1255,7 @@
                         "scenarioID": 8,
                         "scenario": "A team member says, 'I'm willing to give the new tool a try.'",
                         "correctOption": [
-                            "First: 'So, you see how this tool could save time, right?'",
-                            "Second: 'And implementing it would simplify workflows, correct?'",
-                            "Third: 'So, we’re aligned on giving it a try?'"
+                            "So, you see how this tool could save time, right?",
                         ],
                         "wrongOptions": [
                             "Can you agree to use this tool?",
@@ -1282,9 +1266,7 @@
                         "scenarioID": 9,
                         "scenario": "Your landlord says, 'We can discuss the rent terms.'",
                         "correctOption": [
-                            "First: 'So, you agree this property has been well-maintained, right?'",
-                            "Second: 'And the current rent reflects its market value, correct?'",
-                            "Third: 'So, we’re in agreement to keep the rent unchanged?'"
+                            "So, you agree this property has been well-maintained, right?",
                         ],
                         "wrongOptions": [
                             "Can you confirm this is fair?",
@@ -1295,9 +1277,7 @@
                         "scenarioID": 10,
                         "scenario": "A stakeholder says, 'Your idea has potential.'",
                         "correctOption": [
-                            "First: 'So, this idea aligns with your objectives, right?'",
-                            "Second: 'And implementing it would address your challenges, correct?'",
-                            "Third: 'So, we’re aligned on moving forward?'"
+                            "So, this idea aligns with your objectives, right?",
                         ],
                         "wrongOptions": [
                             "Can you approve this idea?",
@@ -1308,9 +1288,7 @@
                         "scenarioID": 11,
                         "scenario": "A prospect says, 'We're interested in your service.'",
                         "correctOption": [
-                            "First: 'So, this subscription aligns with your needs, right?'",
-                            "Second: 'And the pricing works within your budget, correct?'",
-                            "Third: 'So, we’re aligned on starting this subscription?'"
+                            "So, this subscription aligns with your needs, right?",
                         ],
                         "wrongOptions": [
                             "Can you agree to sign up?",
@@ -1321,9 +1299,7 @@
                         "scenarioID": 12,
                         "scenario": "A client says, 'Your product meets our requirements.'",
                         "correctOption": [
-                            "First: 'So, you agree the product meets your requirements, right?'",
-                            "Second: 'And the value outweighs the cost, correct?'",
-                            "Third: 'So, we’re aligned on proceeding at this price?'"
+                            "So, you agree the product meets your requirements, right?",
                         ],
                         "wrongOptions": [
                             "Can you accept the price?",
@@ -1334,9 +1310,7 @@
                         "scenarioID": 13,
                         "scenario": "During a demo, the client says, 'This could work for us.'",
                         "correctOption": [
-                            "First: 'So, you see how this feature fits your workflow, right?'",
-                            "Second: 'And this functionality addresses your pain points, correct?'",
-                            "Third: 'So, we’re in agreement this product is a good fit?'"
+                            "So, you see how this feature fits your workflow, right?",
                         ],
                         "wrongOptions": [
                             "Can you confirm this product will work?",
@@ -1347,9 +1321,7 @@
                         "scenarioID": 14,
                         "scenario": "An existing client says, 'We might consider increasing our order.'",
                         "correctOption": [
-                            "First: 'So, increasing the order benefits your supply chain, right?'",
-                            "Second: 'And larger volumes improve efficiency, correct?'",
-                            "Third: 'So, we’re aligned on adjusting the order size?'"
+                            "So, increasing the order benefits your supply chain, right?",
                         ],
                         "wrongOptions": [
                             "Can you confirm the larger order?",
@@ -1360,9 +1332,7 @@
                         "scenarioID": 15,
                         "scenario": "A customer says, 'Your product offers more features.'",
                         "correctOption": [
-                            "First: 'So, our product offers greater value, right?'",
-                            "Second: 'And the long-term benefits outweigh the cost, correct?'",
-                            "Third: 'So, we’re aligned on this being the better choice?'"
+                            "So, our product offers greater value, right?",
                         ],
                         "wrongOptions": [
                             "Can you agree we’re better than the competition?",
@@ -1373,9 +1343,7 @@
                         "scenarioID": 16,
                         "scenario": "A client says, 'We're close to making a decision.'",
                         "correctOption": [
-                            "First: 'So, this solution addresses your challenges, right?'",
-                            "Second: 'And it aligns with your long-term goals, correct?'",
-                            "Third: 'So, we’re aligned on moving forward soon?'"
+                            "So, this solution addresses your challenges, right?",
                         ],
                         "wrongOptions": [
                             "Can you finalize the decision today?",
@@ -1386,9 +1354,7 @@
                         "scenarioID": 17,
                         "scenario": "A prospect says, 'I'm interested in reconnecting.'",
                         "correctOption": [
-                            "First: 'So, you’re still interested in solving the challenges we discussed, right?'",
-                            "Second: 'And our solution still aligns with your goals, correct?'",
-                            "Third: 'So, we’re aligned on reconnecting to move forward?'"
+                            "So, you’re still interested in solving the challenges we discussed, right?",
                         ],
                         "wrongOptions": [
                             "Can you tell me why you haven’t responded?",
@@ -1399,9 +1365,7 @@
                         "scenarioID": 18,
                         "scenario": "A client says, 'We're considering the upgrade.'",
                         "correctOption": [
-                            "First: 'So, you see how the upgrade offers additional benefits, right?'",
-                            "Second: 'And these features align with your growing needs, correct?'",
-                            "Third: 'So, we’re aligned on transitioning to the higher tier?'"
+                            "So, you see how the upgrade offers additional benefits, right?",
                         ],
                         "wrongOptions": [
                             "Can you agree this upgrade is worth it?",
@@ -1412,9 +1376,7 @@
                         "scenarioID": 19,
                         "scenario": "Decision-makers say, 'Your solution addresses our concerns.'",
                         "correctOption": [
-                            "First: 'So, this solution addresses the key concerns your team has, right?'",
-                            "Second: 'And implementing it aligns with your strategic goals, correct?'",
-                            "Third: 'So, we’re aligned on moving forward with this decision?'"
+                            "So, this solution addresses the key concerns your team has, right?",
                         ],
                         "wrongOptions": [
                             "Can you agree this is the best solution?",
@@ -1425,9 +1387,7 @@
                         "scenarioID": 20,
                         "scenario": "An executive says, 'Your proposal is interesting.'",
                         "correctOption": [
-                            "First: 'So, this meeting aligns with your company’s goals, right?'",
-                            "Second: 'And it could address key challenges you’re facing, correct?'",
-                            "Third: 'So, we’re aligned on scheduling this meeting soon?'"
+                            "So, this meeting aligns with your company’s goals, right?",
                         ],
                         "wrongOptions": [
                             "Can you confirm this meeting is worthwhile?",
