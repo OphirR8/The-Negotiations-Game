@@ -1,0 +1,388 @@
+[
+            {
+                "tacticID": 10,
+                "tactic": "The Black Swan Theory",
+                "description": "Identify hidden, critical pieces of information that could dramatically shift the negotiation’s outcome.",
+                "purpose": "Uncover unknown factors and adapt your strategy.",
+                "example": {
+                    "scenario": "A vendor says, 'We’re hesitating because of internal discussions.'",
+                    "response": "Who else needs to be involved to move this forward?",
+                    "outcome": "You learn that a senior manager has concerns, allowing you to address them directly."
+                },
+                "scenarios": [
+                    {
+                        "scenarioID": 1,
+                        "scenario": "During a salary negotiation, your employer says, 'We can't approve a raise at this time.'",
+                        "correctOption": "What other priorities might be affecting the decision to approve this raise?",
+                        "wrongOptions": [
+                            "Why haven’t you approved this yet?",
+                            "Can you tell me when this will be finalized?"
+                        ]
+                    },
+                    {
+                        "scenarioID": 2,
+                        "scenario": "A customer says, 'Your product is great, but we're considering other options due to the price.'",
+                        "correctOption": "What other factors are influencing your decision beyond the price?",
+                        "wrongOptions": [
+                            "Why don’t you agree this price is fair?",
+                            "Can we agree this product fits your needs?"
+                        ]
+                    },
+                    {
+                        "scenarioID": 3,
+                        "scenario": "A supplier tells you, 'We can't offer better terms; it's against our policy.'",
+                        "correctOption": "What challenges might we not be seeing on your end regarding better terms?",
+                        "wrongOptions": [
+                            "Why can’t you offer better terms?",
+                            "Can you confirm whether this is your final decision?"
+                        ]
+                    },
+                    {
+                        "scenarioID": 4,
+                        "scenario": "Your coworker says, 'I can't take on more tasks right now.'",
+                        "correctOption": "What other concerns might be making this workload division feel unfair to you?",
+                        "wrongOptions": [
+                            "Why do you think the workload is uneven?",
+                            "Can you confirm this distribution works for you?"
+                        ]
+                    },
+                    {
+                        "scenarioID": 5,
+                        "scenario": "A client states, 'We can't extend the project deadline any further.'",
+                        "correctOption": "What other stakeholders might have concerns about extending the timeline?",
+                        "wrongOptions": [
+                            "Why don’t you think this extension is a good idea?",
+                            "Can you approve this timeline adjustment?"
+                        ]
+                    },
+                    {
+                        "scenarioID": 6,
+                        "scenario": "A vendor says, 'We can't offer any discounts at this time.'",
+                        "correctOption": "What internal policies or constraints might be affecting your ability to offer a discount?",
+                        "wrongOptions": [
+                            "Why can’t you offer us a discount?",
+                            "Can you confirm whether this is your best price?"
+                        ]
+                    },
+                    {
+                        "scenarioID": 7,
+                        "scenario": "Your partner says, 'I don't think we should make this big purchase right now.'",
+                        "correctOption": "What other financial concerns might be making this decision feel difficult?",
+                        "wrongOptions": [
+                            "Why don’t you think this expense is justified?",
+                            "Can you confirm whether this fits our priorities?"
+                        ]
+                    },
+                    {
+                        "scenarioID": 8,
+                        "scenario": "A team member mentions, 'I don't think implementing this new tool is a good idea.'",
+                        "correctOption": "What hidden challenges might you foresee in adopting this tool?",
+                        "wrongOptions": [
+                            "Why can’t you just trust this tool will work?",
+                            "Can we agree to move forward with this implementation?"
+                        ]
+                    },
+                    {
+                        "scenarioID": 9,
+                        "scenario": "Your landlord says, 'I'm increasing your rent due to market rates.'",
+                        "correctOption": "What other factors are contributing to the need for a rent increase?",
+                        "wrongOptions": [
+                            "Why do you think this increase is fair?",
+                            "Can we agree to delay the rent hike?"
+                        ]
+                    },
+                    {
+                        "scenarioID": 10,
+                        "scenario": "In a meeting, a stakeholder says, 'We're hesitant to approve this project.'",
+                        "correctOption": "What hidden risks or challenges might you see with this proposal?",
+                        "wrongOptions": [
+                            "Why don’t you think this idea will work?",
+                            "Can we agree this is the best solution?"
+                        ]
+                    },
+                    {
+                        "scenarioID": 11,
+                        "scenario": "A prospect tells you, 'We're not ready to sign up for your service.'",
+                        "correctOption": "What other considerations might be making you hesitant to commit?",
+                        "wrongOptions": [
+                            "Why don’t you think this subscription is worth it?",
+                            "Can you confirm whether this service fits your needs?"
+                        ]
+                    },
+                    {
+                        "scenarioID": 12,
+                        "scenario": "A potential client says, 'We need a significant discount to consider your product.'",
+                        "correctOption": "What additional concerns might be driving the need for a discount?",
+                        "wrongOptions": [
+                            "Why do you think this product is overpriced?",
+                            "Can you agree this product is worth the full price?"
+                        ]
+                    },
+                    {
+                        "scenarioID": 13,
+                        "scenario": "During a product demo, the client says, 'I don't think this will meet our needs.'",
+                        "correctOption": "What specific challenges might you be worried this product can’t address?",
+                        "wrongOptions": [
+                            "Why do you think this product won’t work for you?",
+                            "Can you confirm whether this product fits your needs?"
+                        ]
+                    },
+                    {
+                        "scenarioID": 14,
+                        "scenario": "An existing client mentions, 'We're not comfortable increasing our order size right now.'",
+                        "correctOption": "What other priorities might make committing to a larger order difficult?",
+                        "wrongOptions": [
+                            "Why don’t you think a larger order makes sense?",
+                            "Can we agree this is the right time to increase the order size?"
+                        ]
+                    },
+                    {
+                        "scenarioID": 15,
+                        "scenario": "A customer says, 'We're considering a cheaper alternative from a competitor.'",
+                        "correctOption": "What other factors might be driving your preference for the competitor?",
+                        "wrongOptions": [
+                            "Why do you think their product is better?",
+                            "Can we agree that value is more important than price?"
+                        ]
+                    },
+                    {
+                        "scenarioID": 16,
+                        "scenario": "A client says, 'We need more time before making a decision.'",
+                        "correctOption": "What other priorities might be delaying your decision?",
+                        "wrongOptions": [
+                            "Why do you think you need more time?",
+                            "Can we agree to finalize this soon?"
+                        ]
+                    },
+                    {
+                        "scenarioID": 17,
+                        "scenario": "A prospect hasn't responded, and when contacted, they say, 'Our priorities have shifted.'",
+                        "correctOption": "What changed on your end that might have shifted priorities since we last spoke?",
+                        "wrongOptions": [
+                            "Why haven’t you responded to my follow-ups?",
+                            "Can we agree to revisit this conversation?"
+                        ]
+                    },
+                    {
+                        "scenarioID": 18,
+                        "scenario": "A client says, 'Upgrading isn't something we're considering at the moment.'",
+                        "correctOption": "What other factors might be making this upgrade feel like a big commitment?",
+                        "wrongOptions": [
+                            "Why don’t you think upgrading is worth it?",
+                            "Can you agree this upgrade is a good fit?"
+                        ]
+                    },
+                    {
+                        "scenarioID": 19,
+                        "scenario": "During a sales pitch, decision-makers express, 'We're not convinced this solution is right for us.'",
+                        "correctOption": "What concerns might your team have that haven’t been shared yet?",
+                        "wrongOptions": [
+                            "Why don’t you think this solution will work?",
+                            "Can we agree this solution aligns with your goals?"
+                        ]
+                    },
+                    {
+                        "scenarioID": 20,
+                        "scenario": "An executive replies to your meeting request with, 'I don't think this meeting is necessary right now.'",
+                        "correctOption": "What other priorities might be making this meeting feel less important right now?",
+                        "wrongOptions": [
+                            "Why don’t you think this meeting is worthwhile?",
+                            "Can you confirm this meeting is a good idea?"
+                        ]
+                    }
+                ]
+            },
+            {
+                "tacticID": 11,
+                "tactic": "Anchoring with Extreme Requests",
+                "description": "Start with a bold or slightly extreme offer to set a favorable reference point.",
+                "purpose": "Influence perceptions of value and create room for concessions.",
+                "example": {
+                    "scenario": "A buyer says, 'We’re looking for a price of $15,000.'",
+                    "response": "For this level of service, our standard price is $25,000, but we can explore adjustments.",
+                    "outcome": "The higher anchor frames the negotiation, making $20,000 seem like a fair compromise."
+                },
+                "scenarios": [
+                    {
+                        "scenarioID": 1,
+                        "scenario": "During a salary negotiation, your employer says, 'We might be able to offer a small raise.'",
+                        "correctOption": "Given my contributions, I’m looking for a 20% raise. Let’s start there and discuss options.",
+                        "wrongOptions": [
+                            "Can we agree on a modest raise of 5%?",
+                            "I’m hoping for a small adjustment, is that possible?"
+                        ]
+                    },
+                    {
+                        "scenarioID": 2,
+                        "scenario": "A customer says, 'Your product is too expensive; we have a budget of $10,000.'",
+                        "correctOption": "Our typical pricing starts at $20,000, but let’s explore a package that fits your budget.",
+                        "wrongOptions": [
+                            "Our product is competitively priced; can you agree to this cost?",
+                            "Would you consider $15,000 as a compromise?"
+                        ]
+                    },
+                    {
+                        "scenarioID": 3,
+                        "scenario": "A supplier tells you, 'Our standard payment terms are 30 days.'",
+                        "correctOption": "We’re looking for 90-day payment terms. Can you work with that?",
+                        "wrongOptions": [
+                            "Would you consider extending to 60 days?",
+                            "Can we negotiate slightly better payment terms?"
+                        ]
+                    },
+                    {
+                        "scenarioID": 4,
+                        "scenario": "Your coworker says, 'I can help with a few additional tasks.'",
+                        "correctOption": "I’d like to take on the leadership role for the entire project. How does that sound?",
+                        "wrongOptions": [
+                            "Can we share responsibilities evenly?",
+                            "Let’s start with adjusting a few tasks for now."
+                        ]
+                    },
+                    {
+                        "scenarioID": 5,
+                        "scenario": "A client mentions, 'We can possibly allow a one-week extension.'",
+                        "correctOption": "To ensure the best quality, we’ll need an additional three weeks. Does that work for you?",
+                        "wrongOptions": [
+                            "Would you consider extending the timeline by a week?",
+                            "How about giving us a few extra days to finish?"
+                        ]
+                    },
+                    {
+                        "scenarioID": 6,
+                        "scenario": "A vendor says, 'We can offer you a 5% discount on this order.'",
+                        "correctOption": "For an order of this size, we’re expecting a 30% discount. Can you accommodate that?",
+                        "wrongOptions": [
+                            "Could you consider a 10% discount?",
+                            "What’s the best price you can offer?"
+                        ]
+                    },
+                    {
+                        "scenarioID": 7,
+                        "scenario": "Your partner says, 'Maybe we can save a little more each month.'",
+                        "correctOption": "I’d like us to set aside 40% of our income for savings this year. How does that sound?",
+                        "wrongOptions": [
+                            "Can we save 10% more than we did last year?",
+                            "What if we just save a little more for now?"
+                        ]
+                    },
+                    {
+                        "scenarioID": 8,
+                        "scenario": "A team member says, 'We could try the new tool on a small project.'",
+                        "correctOption": "Let’s implement the tool across all teams immediately. Do you see any challenges with that?",
+                        "wrongOptions": [
+                            "Can we test it out with one small team first?",
+                            "Let’s consider this as a pilot for now."
+                        ]
+                    },
+                    {
+                        "scenarioID": 9,
+                        "scenario": "Your landlord tells you, 'I'm planning a small rent increase next month.'",
+                        "correctOption": "We’re looking to keep the rent unchanged for the next two years. Can you agree to that?",
+                        "wrongOptions": [
+                            "Can we agree to a smaller increase for now?",
+                            "How about postponing the rent increase for six months?"
+                        ]
+                    },
+                    {
+                        "scenarioID": 10,
+                        "scenario": "In a meeting, a stakeholder says, 'We have a budget of $200,000 for new projects.'",
+                        "correctOption": "We’re proposing a $500,000 budget for this project to maximize its potential. Can we start there?",
+                        "wrongOptions": [
+                            "Could we start with a smaller budget and scale up later?",
+                            "Let’s begin with a conservative budget of $100,000."
+                        ]
+                    },
+                    {
+                        "scenarioID": 11,
+                        "scenario": "A prospect says, 'We're interested in your basic plan at $100 per month.'",
+                        "correctOption": "Our premium annual plan is $1,500, but we can explore a smaller plan if needed.",
+                        "wrongOptions": [
+                            "Would you consider our basic monthly plan for $100?",
+                            "How about starting with a discounted plan?"
+                        ]
+                    },
+                    {
+                        "scenarioID": 12,
+                        "scenario": "A potential client says, 'We can offer $10,000 for your product.'",
+                        "correctOption": "Our regular price is $25,000, but let’s discuss how we can tailor a package for you.",
+                        "wrongOptions": [
+                            "Would you agree to $15,000 as a compromise?",
+                            "Can we meet somewhere in the middle on pricing?"
+                        ]
+                    },
+                    {
+                        "scenarioID": 13,
+                        "scenario": "During a demo, the client says, 'We're interested in your entry-level model.'",
+                        "correctOption": "Our top-tier model is designed for companies of your size and is priced at $30,000. Does that align with your needs?",
+                        "wrongOptions": [
+                            "Would you like to see our entry-level model instead?",
+                            "How about starting with a basic version and upgrading later?"
+                        ]
+                    },
+                    {
+                        "scenarioID": 14,
+                        "scenario": "An existing client says, 'We might increase our order by 10%.'",
+                        "correctOption": "We’d like to increase the order by 50% to maximize efficiency. How does that sound?",
+                        "wrongOptions": [
+                            "Can we try a modest increase of 10% for now?",
+                            "What if we increased the order slightly?"
+                        ]
+                    },
+                    {
+                        "scenarioID": 15,
+                        "scenario": "A customer mentions, 'Your competitor offers similar features at a lower cost.'",
+                        "correctOption": "Our product includes premium support and advanced features, which justify the $20,000 price point. Can we start there?",
+                        "wrongOptions": [
+                            "Would you consider a discount to match their price?",
+                            "Can we agree that our features outweigh their lower cost?"
+                        ]
+                    },
+                    {
+                        "scenarioID": 16,
+                        "scenario": "A client says, 'We need more time to make a decision.'",
+                        "correctOption": "Let’s finalize the agreement this week to secure the current terms. Does that work for you?",
+                        "wrongOptions": [
+                            "Would you like more time to review the terms?",
+                            "Can we revisit this decision in a few weeks?"
+                        ]
+                    },
+                    {
+                        "scenarioID": 17,
+                        "scenario": "A prospect who hasn't responded says, 'We're still thinking about your proposal.'",
+                        "correctOption": "We’d like to offer you our most comprehensive package for $10,000. Does that align with your needs?",
+                        "wrongOptions": [
+                            "Would you prefer to discuss a smaller package?",
+                            "Can we talk about other options at a lower price point?"
+                        ]
+                    },
+                    {
+                        "scenarioID": 18,
+                        "scenario": "A client says, 'We're considering upgrading to the next tier.'",
+                        "correctOption": "Our highest tier offers the best value at $50,000 annually. Let’s start there and adjust if needed.",
+                        "wrongOptions": [
+                            "Would you like to discuss a mid-tier package instead?",
+                            "Can we explore smaller upgrades first?"
+                        ]
+                    },
+                    {
+                        "scenarioID": 19,
+                        "scenario": "During a pitch, decision-makers say, 'We're looking for a small-scale solution.'",
+                        "correctOption": "We propose an enterprise-wide implementation starting at $100,000. How does that fit your goals?",
+                        "wrongOptions": [
+                            "Can we begin with a smaller-scale solution?",
+                            "Would you like to explore other options at a lower price point?"
+                        ]
+                    },
+                    {
+                        "scenarioID": 20,
+                        "scenario": "An executive responds to your meeting request with, 'I can give you 15 minutes next week.'",
+                        "correctOption": "I’d like to schedule a full hour to explore how we can support your team’s growth. Can you commit to that?",
+                        "wrongOptions": [
+                            "Can we schedule a quick 15-minute call?",
+                            "Would you consider a brief meeting to start?"
+                        ]
+                    }
+                ]
+            }
+    ]
