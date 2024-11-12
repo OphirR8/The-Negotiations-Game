@@ -6,6 +6,13 @@ let allScenarios = [];
 let currentScenarioIndex = 0;
 let score = 0;
 
+// List of tactic files
+const tacticFiles = [
+  './data/Tactics1-4.json',
+  './data/Tactics5-9.json',
+  './data/Tactics10-11.json'
+];
+
 // Function to format time
 function formatTime(seconds) {
   const minutes = Math.floor(seconds / 60);
@@ -15,21 +22,30 @@ function formatTime(seconds) {
     .padStart(2, '0')}`;
 }
 
-// Function to fetch data and start the game
+// Function to fetch all data and start the game
 function fetchDataAndStartGame() {
   console.log('Start Game button clicked');
-  fetch('./data/tactics.json')
-    .then((response) => {
-      console.log('Fetch response:', response);
-      if (!response.ok) {
-        throw new Error(`HTTP error! Status: ${response.status}`);
-      }
-      return response.json();
-    })
-    .then((data) => {
-      tacticsData = data;
-      console.log('Tactics Data Loaded:', tacticsData);
-      startGame(); // Start the game after data is loaded
+
+  const filePromises = tacticFiles.map((file) =>
+    fetch(file)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        return response.json();
+      })
+      .catch((error) => {
+        console.error(`Error loading file ${file}:`, error);
+        return []; // Return an empty array for failed fetches
+      })
+  );
+
+  Promise.all(filePromises)
+    .then((dataArrays) => {
+      // Combine all tactic data into one array
+      tacticsData = dataArrays.flat();
+      console.log('All Tactics Data Loaded:', tacticsData);
+      startGame(); // Start the game after all data is loaded
     })
     .catch((error) => {
       console.error('Error loading tactics data:', error);
@@ -54,11 +70,10 @@ function startGame() {
   }, 1000);
 
   flattenScenarios();
-  // Removed duplicate shuffleScenarios() call to prevent double shuffling
   loadScenario();
 }
 
-// Function to flatten all scenarios into a single array with a unique key
+// Function to flatten all scenarios into a single array
 function flattenScenarios() {
   console.log('Flattening scenarios');
   allScenarios = [];
@@ -182,26 +197,11 @@ function showLearnPage() {
   loadTactics();
 }
 
-// Load tactics into Learn page with collapsible design
+// Load tactics into Learn page
 function loadTactics() {
   console.log('Loading tactics for Learn Page');
   if (tacticsData.length === 0) {
-    // Data not loaded yet, fetch it
-    console.log('Tactics data is empty, fetching data for Learn Page');
-    fetch('./data/tactics.json')
-      .then((response) => {
-        console.log('Fetch response for tactics:', response);
-        if (!response.ok) {
-          throw new Error(`HTTP error! Status: ${response.status}`);
-        }
-        return response.json();
-      })
-      .then((data) => {
-        tacticsData = data;
-        console.log('Tactics Data Loaded for Learn Page:', tacticsData);
-        renderTactics();
-      })
-      .catch((error) => console.error('Error loading tactics data:', error));
+    fetchDataAndStartGame(); // Load all files if not already loaded
   } else {
     console.log('Tactics data already loaded');
     renderTactics();
@@ -217,7 +217,6 @@ function renderTactics() {
     const tacticDiv = document.createElement('div');
     tacticDiv.className = 'tactic';
 
-    // Create the header for the tactic
     const header = document.createElement('h3');
     header.className = 'tactic-header';
     header.textContent = tactic.tactic;
@@ -226,12 +225,10 @@ function renderTactics() {
       content.style.display = content.style.display === 'none' ? 'block' : 'none';
     };
 
-    // Create the collapsible content
     const content = document.createElement('div');
     content.className = 'tactic-content';
-    content.style.display = 'none'; // Initially hidden
+    content.style.display = 'none';
 
-    // Handle 'example.response' as a string
     let exampleResponse = tactic.example.response;
     if (Array.isArray(tactic.example.response)) {
       exampleResponse = tactic.example.response.join(' ');
@@ -256,12 +253,5 @@ function renderTactics() {
 function backToMenu() {
   console.log('Back to Menu button clicked');
   document.getElementById('learn-page').classList.add('hidden');
-  document.getElementById('high-scores').classList.add('hidden');
   document.getElementById('main-menu').classList.remove('hidden');
-}
-
-// High Scores (Placeholder function)
-function showHighScores() {
-  console.log('High Scores button clicked');
-  alert('High Scores feature is under development.');
 }
