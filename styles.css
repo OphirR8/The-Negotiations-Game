@@ -141,3 +141,17 @@ button.incorrect {
     background-color: #f44336 !important; /* Red for incorrect */
     color: #fff !important;
 }
+
+#score-list {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  text-align: center; /* Center text */
+}
+
+#score-list div {
+  font-size: 1.5rem; /* Larger font size */
+  margin: 10px 0; /* Spacing between items */
+  color: #333; /* Adjust text color as needed */
+}
+
