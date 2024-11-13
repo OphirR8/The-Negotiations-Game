@@ -25,7 +25,6 @@ body {
 /* Headings */
 h1, h2 {
     color: #61dafb;
-    margin-bottom: 20px;
 }
 
 /* Buttons */
@@ -86,9 +85,12 @@ button:hover {
 /* Learn Page Styling */
 #learn-page {
     background-color: #282c34; /* Match game screen background */
-    color: #61dafb; /* Light blue for text */
+    color: #fff; /* White text for readability */
     padding: 20px;
     font-family: Arial, sans-serif;
+    max-height: 90vh; /* Prevent overflow */
+    overflow-y: auto; /* Add scrolling if content overflows */
+    border-radius: 10px;
 }
 
 /* Tactic headers for Learn Page */
@@ -131,6 +133,7 @@ button:hover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
     gap: 20px;
+    width: 100%;
 }
 
 /* Correct/Incorrect button feedback */
