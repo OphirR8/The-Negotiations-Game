@@ -2,35 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Negotiations Game</title>
   <link rel="stylesheet" href="styles.css">
-  <style>
-    /* Basic styles for visibility */
-    .hidden {
-      display: none;
-    }
-    .tactic {
-      border: 1px solid #ccc;
-      padding: 10px;
-      margin-bottom: 10px;
-      border-radius: 5px;
-    }
-    .tactic-header {
-      cursor: pointer;
-      background-color: #f0f0f0;
-      padding: 10px;
-      border-radius: 5px;
-    }
-    .tactic-content {
-      padding: 10px;
-      background-color: #fafafa;
-      border-radius: 5px;
-    }
-    .indented {
-      margin-left: 20px;
-    }
-    /* Add more styles as needed */
-  </style>
 </head>
 <body>
   <div class="container">
@@ -61,12 +35,12 @@
       <button onclick="backToMenu()">Back to Menu</button>
     </div>
 
-   <!-- High Scores Page -->
-<div id="high-scores" class="hidden">
-  <h2>High Scores</h2>
-  <ul id="score-list"></ul>
-  <button onclick="backToMenu()">Back to Menu</button>
-</div>
+    <!-- High Scores Page -->
+    <div id="high-scores" class="hidden">
+      <h2>High Scores</h2>
+      <div id="score-list"></div> <!-- Replaced <ul> with <div> -->
+      <button onclick="backToMenu()">Back to Menu</button>
+    </div>
   </div>
   <script src="app.js"></script>
 </body>
