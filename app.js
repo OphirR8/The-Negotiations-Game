@@ -210,11 +210,23 @@ function showHighScores() {
   const scoreList = document.getElementById('score-list');
   scoreList.innerHTML = ''; // Clear existing content
 
-  highScores.forEach((entry, index) => {
-    const listItem = document.createElement('li');
-    listItem.textContent = `#${index + 1} - Score: ${entry.score}, Time: ${formatTime(entry.time)}`;
-    scoreList.appendChild(listItem);
-  });
+  if (highScores.length === 0) {
+    scoreList.innerHTML = '<p>No high scores yet. Play the game to set a record!</p>';
+  } else {
+    highScores.forEach((entry, index) => {
+      const listItem = document.createElement('div');
+      const date = new Date(entry.date).toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'short',
+        day: 'numeric',
+      });
+      listItem.textContent = `#${index + 1} - Score: ${entry.score}, Date: ${date}`;
+      listItem.style.textAlign = 'center'; // Center the text
+      listItem.style.fontSize = '1.5rem'; // Make the text larger
+      listItem.style.margin = '10px 0'; // Add spacing between entries
+      scoreList.appendChild(listItem);
+    });
+  }
 
   document.getElementById('main-menu').classList.add('hidden');
   document.getElementById('high-scores').classList.remove('hidden');
