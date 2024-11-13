@@ -195,15 +195,16 @@ function showFeedback(isCorrect, scenarioObj) {
 }
 
 // End the game
+// Save high score with date
 function endGame() {
   console.log('Ending game');
   clearInterval(timerInterval);
 
   // Save high score
   const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
-  const date = new Date().toISOString().split('T')[0]; // Save only the date (YYYY-MM-DD)
-  highScores.push({ score, date });
-  highScores.sort((a, b) => b.score - a.score); // Sort by score
+  const currentDate = new Date().toISOString().split('T')[0]; // Get current date in YYYY-MM-DD format
+  highScores.push({ score, time: secondsElapsed, date: currentDate });
+  highScores.sort((a, b) => b.score - a.score || a.time - b.time); // Sort by score, then by time
   localStorage.setItem('highScores', JSON.stringify(highScores.slice(0, 10))); // Keep top 10 scores
 
   alert(`Game Over!\nYour score: ${score}\nTime elapsed: ${formatTime(secondsElapsed)}`);
@@ -211,7 +212,7 @@ function endGame() {
   document.getElementById('main-menu').classList.remove('hidden');
 }
 
-
+// Show high scores
 function showHighScores() {
   console.log('High Scores button clicked');
   const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
@@ -219,25 +220,27 @@ function showHighScores() {
   scoreList.innerHTML = ''; // Clear existing content
 
   if (highScores.length === 0) {
-    scoreList.innerHTML = '<p>No high scores yet. Play the game to set a record!</p>';
+    scoreList.textContent = "No high scores yet!";
   } else {
     highScores.forEach((entry, index) => {
       const listItem = document.createElement('div');
-      const date = new Date(entry.date).toLocaleDateString('en-US', {
-        year: 'numeric',
-        month: 'short',
-        day: 'numeric',
-      });
-      listItem.textContent = `#${index + 1} - Score: ${entry.score}, Date: ${date}`;
-      listItem.style.textAlign = 'center'; // Center the text
-      listItem.style.fontSize = '1.5rem'; // Make the text larger
-      listItem.style.margin = '10px 0'; // Add spacing between entries
+      listItem.className = 'high-score-item';
+      listItem.textContent = `#${index + 1} - Score: ${entry.score}, Time: ${formatTime(entry.time)}, Date: ${entry.date}`;
       scoreList.appendChild(listItem);
     });
   }
 
   document.getElementById('main-menu').classList.add('hidden');
   document.getElementById('high-scores').classList.remove('hidden');
+}
+
+// Back to menu
+function backToMenu() {
+  console.log('Back to Menu button clicked');
+  document.getElementById('learn-page').classList.add('hidden');
+  document.getElementById('high-scores').classList.add('hidden');
+  document.getElementById('game-screen').classList.add('hidden');
+  document.getElementById('main-menu').classList.remove('hidden');
 }
 
 
@@ -325,14 +328,5 @@ function renderTactics() {
     tacticDiv.appendChild(content);
     tacticList.appendChild(tacticDiv);
   });
-}
-
-// Return to menu
-function backToMenu() {
-  console.log('Back to Menu button clicked');
-  document.getElementById('learn-page').classList.add('hidden');
-  document.getElementById('high-scores').classList.add('hidden'); // Ensure high scores are hidden
-  document.getElementById('game-screen').classList.add('hidden'); // Ensure game screen is hidden
-  document.getElementById('main-menu').classList.remove('hidden');
 }
 
