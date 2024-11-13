@@ -147,16 +147,27 @@ button.incorrect {
     color: #fff !important;
 }
 
-/* High Scores */
+/* High Scores Styling */
 #score-list {
   list-style-type: none; /* Remove bullet points */
-  padding: 0;
-  margin: 20px 0;
+  padding: 0; /* Remove default padding */
+  margin: 20px 0; /* Add space around */
+  text-align: center; /* Center text */
+}
+
+.high-score-item {
+  font-size: 1.2rem; /* Larger font size */
+  margin: 10px 0; /* Space between items */
+  color: #FAFAFA; /* Light text color */
+  background-color: #333; /* Dark background */
+  padding: 10px;
+  border-radius: 5px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
 }
 
-#score-list div {
-  font-size: 1.5rem; /* Larger font size */
-  margin: 10px 0;
-  color: #61dafb; /* Match theme */
+#high-scores button {
+  margin-top: 20px; /* Add space above button */
 }
