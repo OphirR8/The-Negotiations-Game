@@ -153,11 +153,16 @@ function selectOption(selectedOption, scenarioObj) {
   console.log('Option selected:', selectedOption);
   const isCorrect = selectedOption === scenarioObj.correctOption;
 
-  // Highlight the selected button
   const optionsContainer = document.getElementById('tactic-options');
   Array.from(optionsContainer.children).forEach((button) => {
     if (button.textContent === selectedOption) {
-      button.style.backgroundColor = isCorrect ? '#4caf50' : '#f44336'; // Green for correct, red for wrong
+      // Highlight the selected button in green if correct, red if wrong
+      button.style.backgroundColor = isCorrect ? '#4caf50' : '#f44336';
+      button.style.color = '#fff';
+    }
+    if (button.textContent === scenarioObj.correctOption) {
+      // Highlight the correct answer in green
+      button.style.backgroundColor = '#4caf50';
       button.style.color = '#fff';
     }
     button.disabled = true; // Disable all buttons after selection
@@ -174,8 +179,9 @@ function selectOption(selectedOption, scenarioObj) {
   currentScenarioIndex++;
   setTimeout(() => {
     loadScenario();
-  }, 500);
+  }, 800);
 }
+
 
 
 // Show feedback
@@ -195,14 +201,16 @@ function endGame() {
 
   // Save high score
   const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
-  highScores.push({ score, time: secondsElapsed });
-  highScores.sort((a, b) => b.score - a.score || a.time - b.time); // Sort by score, then by time
+  const date = new Date().toISOString().split('T')[0]; // Save only the date (YYYY-MM-DD)
+  highScores.push({ score, date });
+  highScores.sort((a, b) => b.score - a.score); // Sort by score
   localStorage.setItem('highScores', JSON.stringify(highScores.slice(0, 10))); // Keep top 10 scores
 
   alert(`Game Over!\nYour score: ${score}\nTime elapsed: ${formatTime(secondsElapsed)}`);
   document.getElementById('game-screen').classList.add('hidden');
   document.getElementById('main-menu').classList.remove('hidden');
 }
+
 
 function showHighScores() {
   console.log('High Scores button clicked');
@@ -323,5 +331,8 @@ function renderTactics() {
 function backToMenu() {
   console.log('Back to Menu button clicked');
   document.getElementById('learn-page').classList.add('hidden');
+  document.getElementById('high-scores').classList.add('hidden'); // Ensure high scores are hidden
+  document.getElementById('game-screen').classList.add('hidden'); // Ensure game screen is hidden
   document.getElementById('main-menu').classList.remove('hidden');
 }
+
